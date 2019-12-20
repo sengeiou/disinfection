@@ -10,7 +10,7 @@ class Content extends AppBase {
   onLoad(options) {
     this.Base.Page = this;
     options.keycode="帮助中心";
-    options.title = "aaaas";
+    options.title = "关于我们";
     super.onLoad(options);
   }
   onShow() {

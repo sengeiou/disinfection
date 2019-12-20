@@ -406,6 +406,9 @@ button[disabled][type=primary] {
 .margin-right{
   margin-right:20rpx;
 }
+.margin-right-70{
+  margin-right:70rpx;
+}
 .radius-50{
   border-radius: 50%;
 }
@@ -451,6 +454,10 @@ button[disabled][type=primary] {
 .icon-75{
   width: 150rpx;
   height: 150rpx;
+}
+.icon-90{
+  width: 90rpx;
+  height: 90rpx;
 }
 .icon-100{
   width: 200rpx;

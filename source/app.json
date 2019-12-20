@@ -1,7 +1,10 @@
 {
   "pages": [
     "pages/home/home",
+    "pages/aboutus/aboutus",
+    "pages/content/content",
     "pages/auth/auth"
+    
   ],
   "permission": {
     "scope.userLocation": {

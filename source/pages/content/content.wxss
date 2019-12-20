@@ -1,4 +1,3 @@
-/* pages/content/content.wxss */
-page{
-  background-color:white;
+.mt-28{
+  margin-top: 28rpx;
 }

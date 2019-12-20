@@ -1,0 +1,16 @@
+<view class='margin-top flex-row flex-column h4-5 txt-black'>
+  <image src='{{uploadpath}}resource/{{res.title}}' class='icon-75 margin-top'></image>
+  <view class='margin-top  txt-bold h4-5'>{{aboutus.summary}}</view>
+  <view class='h5 margin-top-5' style='#262626;'>{{aboutus.name}}</view>
+</view>
+
+<view class='padding-40 h5 margin-top-60 txt-gray' style='line-height:43rpx;opacity:0.6;'>{{aboutus.content}}</view>
+
+
+<view class='di'>
+  <view class='flex-center flex-row'>
+    <view class='flex-1'></view>
+    <view class='h7'>{{instinfo.banquan}}</view>
+    <view class='flex-1'></view>
+  </view>
+</view>

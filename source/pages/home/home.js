@@ -2,6 +2,7 @@
 import { AppBase } from "../../appbase";
 import { ApiConfig } from "../../apis/apiconfig";
 import { InstApi } from "../../apis/inst.api.js";
+import { MemberApi } from "../../apis/member.api.js";
 
 class Content extends AppBase {
   constructor() {
@@ -12,13 +13,35 @@ class Content extends AppBase {
     //options.id=5;
     super.onLoad(options);
   }
+  setPageTitle() {
+    wx.setNavigationBarTitle({
+      title: '牛牛消毒',
+    });
+  }
   onMyShow() {
     var that = this;
+    var instapi = new InstApi;
+    var memberapi = new MemberApi;
+
+    memberapi.xuanxianglist({}, (xuanxianglist)=>{
+      this.Base.setMyData({ xuanxianglist })
+    })
+
+    instapi.indexbanner({}, (indexbanner)=>{
+      this.Base.setMyData({indexbanner})
+    })
     console.log(123123);
+  }
+  click(){
+    wx.navigateTo({
+      url: '/pages/aboutus/aboutus',
+    })
   }
 }
 var content = new Content();
 var body = content.generateBodyJson();
 body.onLoad = content.onLoad;
-body.onMyShow = content.onMyShow;
+body.onMyShow = content.onMyShow; 
+body.click = content.click;
+
 Page(body)
