@@ -30,9 +30,9 @@ class Content extends AppBase {
 
     })
 
-    // memberapi.zhenzhengshu({}, (zhengshu) => {
-    //   this.Base.setMyData({ zhengshu })
-    // })
+    memberapi.zhengshu({}, (zhengshu) => {
+      this.Base.setMyData({ zhengshu })
+    })
 
     instapi.indexbanner({ orderby: 'r_main.seq' }, (indexbanner) => {
       this.Base.setMyData({ indexbanner })
