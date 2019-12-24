@@ -1,15 +1,15 @@
 /*******使用方法，下面两句复制到page的js文件的头部
 
 import { ApiConfig } from '../../apis/apiconfig';
-import { InstApi } from '../../apis/wechat.api';
+import { InstApi } from '../../apis/order.api';
 
-var wechatApi=new WechatApi();
+var orderApi=new OrderApi();
 *******/
 import { ApiConfig } from 'apiconfig';
-export class WechatApi{
+export class OrderApi{
 
 
-    decrypteddata(json, callback, showLoading = true) {
+    createorder(json, callback, showLoading = true) {
 
         if (showLoading)
             ApiConfig.ShowLoading();
@@ -18,7 +18,7 @@ export class WechatApi{
         console.log(header);
         console.log(json);
         wx.request({
-            url: ApiConfig.GetApiUrl() + 'wechat/decrypteddata',
+            url: ApiConfig.GetApiUrl() + 'order/createorder',
             data: json,
             method: 'POST',
             dataType: 'json',
@@ -41,7 +41,7 @@ export class WechatApi{
         })
     }
 
-    notify(json, callback, showLoading = true) {
+    myorder(json, callback, showLoading = true) {
 
         if (showLoading)
             ApiConfig.ShowLoading();
@@ -50,7 +50,7 @@ export class WechatApi{
         console.log(header);
         console.log(json);
         wx.request({
-            url: ApiConfig.GetApiUrl() + 'wechat/notify',
+            url: ApiConfig.GetApiUrl() + 'order/myorder',
             data: json,
             method: 'POST',
             dataType: 'json',
@@ -73,7 +73,7 @@ export class WechatApi{
         })
     }
 
-    prepay(json, callback, showLoading = true) {
+    orderinfo(json, callback, showLoading = true) {
 
         if (showLoading)
             ApiConfig.ShowLoading();
@@ -82,7 +82,39 @@ export class WechatApi{
         console.log(header);
         console.log(json);
         wx.request({
-            url: ApiConfig.GetApiUrl() + 'wechat/prepay',
+            url: ApiConfig.GetApiUrl() + 'order/orderinfo',
+            data: json,
+            method: 'POST',
+            dataType: 'json',
+            header: header,
+            success: function (res) {
+                if (callback != null) {
+                    callback(res.data);
+                }
+            },
+            fail: function (res) {
+                console.log(res);
+                callback(false);
+            },
+            complete: function (res) {
+                console.log(res);
+            
+                if (showLoading)
+                    ApiConfig.CloseLoading();
+            }
+        })
+    }
+
+    xiaodujieshu(json, callback, showLoading = true) {
+
+        if (showLoading)
+            ApiConfig.ShowLoading();
+
+        var header = ApiConfig.GetHeader();
+        console.log(header);
+        console.log(json);
+        wx.request({
+            url: ApiConfig.GetApiUrl() + 'order/xiaodujieshu',
             data: json,
             method: 'POST',
             dataType: 'json',

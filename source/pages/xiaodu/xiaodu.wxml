@@ -1,0 +1,32 @@
+<swiper indicator-dots="true" circular='true' autoplay="true" interval="3000" duration="500" style='width:750rpx;height:400rpx;'>
+	<block wx:for="{{indexbanner}}" wx:key="index">
+		<swiper-item>
+			<image src='{{uploadpath}}indexbanner/{{item.img}}' style='width:750rpx;height:400rpx;'></image>
+		</swiper-item>
+	</block>
+</swiper>
+
+<view class="conten">
+	<view class="padding-20 padding-left-40" style="border-bottom:1rpx solid #D6D6D6;color:#7B7B7B">
+
+		{{orderinfo.xiaoduzhuantai_name}}
+	</view>
+	<view wx:if="{{orderinfo.xiaoduzhuantai=='B'}}" class="flex-row flex-center margin-top-10">
+		<view class="flex-1"></view>
+		<canvas-ring class="h3" title="{{time}}" Number="5" canvasWidth="140" lineColor="#ECF0F7" id="canvasRing" value="{{baifenbi}}"></canvas-ring>
+		<view class="flex-1"></view>
+	</view>
+  <view wx:if="{{orderinfo.xiaoduzhuantai=='C'}}" class="flex-row flex-center margin-top-10">
+		<view class="flex-1"></view>
+		<canvas-ring class="h3" title="" Number="5" canvasWidth="140" lineColor="#ECF0F7" id="canvasRing" value="{{baifenbi}}"></canvas-ring>
+		<view class="flex-1"></view>
+	</view>
+	<view wx:if="{{orderinfo.xiaoduzhuantai=='C'}}" class="wwwc">
+		<view class="flex-row flex-center ">
+			<view class="flex-1"></view>
+			<image class="wanchen" src="{{uploadpath}}resource/{{res.xiaodujieshu}}"></image>
+			<view class="flex-1"></view>
+
+		</view>
+	</view>
+</view>
