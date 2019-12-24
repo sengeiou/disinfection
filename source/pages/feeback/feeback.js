@@ -23,19 +23,44 @@ class Content extends AppBase {
     var instapi = new InstApi;
     var memberapi = new MemberApi;
 
-    memberapi.fankui({}, (fankui) => {
-      this.Base.setMyData({ fankui })
-    })
+console.log('快快快')
+
+  
+
   }
   click(){
     var qsaaa=this.Base.getMyData().inputvalue;
-    var ssss=this.Base.getMyData().lxfs;
-     
+    var ssss=this.Base.getMyData().lxfs; 
+    var memberapi = new MemberApi();
+    var that=this;
+ 
     if(qsaaa == ''||qsaaa==undefined){
       console.log('为空')
       this.Base.toast('请填写问题描述')
       return;
-    } 
+    }
+    wx.showModal({
+      title: '提示',
+      content: '是否提交意见反馈？',
+      confirmText: "确认",
+      success: function (res) {
+        if (res.confirm) {
+          memberapi.fankui({
+            member_id: that.Base.getMyData().memberinfo.id,
+            content: qsaaa,
+            summary: ssss,
+            status: 'A' 
+          }, (fankui) => {
+            wx.navigateBack({
+            })
+            that.Base.toast('提交成功!') 
+          })
+        }
+      }
+    })
+
+
+
 
 
     console.log(qsaaa)
