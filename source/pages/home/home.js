@@ -23,11 +23,16 @@ class Content extends AppBase {
     var instapi = new InstApi;
     var memberapi = new MemberApi;
 
-    memberapi.xuanxianglist({}, (xuanxianglist)=>{
+    memberapi.xuanxianglist({orderby:'r_main.seq'}, (xuanxianglist)=>{
       this.Base.setMyData({ xuanxianglist })
-    })
 
-    instapi.indexbanner({}, (indexbanner)=>{
+    })
+  
+    memberapi.zhengshu({},(zhengshu)=>{
+      this.Base.setMyData({zhengshu})
+    })
+    
+    instapi.indexbanner({orderby:'r_main.seq'}, (indexbanner)=>{
       this.Base.setMyData({indexbanner})
     })
     console.log(123123);
@@ -37,11 +42,32 @@ class Content extends AppBase {
       url: '/pages/aboutus/aboutus',
     })
   }
+  xiaofei(){
+    wx.navigateTo({
+      url: '/pages/xiaofei/xiaofei',
+    })
+  }
+  feeback(){
+    wx.navigateTo({
+      url: '/pages/feeback/feeback',
+    })
+  }
+  kaishi(e){
+    var type =e.currentTarget.id;
+    console.log(e)
+
+    this.base.setMyData({
+      show:0
+    })
+  }
+
 }
 var content = new Content();
 var body = content.generateBodyJson();
 body.onLoad = content.onLoad;
 body.onMyShow = content.onMyShow; 
 body.click = content.click;
-
+body.kaishi=content.kaishi;
+body.xiaofei=content.xiaofei;
+body.feeback=content.feeback;
 Page(body)

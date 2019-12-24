@@ -19,7 +19,7 @@ class Content extends AppBase {
       // for(var i=0;i<wendang.length;i++){
       //   WxParse.wxParse('content', 'html', wendang[i].content, that, 10);
       // }
-     
+     console.log(aboutus)
       this.Base.setMyData({
         aboutus
       });

@@ -39,12 +39,26 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 2,
 			"list": [
 				{
 					"id": 0,
 					"name": "关于我们",
 					"pathName": "pages/aboutus/aboutus",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "历史订单",
+					"pathName": "pages/xiaofei/xiaofei",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "意见反馈",
+					"pathName": "pages/feeback/feeback",
 					"query": "",
 					"scene": null
 				}

@@ -1,0 +1,7 @@
+<view class='flex-row flex-column margin-top-40'>
+<view class='flex-1 margin-top-80'></view>
+<image src='{{uploadpath}}resource/{{res.shenque}}' style='width:458rpx;height:284rpx;'></image>
+<view class='flex-1 margin-top-10'></view>
+<view class='margin-top h4-5' style='color:#7B7B7B'>暂无消费记录哦~</view>
+<view class='flex-1'></view>
+</view>

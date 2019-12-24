@@ -1,4 +1,4 @@
-<swiper indicator-dots="true" autoplay="true" interval="3000" duration="500" style='width:750rpx;height:400rpx;'>
+<swiper indicator-dots="true" circular='true' autoplay="true" interval="3000" duration="500" style='width:750rpx;height:400rpx;'>
   <block wx:for="{{indexbanner}}" wx:key="index">
     <swiper-item>
       <image src='{{uploadpath}}indexbanner/{{item.img}}' style='width:750rpx;height:400rpx;'></image>
@@ -6,8 +6,9 @@
   </block>
 </swiper>
 
-<view wx:for='{{xuanxianglist}}' wx:key='k'>
-  <view class='flex-row margin-top-20 margin-left-50' style="background-image:url({{uploadpath}}xuanxiang/{{item.img1}});background-size:95% 100%;height:132rpx;background-repeat:no-repeat;">
+<view class='' wx:for='{{xuanxianglist}}' wx:key='k'>
+
+  <view class='flex-row flex-center    blocks' style="background-image:url({{uploadpath}}xuanxiang/{{item.img1}});background-size:100% 100%;height:132rpx;background-repeat:no-repeat;" id='true' bindtap='kaishi'>
     <view class='flex-row flex-column'>
       <view class='h3 txt-white margin-left-50 padding-top-10'>{{item.title}}</view>
       <view class='h5 txt-white margin-left-50 padding-top-10'>可消毒{{item.number}}台手机</view>
@@ -17,30 +18,51 @@
       <image src='{{uploadpath}}xuanxiang/{{item.img2}}' class='icon-90'></image>
     </view>
   </view>
+
+</view>
+<view class='flex-1'></view>
+<view class='height-70 bg-white blocks flex-row flex-center' style='border-radius:22rpx' bindtap='xiaofei'>
+  <view class='flex-1'></view>
+  <view class='f-36' style='color:#7E97BE'>消费记录</view>
+  <image src='{{uploadpath}}resource/{{res.xfjl}}' class='icon padding-left-20'></image>
+  <view class='flex-1'></view>
 </view>
 
-<view class='height-70 bg-white margin-top-20 margin-left-20 flex-row flex-center' style='width:95%;border-radius:22rpx'>
-<view class='flex-1'></view>
-<view class='f-36' style='color:#7E97BE'>消费记录</view>
-<image src='{{uploadpath}}resource/{{res.xfjl}}' class='icon padding-left-20'></image>
-<view class='flex-1'></view>
+<view class='margin-top  margin-left-30'>
+  <view class='f-36 txt-black txt-bold  height-50 margin-top-5'>检测证书</view>
 </view>
 
-<view class='margin-top  margin-left-30 margin'>
-<view class='f-36 txt-black txt-bold  height-50 margin-top-5'>检测证书</view>
+<view class='flex-row flex-center'>
+  <view class='flex-1'></view>
+  <view wx:for='{{zhengshu}}'  wx:key='z'>
+  <view class='margin-10'>
+  <image src='{{uploadpath}}zhengshu/{{item.wenjian}}' style='width:218rpx;height:266rpx'></image>
+  </view>
+  </view>
+  <view class='flex-1'></view>
 </view>
 
-<view class='flex-row'>
-<view class=''></view>
+<view  style='border-top:1rpx solid #ccc' class='flex-row blocks'></view>
+<view class='flex-row flex-center blocks' bindtap='phoneCall' id='{{instinfo.instmobile}}'>
+<view class='txt-black' >联系客服</view>
+  <view class='flex-1'></view>
+  <image src='{{uploadpath}}resource/{{res.right}}' class='icon'></image>
 </view>
 
-<view class='di'>
-<view class='flex-row flex-column'>
-<view class='flex-1'></view>
-<view class='h6' style='color:#526B96' bindtap='click'>关于我们</view>
-<view class='flex-1'></view>
-<view class='h7'>{{instinfo.banquan}}</view>
-<view class='flex-1'></view>
+<view  style='border-top:1rpx solid #ccc' class='flex-row blocks'></view>
+<view class='flex-row flex-center blocks' bindtap='feeback'>
+  <view class=' txt-black'>意见反馈</view>
+  <view class='flex-1'></view>
+  <image src='{{uploadpath}}resource/{{res.right}}' class='icon'></image>
 </view>
+<view  style='border-top:1rpx solid #ccc' class='flex-row blocks'></view>
+
+<view class='flex-row flex-column margin-top'>
+  <view class='flex-1'></view>
+  <view class='h6' style='color:#526B96' bindtap='click'>关于我们</view>
+  <view class='flex-1'></view>
+  <view class='h7 padding-top-5'>{{instinfo.banquan}}</view>
+  <view class='flex-1'></view>
 </view>
 
+<view style='height:30rpx'></view>

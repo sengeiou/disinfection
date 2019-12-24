@@ -1,0 +1,16 @@
+.di{
+  position: absolute; 
+  bottom: 72rpx;
+  width:100vw;
+}
+.btn{
+  width:276rpx;
+  height:64rpx;
+  border-radius:40rpx;
+}
+.btn:hover{
+  background-color: #A6B4CF;
+}
+.lan{
+  background-color: #ECF0F7;
+}

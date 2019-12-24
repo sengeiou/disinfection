@@ -1,0 +1,5 @@
+.di{
+  position: absolute; 
+  bottom: 30rpx;
+  width:100vw;
+}

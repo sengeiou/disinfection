@@ -3,7 +3,9 @@
     "pages/home/home",
     "pages/aboutus/aboutus",
     "pages/content/content",
-    "pages/auth/auth"
+    "pages/auth/auth",
+    "pages/xiaofei/xiaofei",
+    "pages/feeback/feeback"
     
   ],
   "permission": {
