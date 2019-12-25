@@ -1,0 +1,22 @@
+.conten{
+
+  background: white;
+  width: 618rpx;
+  height: 400rpx;
+  position: relative;
+  top: -20rpx;
+  left: 66rpx;
+  border-radius: 30rpx;
+}
+page{
+  background: #F2F2F2;
+}
+.wanchen{
+  width: 126rpx;
+  height: 96rpx;
+}
+.wwwc{
+position: fixed;
+width: 618rpx;
+top:580rpx;
+}

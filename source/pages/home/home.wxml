@@ -6,11 +6,13 @@
   </block>
 </swiper>
 
+
+<button  wx:if="{{memberinfo==undefined}}" class="clear-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
 <view class='' wx:for='{{xuanxianglist}}' wx:key='k'>
 
-  <view class='flex-row flex-center    blocks' style="background-image:url({{uploadpath}}xuanxiang/{{item.img1}});background-size:100% 100%;height:132rpx;background-repeat:no-repeat;" id='true' bindtap='kaishi'>
+  <view class='flex-row flex-center    blocks' style="background-image:url({{uploadpath}}xuanxiang/{{item.img1}});background-size:100% 100%;height:132rpx;background-repeat:no-repeat;" id='true' >
     <view class='flex-row flex-column'>
-      <view class='h3 txt-white margin-left-50 padding-top-10'>{{item.title}}</view>
+     <view class='h3 txt-white margin-left-50 padding-top-10'>{{item.title}}</view>
       <view class='h5 txt-white margin-left-50 padding-top-10'>可消毒{{item.number}}台手机</view>
     </view>
     <view class='flex-1'></view>
@@ -20,6 +22,26 @@
   </view>
 
 </view>
+</button>
+
+<view wx:if="{{memberinfo!=undefined}}" class='' wx:for='{{xuanxianglist}}' wx:key='k'>
+
+  <view class='flex-row flex-center    blocks' style="background-image:url({{uploadpath}}xuanxiang/{{item.img1}});background-size:100% 100%;height:132rpx;background-repeat:no-repeat;" data-id='{{item}}' bindtap='kaishi'>
+    <view class='flex-row flex-column'>
+     <view wx:if="{{jinxinzhon==item.id}}" class='h3 txt-white margin-left-50 padding-top-10'>订单进行中...</view>
+       <view wx:if="{{jinxinzhon!=item.id}}" class='h3 txt-white margin-left-50 padding-top-10'>{{item.title}}</view>
+     
+      <view class='h5 txt-white margin-left-50 padding-top-10'>可消毒{{item.number}}台手机</view>
+    </view>
+    <view class='flex-1'></view>
+    <view class='flex-row flex-center margin-right-70'>
+      <image src='{{uploadpath}}xuanxiang/{{item.img2}}' class='icon-90'></image>
+    </view>
+  </view>
+
+</view>
+
+
 <view class='flex-1'></view>
 <view class='height-70 bg-white blocks flex-row flex-center' style='border-radius:22rpx' bindtap='xiaofei'>
   <view class='flex-1'></view>
@@ -68,3 +90,5 @@
 </view>
 
 <view style='height:30rpx'></view>
+
+

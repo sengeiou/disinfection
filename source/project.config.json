@@ -38,6 +38,10 @@
 			"currentL": -1,
 			"list": []
 		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
 		"miniprogram": {
 			"current": 2,
 			"list": [
@@ -60,6 +64,13 @@
 					"name": "意见反馈",
 					"pathName": "pages/feeback/feeback",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "消毒",
+					"pathName": "pages/xiaodu/xiaodu",
+					"query": "id=12",
 					"scene": null
 				}
 			]

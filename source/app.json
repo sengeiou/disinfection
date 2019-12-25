@@ -5,6 +5,7 @@
     "pages/content/content",
     "pages/auth/auth",
     "pages/xiaofei/xiaofei",
+    "pages/xiaodu/xiaodu",
     "pages/feeback/feeback"
     
   ],
