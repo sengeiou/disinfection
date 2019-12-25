@@ -34,7 +34,7 @@ console.log('快快快')
     var memberapi = new MemberApi();
     var that=this;
  
-    if(qsaaa == ''||qsaaa==undefined){
+    if(qsaaa == '' || qsaaa==undefined){
       console.log('为空')
       this.Base.toast('请填写问题描述')
       return;

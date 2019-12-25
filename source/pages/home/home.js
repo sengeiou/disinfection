@@ -61,6 +61,16 @@ class Content extends AppBase {
     })
   }
 
+  preview(e){
+    var src=e.currentTarget.dataset.src;
+    var imgList=e.currentTarget.dataset.imgList;
+
+    wx.previewImage({
+             current: src, 
+           urls: imgList 
+    })
+  }
+
 }
 var content = new Content();
 var body = content.generateBodyJson();
@@ -70,4 +80,5 @@ body.click = content.click;
 body.kaishi=content.kaishi;
 body.xiaofei=content.xiaofei;
 body.feeback=content.feeback;
+body.preview = content.preview;
 Page(body)
