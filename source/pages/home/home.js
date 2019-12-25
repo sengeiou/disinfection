@@ -49,12 +49,7 @@ class Content extends AppBase {
         this.Base.setMyData({ jinxinzhon: myorder[0].xuanxiang_id, jinxinzhonid: myorder[0].id });
         var orderinfo=myorder[0];
         this.minReturn(Number(orderinfo.kaishi_shijian_timespan) + Number(orderinfo.xuanxiang_time) - Number(Date.parse(new Date()) / 1000),orderinfo.id);
-        wx.showToast({
-          title: "您已有一个订单正在进行中",
-          icon: 'none',//图标，支持"success"、"loading" 
-          duration: 2000,//提示的延迟时间，单位毫秒，默认：1500 
-          mask: false,//是否显示透明蒙层，防止触摸穿透，默认：false 
-        })
+      
       }
       else{
         this.Base.setMyData({jinxinzhon:''})
@@ -83,16 +78,32 @@ class Content extends AppBase {
   kaishi(e) {
     console.log(e);
     var jinxinzhon = this.Base.getMyData().jinxinzhon;
-    if (jinxinzhon != '') {
+    console.log(jinxinzhon);
+    console.log("hahahah");
+    if (jinxinzhon == e.currentTarget.dataset.id.id) {
       wx.navigateTo({
         url: '/pages/xiaodu/xiaodu?id=' + this.Base.getMyData().jinxinzhonid,
       })
       return
     }
-
-
+    console.log(jinxinzhon);
+    console.log(e.currentTarget.dataset.id);
+    if(jinxinzhon>0&&jinxinzhon != e.currentTarget.dataset.id.id)
+    {
+      wx.showToast({
+        title: "您已有一个订单正在进行中",
+        icon: 'none',//图标，支持"success"、"loading" 
+        duration: 2000,//提示的延迟时间，单位毫秒，默认：1500 
+        mask: false,//是否显示透明蒙层，防止触摸穿透，默认：false 
+      })
+      return
+    }
+ 
+ 
 
     var taocan = e.currentTarget.dataset.id;
+
+     
 
 
     var api = new OrderApi();
