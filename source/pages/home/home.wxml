@@ -7,7 +7,7 @@
 </swiper>
 
 
-<button  wx:if="{{memberinfo==undefined}}" class="clear-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+<button  wx:if="{{memberinfo==undefined||memberinfo.avatarUrl==''}}" class="clear-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
 <view class='' wx:for='{{xuanxianglist}}' wx:key='k'>
 
   <view class='flex-row flex-center    blocks' style="background-image:url({{uploadpath}}xuanxiang/{{item.img1}});background-size:100% 100%;height:132rpx;background-repeat:no-repeat;" id='true' >
@@ -24,7 +24,7 @@
 </view>
 </button>
 
-<view wx:if="{{memberinfo!=undefined}}" class='' wx:for='{{xuanxianglist}}' wx:key='k'>
+<view wx:if="{{!(memberinfo==undefined||memberinfo.avatarUrl=='')}}" class='' wx:for='{{xuanxianglist}}' wx:key='k'>
 
   <view class='flex-row flex-center    blocks' style="background-image:url({{uploadpath}}xuanxiang/{{item.img1}});background-size:100% 100%;height:132rpx;background-repeat:no-repeat;" data-id='{{item}}' bindtap='kaishi'>
     <view class='flex-row flex-column'>
