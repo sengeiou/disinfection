@@ -464,6 +464,10 @@ button[disabled][type=primary] {
   width: 150rpx;
   height: 150rpx;
 }
+.icon-80{
+  width: 180rpx;
+  height: 180rpx;
+}
 .icon-90{
   width: 90rpx;
   height: 90rpx;
@@ -477,6 +481,9 @@ button[disabled][type=primary] {
 }
 .line-height-0{
   line-height: 0rpx;
+}
+.line-height-44{
+  line-height: 44rpx;
 }
 
 

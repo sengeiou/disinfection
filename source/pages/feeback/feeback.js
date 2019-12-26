@@ -12,6 +12,9 @@ class Content extends AppBase {
     this.Base.Page = this;
     //options.id=5;
     super.onLoad(options);
+    this.Base.setMyData({
+      aa:false
+    })
   }
   setPageTitle() {
     wx.setNavigationBarTitle({
@@ -22,7 +25,7 @@ class Content extends AppBase {
     var that = this;
     var instapi = new InstApi;
     var memberapi = new MemberApi;
-
+      
 console.log('快快快')
 
   
@@ -34,9 +37,9 @@ console.log('快快快')
     var memberapi = new MemberApi();
     var that=this;
  
-    if(qsaaa == ''||qsaaa==undefined){
+    if(qsaaa == '' || qsaaa==undefined){
       console.log('为空')
-      this.Base.toast('请填写问题描述')
+      this.Base.toast('请填写反馈内容')
       return;
     }
     wx.showModal({
@@ -58,12 +61,12 @@ console.log('快快快')
         }
       }
     })
+    
+    this.setData({
+      inputInit: '', // 清空输入框中的内容
+    });
 
-
-
-
-
-    console.log(qsaaa)
+ console.log(qsaaa)
     console.log(ssss)
   }
   shuru(e){
@@ -73,9 +76,14 @@ console.log('快快快')
 
     if (this.Base.getMyData().inputvalue == '') {
         console.log(123)
-       
+        this.Base.setMyData({
+          aa:false
+        })
     }else{
-      console.log(2345)
+      console.log(2345);
+      this.Base.setMyData({
+        aa: true
+      })
     }
 
     console.log(e)

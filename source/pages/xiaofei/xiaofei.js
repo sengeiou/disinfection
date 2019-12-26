@@ -31,7 +31,11 @@ class Content extends AppBase {
 
 
     })
+    memberapi.xiaofeijilu({},(xiaofeijilu)=>{
+      this.Base.setMyData({xiaofeijilu})
+    })
   }
+   
   
 }
 var content = new Content();

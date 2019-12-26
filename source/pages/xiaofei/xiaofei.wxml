@@ -9,19 +9,15 @@
 <view wx:if="{{myorder.length>=0}}">
 
 
-	<view class="flex-row flex-center padding-30" wx:for="{{myorder}}" wx:key='k'>
+	<view class="flex-row flex-center blocks" wx:for="{{myorder}}" wx:key='k' style='border-bottom:1rpx solid #ccc;'>
 
-		<view>
-
-			<view>消毒完成</view>
-			<view>{{item.pay_time}}</view>
+  	 <image src='{{uploadpath}}resource/{{res.wancheng}}'class="icon-30 margin-right-20 margin-bottom-20"></image>
+<view >
+<view class='flex-1'></view>
+    <view class='txt-black h5'>消毒完成</view>
+			<view class='margin-bottom-20'>{{item.pay_time}}</view>
 		</view>
 		<view class="flex-1"></view>
-		<view>-{{item.amount}}¥</view>
-
-
-
-	</view>
-
-
+		<view class='txt-black f-36'>-{{item.amount}}¥</view>
+    </view>
 </view>

@@ -11,3 +11,6 @@ page {
 .blocks {
   margin: 30rpx 30rpx 0 30rpx; 
 }
+.aa{
+  width:218rpx;height:266rpx
+}
