@@ -13,6 +13,7 @@
 }
 .lan{
   background-color: #ECF0F7;
+  padding: 10rpx 20rpx 10rpx 20rpx
 }
 .gao{
   padding: 20rpx 14rpx 52rpx 24rpx;

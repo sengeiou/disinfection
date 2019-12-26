@@ -13,7 +13,7 @@ class Content extends AppBase {
     //options.id=5;
     super.onLoad(options);
     this.Base.setMyData({
-      aa:false
+      aa: false, zushu:0
     })
   }
   setPageTitle() {
@@ -61,7 +61,7 @@ console.log('快快快')
         }
       }
     })
-    
+
     this.setData({
       inputInit: '', // 清空输入框中的内容
     });
@@ -71,7 +71,8 @@ console.log('快快快')
   }
   shuru(e){
     this.Base.setMyData({
-      inputvalue:e.detail.value
+      inputvalue:e.detail.value,
+      zushu:e.detail.cursor
     })
 
     if (this.Base.getMyData().inputvalue == '') {
