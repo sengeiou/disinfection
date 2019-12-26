@@ -200,15 +200,6 @@ class Content extends AppBase {
     })
 
   }
-preview(e){
-    var src=e.currentTarget.dataset.src;
-    var imgList=e.currentTarget.dataset.imgList;
-
-    wx.previewImage({
-             current: src, 
-           urls: imgList 
-    })
-  }
 }
 var content = new Content();
 var body = content.generateBodyJson();
@@ -222,5 +213,4 @@ body.feeback = content.feeback;
 body.getorder = content.getorder;
 body.minReturn=content.minReturn;
 body.jieshuxiaodu=content.jieshuxiaodu;
-body.preview = content.preview;
 Page(body)

@@ -14,6 +14,11 @@ class Content extends AppBase {
     this.getorderinfo();
 
   }
+  setPageTitle() {
+    wx.setNavigationBarTitle({
+      title: '牛牛消毒',
+    });
+  }
   onMyShow() {
     var that = this;
     var instapi = new InstApi;

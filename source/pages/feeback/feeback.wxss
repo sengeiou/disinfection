@@ -8,9 +8,12 @@
   height:64rpx;
   border-radius:40rpx;
 }
-.btn:hover{
+.active{
   background-color: #A6B4CF;
 }
 .lan{
   background-color: #ECF0F7;
+}
+.gao{
+  padding: 20rpx 14rpx 52rpx 24rpx;
 }
