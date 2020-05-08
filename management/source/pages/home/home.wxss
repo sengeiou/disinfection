@@ -1,51 +1,23 @@
-.Top{
-  background-color:#2699EC;
+.mianji{
+  width:314rpx;
+  height:196rpx;
+  border-radius: 30rpx;
+    margin-left:20rpx;
+    margin-top:40rpx;
 }
-.search{
-  width:680rpx;
-  border-radius: 7rpx;
-  background-color: white;
+page{
+  background:#F5F4F9;
 }
-.search_icon{
-  height:40rpx;
-  width:40rpx;
+.color1{
+  color:#232323;
 }
-.Mid{
-  height: 150rpx;
+.margin1{
+  margin-top:54rpx;
 }
-.mid1{
-  background:#F6511D;
-  border-radius:10rpx;
+.margin2{
+  margin-top:68rpx;
 }
-.mid2{
-  background:#FFB400;
-  border-radius:10rpx;
+.margin3{
+  margin-left:188rpx;
 }
-.evaluation{
-  background-color: #2699EC;
-  border-radius: 10rpx;
-  margin-left: 20rpx;
-  margin-right: 20rpx;
-}
-.Under{
-  margin-top: 50rpx;
-  border-bottom: 1rpx solid rgb(233, 231, 231);
-}
-.phone{
-  border-radius: 10rpx;
-  box-shadow: 1px 1px 7px rgb(231, 228, 228);
-}
-.icon{
-  width: 110rpx;
-  height: 180rpx;
-}
-.column{
-  align-content: center;
-  flex-direction:column;
-}
-.ma-0{
-  margin-left: 20rpx;
-}
-.ma-1{
-  margin-left: 20rpx;
-}
+

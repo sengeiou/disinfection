@@ -7,6 +7,12 @@ class Content extends AppBase {
   constructor() {
     super();
   }
+  setPageTitle() {
+    wx.setNavigationBarTitle({
+      // title: '首页',
+      title: '首页',
+    });
+  }
   onLoad(options) {
     this.Base.Page = this;
     //options.id=5;
@@ -16,6 +22,7 @@ class Content extends AppBase {
     var that = this;
   }
 }
+
 var content = new Content();
 var body = content.generateBodyJson();
 body.onLoad = content.onLoad;

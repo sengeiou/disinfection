@@ -1,0 +1,15 @@
+<view class=""style="height:288rpx;width:670rpx;background-color:#091C2B;margin-left:40rpx;border-radius: 30rpx;">
+<view class='flex-row'>
+<view class='daxiao 'style='border:1px dashed #FFFFFF;'></view>
+<view class="txt-white h5 txt-bold margin2" >*********</view>
+</view>
+
+<view class="text-center txt-white h5 margin1" style='background-color:#FF674B;border-radius:30rpx;height:48rpx;width:154rpx;'>微信授权
+</view>
+</view>
+
+
+
+
+
+<!-- <image src='{{uploadpath}}resource/{{res.kkk}}'></image> -->

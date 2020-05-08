@@ -1,1 +1,34 @@
-home
+<view class=""style="height:288rpx;width:670rpx;background-color:#091C2B;margin-left:40rpx;border-radius: 30rpx;">
+<view class="h5 margin-top-60 margin-left-40" style='color:#FF674B;'>可提现余额 </view>
+<view class="txt-white h2 margin-left-40 margin-bottom-40 txt-bold">￥12350.22 </view>
+<view class='flex-row'>
+<view class="h5 margin-left-40">累计收入</view>
+<view class="txt-white h5 txt-bold" >+12350.22￥</view>
+<view class="text-center txt-white h5 margin3" style='background-color:#FF674B;border-radius:30rpx;height:48rpx;width:128rpx;'>提现
+</view>
+</view>
+</view>
+<view class='flex-row flex-wrap'>
+<view class='text-center flex-1 mianji white-block flex-row'>
+<image src='{{uploadpath}}resource/{{res.aa}}' class='icon-40 margin-left-30 margin1'></image>
+<view class='margin-left-20 txt-bold h5 color1 margin2'>我的商户</view>
+</view>
+<view class='text-center flex-1 mianji white-block flex-row'>
+<image src='{{uploadpath}}resource/{{res.bb}}' class='icon-40 margin-left-30 margin1'></image>
+<view class='margin-left-20 txt-bold h5 color1 margin2'>设备统计</view>
+</view>
+</view>
+<view class='flex-row flex-wrap'>
+<view class='text-center flex-1 mianji white-block flex-row'>
+<image src='{{uploadpath}}resource/{{res.cc}}' class='icon-40 margin-left-30 margin1'></image>
+<view class='margin-left-20 txt-bold h5 color1 margin2'>设备订单</view>
+</view>
+<view class='text-center flex-1 mianji white-block flex-row'>
+<image src='{{uploadpath}}resource/{{res.dd}}' class='icon-40 margin-left-30 margin1'></image>
+<view class='margin-left-20 txt-bold h5 color1 margin2'>代理合作</view>
+</view>
+</view>
+
+
+
+<!-- <image src='{{uploadpath}}resource/{{res.kkk}}'></image> -->

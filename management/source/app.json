@@ -1,18 +1,48 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/auth/auth"
+    "pages/auth/auth",
+    "mta_wechat_sdk",
+    "pages/shouye/shouye",
+    "pages/shouyi/shouyi",
+    "pages/wode/wode"
   ],
   "permission": {
     "scope.userLocation": {
-      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+      "desc": "牛牛消毒获取您的位置，为您推荐附近优质的结构"
     }
   },
   "window": {
-    "backgroundTextStyle": "light",
+    "backgroundTextStyle": "dark",
     "enablePullDownRefresh": true,
-    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarBackgroundColor": "#FFFFFF",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#91959B",
+    "selectedColor": "#91959B",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/home/home",
+        "iconPath": "images/icons/d-d.png",
+        "selectedIconPath": "images/icons/d.png"
+      },
+      {
+        "text": "收益",
+        "pagePath": "pages/shouyi/shouyi",
+        "iconPath": "images/icons/c-c.png",
+        "selectedIconPath": "images/icons/c.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/wode/wode",
+        "iconPath": "images/icons/e-e.png",
+        "selectedIconPath": "images/icons/e.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }
