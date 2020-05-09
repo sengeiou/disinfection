@@ -2,16 +2,16 @@
 import { AppBase } from "../../appbase";
 import { ApiConfig } from "../../apis/apiconfig";
 import { InstApi } from "../../apis/inst.api.js";
-import { ApiUtil} from "../../apis/apiutil";
-import {MemberApi} from "../../apis/member.api.js";
+import { ApiUtil } from "../../apis/apiutil";
+import { MemberApi } from "../../apis/member.api.js";
 class Content extends AppBase {
   constructor() {
     super();
   }
   setPageTitle() {
     wx.setNavigationBarTitle({
-      // title: '收益',
-      title: '收益',
+      // title: '在线客服',
+      title: '在线客服',
     });
   }
   onLoad(options) {

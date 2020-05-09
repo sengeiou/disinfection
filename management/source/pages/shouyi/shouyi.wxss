@@ -1,1 +1,15 @@
 /* pages/shouyi/shouyi.wxss */
+.margin-top-48{
+  margin-top: 48rpx;
+}
+.border{
+  height:72rpx;
+  width:192rpx;
+  border-radius:20rpx;
+  text-align: center;
+  margin-left: 44rpx;
+}
+.bg-color{
+  color:#57628D;
+  background-color:#FBF0EE;
+}

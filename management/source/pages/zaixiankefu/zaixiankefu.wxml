@@ -1,0 +1,42 @@
+<view class='flex-row' style='background-color:#FF674B;height:48rpx;background:rgba(255,0,0,0.1);'>
+ <image src='{{uploadpath}}resource/{{res.jingbao}}' class='icon margin-top-6'></image>
+<view class='h6 margin-top-5 margin-left-10'>客服在线时间为周一~周五09：00-17：30</view>
+</view>
+<view class='h6 margin-top text-center' style='color:#AFAFAF;'>昨天12：58</view>
+
+<view class='flex-row margin-left-40 margin-top-20'>
+<view class='bg-white' style='height:112rpx;width:112rpx;border-radius:88rpx;'>
+<image src='{{uploadpath}}resource/{{res.kefu}}' class='icon-30 margin-left-30 margin-top-26'></image>
+</view>
+<image src='{{uploadpath}}resource/{{res.heixiaoxi}}' class='icon-17 margin-left-30 margin-top'></image>
+<view class='margin-top-15'style='background-color:#091C2B;height:80rpx;width:506rpx;border-radius:20rpx;'>
+<view class='margin-left-30 h5 margin-top-20' style='color:#FFFFFF;'>您好，您遇到什么问题呢？</view> 
+</view>
+</view>
+
+
+<view class='flex-row margin-left-40 margin-top-20'>
+<view class='margin-top-15'style='background-color:#FFFFFF;height:80rpx;width:506rpx;border-radius:20rpx;'>
+<view class='margin-left-30 h5 margin-top-20' style='color:#091C2B;'>您好</view> 
+<image src='{{uploadpath}}resource/{{res.baixiaoxi}}' class='icon-17 margin-left-30 margin-top'></image>
+</view>
+<view class='bg-white' style='height:112rpx;width:112rpx;border-radius:88rpx;'>
+<image src='{{uploadpath}}resource/{{res.kefu}}' class='icon-30 margin-left-30 margin-top-26'></image>
+</view>
+</view>
+
+
+<view class='flex-row margin-left-40 margin-top-20'>
+<view class='margin-top-15'style='background-color:#FFFFFF;height:80rpx;width:506rpx;border-radius:20rpx;'>
+<view class='margin-left-30 h5 margin-top-20' style='color:#091C2B;'>请问我的转账什么时候到账</view> 
+<image src='{{uploadpath}}resource/{{res.baixiaoxi}}' class='icon-17 margin-left-30 margin-top'></image>
+</view>
+<view class='bg-white' style='height:112rpx;width:112rpx;border-radius:88rpx;'>
+<image src='{{uploadpath}}resource/{{res.kefu}}' class='icon-30 margin-left-30 margin-top-26'></image>
+</view>
+</view>
+
+<view class='flex-row'>
+<view></view>
+<view></view>
+</view>

@@ -1,0 +1,21 @@
+/* pages/zaixiankefu/zaixiankefu.wxss */
+.margin-left-94{
+  margin-left: 94rpx;
+}
+.margin-top-6{
+  margin-left: 49rpx;
+  margin-top: 6rpx;
+}
+page{
+  background:#F5F4F9;
+}
+.margin-top-26{
+  margin-top: 26rpx;
+  margin-left: 25rpx;
+}
+.margin-top-15{
+  margin-top: 15rpx;
+}
+.margin-left-30{
+  margin-left: 30rpx;
+}

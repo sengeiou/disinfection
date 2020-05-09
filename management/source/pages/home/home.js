@@ -2,7 +2,8 @@
 import { AppBase } from "../../appbase";
 import { ApiConfig } from "../../apis/apiconfig";
 import { InstApi } from "../../apis/inst.api.js";
-
+import { ApiUtil } from "../../apis/apiutil";
+import { MemberApi } from "../../apis/member.api.js";
 class Content extends AppBase {
   constructor() {
     super();

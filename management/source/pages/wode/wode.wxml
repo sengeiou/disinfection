@@ -1,15 +1,35 @@
 <view class=""style="height:288rpx;width:670rpx;background-color:#091C2B;margin-left:40rpx;border-radius: 30rpx;">
 <view class='flex-row'>
-<view class='daxiao 'style='border:1px dashed #FFFFFF;'></view>
-<view class="txt-white h5 txt-bold margin2" >*********</view>
+<view class='mianji margin-left-40 margin-top-70'style='border:1px dashed #FFFFFF;'>
+<view class='mianji  bg-white' style='border-radius:88rpx;'></view>
+</view>
+<view class="txt-white h5 txt-bold margin-top-70 margin-left-50" >*********</view>
 </view>
 
-<view class="text-center txt-white h5 margin1" style='background-color:#FF674B;border-radius:30rpx;height:48rpx;width:154rpx;'>微信授权
+<view class="text-center txt-white h5 margin-left-200" style='background-color:#FF674B;border-radius:30rpx;height:48rpx;width:154rpx;'>微信授权
 </view>
 </view>
+<view data-name='zaixiankefu' bindtap='todetails' class='flex-row'>
+    <view class='txt-black txt-bold margin-top margin-left-80'>在线客服
+    <image class='icon-15  margin-left-400' src='{{uploadpath}}resource/{{res.right}}'></image></view>
+  </view>
+    <view class='border'></view>
 
+    <view data-name='wentifankui' bindtap='todetails' class='flex-row'>
+    <view class='txt-black  txt-bold margin-top margin-left-80'>问题反馈
+   <image src='{{uploadpath}}resource/{{res.right}}' class='icon-15 margin-left-400'></image></view>
+  </view>
+    <view class='border'></view>
 
+    <view data-name='guanyuwomen' bindtap='todetails' class='flex-row'>
+    <view class='txt-black txt-bold margin-top margin-left-80'>关于我们
+    <image class='icon-15 margin-left-400' src='{{uploadpath}}resource/{{res.right}}'></image></view>
+  </view>
+    <view class='border'></view>
 
+    <view data-name='tuichudenglu' bindtap='todetails' class='flex-row'>
+    <view class='txt-black  txt-bold margin-top margin-left-80'>退出登录
+    <image class='icon-15 margin-left-400' src='{{uploadpath}}resource/{{res.right}}'></image></view>
+  </view>
+    <view class='border'></view>
 
-
-<!-- <image src='{{uploadpath}}resource/{{res.kkk}}'></image> -->

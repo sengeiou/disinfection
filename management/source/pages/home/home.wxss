@@ -1,23 +1,23 @@
 .mianji{
   width:314rpx;
-  height:196rpx;
+  height:176rpx;
   border-radius: 30rpx;
-    margin-left:20rpx;
+    margin-left:40rpx;
     margin-top:40rpx;
 }
 page{
   background:#F5F4F9;
 }
-.color1{
+.txt-color{
   color:#232323;
 }
-.margin1{
-  margin-top:54rpx;
+.margin-top-50{
+  margin-top:50rpx;
 }
-.margin2{
-  margin-top:68rpx;
+.margin-top-70{
+  margin-top:70rpx;
 }
-.margin3{
+.margin-left-188{
   margin-left:188rpx;
 }
 

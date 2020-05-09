@@ -5,7 +5,11 @@
     "mta_wechat_sdk",
     "pages/shouye/shouye",
     "pages/shouyi/shouyi",
-    "pages/wode/wode"
+    "pages/wode/wode",
+    "pages/tuichudenglu/tuichudenglu",
+    "pages/wentifankui/wentifankui",
+    "pages/zaixiankefu/zaixiankefu",
+    "pages/guanyuwomen/guanyuwomen"
   ],
   "permission": {
     "scope.userLocation": {
