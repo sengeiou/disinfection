@@ -9,7 +9,11 @@
     "pages/tuichudenglu/tuichudenglu",
     "pages/wentifankui/wentifankui",
     "pages/zaixiankefu/zaixiankefu",
-    "pages/guanyuwomen/guanyuwomen"
+    "pages/guanyuwomen/guanyuwomen",
+    "pages/weixinshouquan/weixinshouquan",
+    "pages/wjmm/wjmm",
+    "pages/zc/zc",
+    "pages/cz/cz"
   ],
   "permission": {
     "scope.userLocation": {

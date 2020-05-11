@@ -49,6 +49,11 @@ class Content extends AppBase {
         url: '/pages/tuichudenglu/tuichudenglu',
       })
     }
+    if (name == "shouquan") {
+      wx.navigateTo({
+        url: '/pages/weixinshouquan/weixinshouquan',
+      })
+    }
   }
 }
 var content = new Content();

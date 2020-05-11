@@ -22,38 +22,14 @@ class Content extends AppBase {
   onMyShow() {
     var that = this;
   }
-  bindshow(e) {
-    var type = e.currentTarget.dataset.type;
-    console.log(type);
-    if (type == "yy") {
-      this.Base.setMyData({
-        show: "yy"
-      })
-    }
-    if (type == "yh") {
-      this.Base.setMyData({
-        show: "yh"
-      })
-    }
-  }
-  shouye(e) {
+ chongzhi(e) {
     var name = e.currentTarget.dataset.name;
-    if (name == "wjmm") {
+    if (name == "cz") {
       wx.navigateTo({
-        url: '/pages/wjmm/wjmm',
+        url: '/pages/cz/cz',
       })
     }
 
-    if (name == "dl") {
-      wx.navigateTo({
-        url: '/pages/home/home',
-      })
-    }
-    if (name == "zc") {
-      wx.navigateTo({
-        url: '/pages/zc/zc',
-      })
-    }
 
   }
 }
@@ -64,6 +40,5 @@ var content = new Content();
 var body = content.generateBodyJson();
 body.onLoad = content.onLoad;
 body.onMyShow = content.onMyShow;
-body.bindshow = content.bindshow;
-body.shouye = content.shouye;
+body.chongzhi = content.chongzhi;
 Page(body)

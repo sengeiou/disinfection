@@ -492,3 +492,12 @@ button[disabled][type=primary] {
   height: 100%;
 }
 
+.fixbottom{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100vw;
+}
+.border-radius-20rpx{
+  border-radius: 20rpx;
+}

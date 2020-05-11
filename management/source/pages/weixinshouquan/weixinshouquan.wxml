@@ -2,16 +2,12 @@
 <view class=""style="height:288rpx;width:670rpx;background-color:#091C2B;margin-left:40rpx;border-radius: 30rpx;">
 <view class='flex-row'>
 <view class='mianji margin-left-40 margin-top-70'style='border:1px dashed #FFFFFF;'>
-<view class='mianji  bg-white' style='border-radius:88rpx;'></view>
+<image class='mianji margin-left-5' src='{{uploadpath}}resource/{{res.touxiang}}' style='border-radius:88rpx;'></image>
 </view>
-<view class="txt-white h5 txt-bold margin-top-70 margin-left-50" >*********</view>
+<view class="txt-white f-32 txt-bold margin-top-70 margin-left-50" >陈秋裤
+<view class='h5 txt-white txt-bold margin-top-10'>ID：13790905047</view>
 </view>
-   <view bindtap="todetails" data-name='shouquan' class='flex-row flex-column'>
-      <!-- <view wx:if="{{memberinfo.dfkorder>0}}" class="shuzi">{{memberinfo.dfkorder}}</view> -->
-     <view class="text-center txt-white h5 margin-left-200" style='background-color:#FF674B;border-radius:30rpx;height:48rpx;width:154rpx;'>微信授权 
 </view>
-    </view>
-
 </view>
 <view data-name='zaixiankefu' bindtap='todetails' class='flex-row'>
     <view class='txt-black txt-bold margin-top margin-left-80'>在线客服

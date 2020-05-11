@@ -10,8 +10,8 @@ class Content extends AppBase {
   }
   setPageTitle() {
     wx.setNavigationBarTitle({
-      // title: '在线客服',
-      title: '在线客服',
+      // title: 'wentifankui',
+      title: '问题反馈',
     });
   }
   onLoad(options) {

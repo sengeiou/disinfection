@@ -1,0 +1,36 @@
+/* pages/wjmm/wjmm.wxss */
+.xyh-mianji{
+height:48px;
+background:rgba(255,255,255,1);
+box-shadow:0px 1px 8px rgba(102,123,162,0.16);
+opacity:1;
+border-radius:30px;
+
+}
+.margin-top-28{
+margin-top: 28rpx;
+}
+.margin-top-320{
+margin-top: 320rpx;
+}
+.logo-mianji{
+  width: 128rpx;
+  height: 128rpx;
+  background-color: #091C2B;
+  border-radius: 100%;
+}
+.margin-top-450{
+  margin-top: 450rpx;
+}
+.margin-left-300{
+  margin-left: 300rpx;
+}
+.margin-top-35{
+margin-top: 35rpx;
+}
+.margin-right-80{
+  margin-right: 80rpx;
+} 
+.margin-left-80{
+  margin-left: 80rpx;
+}

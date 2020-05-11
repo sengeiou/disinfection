@@ -1,3 +1,4 @@
+<view class='margin-top-20'></view>
 <view class=""style="height:408rpx;width:670rpx;background-color:#091C2B;margin-left:40rpx;border-radius: 30rpx;">
 <view class='h5 margin-left-40 margin-top-48' style=''>我的余额</view>
 <view class='flex-row'>
@@ -5,12 +6,16 @@
 <view class="text-center txt-white h5" style='background-color:#FF674B;border-radius:30rpx;height:48rpx;width:154rpx;'>提现
 </view>
 </view>
-<view class='flex-row margin-top margin-left-40'>
-<view class="txt-white flex-1 h5" >本周收益</view>
-<view class="flex-1">|</view>
-<view class="txt-white h5  ">本月收益</view>
+<view class='flex-row margin-top-60 margin-left-40'>
+<view class="txt-white flex-1 h5" >本周收益 +25%
+<view class='h5 txt-white'>+￥156.23</view>
 </view>
-<view class='flex-row margin-left-40 margin-top-60'>
+<view class="" style='border-right:2rpx solid white;'></view>
+<view class="txt-white h5 flex-1 margin-left-40">本月收益 -25%
+<view class='h5 txt-white'>+￥1688.22</view>
+</view>
+</view>
+<view class='flex-row margin-left-40 margin-top'>
 <view class="txt-white h5 txt-bold" >总收益</view>
 <view class=" txt-white h5 " style=''>+22350.22</view>
 </view>

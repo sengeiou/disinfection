@@ -1,2 +1,20 @@
-<!--pages/guanyuwomen/guanyuwomen.wxml-->
-<text>pages/guanyuwomen/guanyuwomen.wxml</text>
+<image src='{{uploadpath}}resource/{{res.logo}}' class='icon-100 margin-left-290'></image>
+<view class='h4-5 text-center' style='color:#585858;'>牛牛消毒商家版</view>
+<view class='h6 text-center margin-top-5' style='color:#9B9B9B;'>1.0.1版</view>
+<view class='h5 number-color  margin-right-80 margin-left-80 margin-top'>12345522111111111111111111111118888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888</view>
+<view class='fixbottom'>
+<view class='padding-left-40 padding-right-40 padding-bottom-180'>
+<view class='flex-row'>
+    <view class='txt-black txt-bold flex-1 margin-left-80'>联系电话
+  </view>
+  <view class='h4-5 number-color margin-right-80'>0755-22675937</view>
+  </view>
+    <view class='border'></view>
+    <view class='flex-row'>
+    <view class='txt-black txt-bold margin-left-80 flex-1 margin-top'>公司邮箱
+  </view>
+  <view class='h4-5 number-color margin-right-80 margin-top'>niuniuniu@163.com</view>
+  </view>
+    <view class='border'></view>
+    </view>
+     </view>

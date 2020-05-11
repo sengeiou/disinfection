@@ -1,3 +1,4 @@
+<view class='margin-top-20'></view>
 <view class=""style="height:288rpx;width:670rpx;background-color:#091C2B;margin-left:40rpx;border-radius: 30rpx;">
 <view class="h5 margin-top-60 margin-left-40" style='color:#FF674B;'>可提现余额 </view>
 <view class="txt-white h2 margin-left-40 margin-bottom-40 txt-bold">￥12350.22 </view>

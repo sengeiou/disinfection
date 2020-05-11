@@ -10,60 +10,51 @@ class Content extends AppBase {
   }
   setPageTitle() {
     wx.setNavigationBarTitle({
-      // title: '',
-      title: '',
+      // title: '我的',
+      title: '我的',
     });
   }
   onLoad(options) {
     this.Base.Page = this;
     //options.id=5;
     super.onLoad(options);
+    this.Base.setMyData({
+      mobile: ""
+    });
   }
   onMyShow() {
     var that = this;
+    var instapi = new InstApi();
   }
-  bindshow(e) {
-    var type = e.currentTarget.dataset.type;
-    console.log(type);
-    if (type == "yy") {
-      this.Base.setMyData({
-        show: "yy"
-      })
-    }
-    if (type == "yh") {
-      this.Base.setMyData({
-        show: "yh"
-      })
-    }
-  }
-  shouye(e) {
+  todetails(e) {
     var name = e.currentTarget.dataset.name;
-    if (name == "wjmm") {
+    if (name == "zaixiankefu") {
       wx.navigateTo({
-        url: '/pages/wjmm/wjmm',
+        url: '/pages/zaixiankefu/zaixiankefu',
       })
     }
 
-    if (name == "dl") {
+    if (name == "wentifankui") {
       wx.navigateTo({
-        url: '/pages/home/home',
+        url: '/pages/wentifankui/wentifankui',
       })
     }
-    if (name == "zc") {
+    if (name == "guanyuwomen") {
       wx.navigateTo({
-        url: '/pages/zc/zc',
+        url: '/pages/guanyuwomen/guanyuwomen',
+      })
+    }
+    if (name == "tuichudenglu") {
+      wx.navigateTo({
+        url: '/pages/tuichudenglu/tuichudenglu',
       })
     }
 
   }
 }
-
-
-
 var content = new Content();
 var body = content.generateBodyJson();
 body.onLoad = content.onLoad;
 body.onMyShow = content.onMyShow;
-body.bindshow = content.bindshow;
-body.shouye = content.shouye;
+body.todetails = content.todetails;
 Page(body)

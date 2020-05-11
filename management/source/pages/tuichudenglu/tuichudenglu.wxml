@@ -1,2 +1,58 @@
-<!--pages/tuichudenglu/tuichudenglu.wxml-->
-<text>pages/tuichudenglu/tuichudenglu.wxml</text>
+<image src='{{uploadpath}}resource/{{res.logo}}' class='icon-100 margin-left-290'></image>
+<view class='h4-5 text-center' style='color:#585858;'>牛牛消毒商家版</view>
+
+        <view class='flex-1 flex-row flex-center margin-top-60'>
+
+          <view class='flex-1 flex-row flex-column' bindtap='bindshow' data-type='yy'>
+            <view class='   flex-1 f-32 padding-10 margin-bottom-5 {{show=="yy"?"":"wdj-color"}} dj-color'>已有账号</view>
+            <view wx:if='{{show=="yy"}}' class='bj-color' style='width:160rpx;height:8rpx;border-radius:4rpx;'></view>
+            <view wx:if='{{show!="yy"}}' class='' style='width:160rpx;height:8rpx;'></view>
+          </view>
+
+          <view class='flex-1 flex-row flex-column' bindtap='bindshow' data-type='yh'>
+            <view class='   flex-1 f-32 padding-10 margin-bottom-5 {{show=="yh"?"":"wdj-color"}} dj-color'>新用户</view>
+            <view wx:if='{{show=="yh"}}' class='bj-color' style='width:160rpx;height:8rpx;border-radius:4rpx;'></view>
+            <view wx:if='{{show!="yh"}}' class='' style='width:160rpx;height:8rpx;'></view>
+          </view>
+        </view>
+
+          <view class='fixbottom' wx:if='{{show=="yy"}}'>
+        <view class=' mianji margin-left-80 margin-top margin-right-80'>
+        <view class='f-32 margin-left-46 margin-top-28 dl-color'>输入手机号</view>
+        </view>
+        <view class=' mianji margin-left-80 margin-top margin-right-80'>
+        <view class='f-32 margin-left-46 margin-top-28 dl-color'>输入密码</view>
+        </view>
+      <view data-name='dl' bindtap='shouye'>
+      <view class='dl-mianji margin-left-80 margin-top margin-right-80 margin-bottom-40'>
+        <view class=' txt-white text-center f-32 margin-top-28' >登录      
+        </view>
+        </view>
+      </view>
+        
+        <view data-name='wjmm' bindtap='shouye' class='flex-row'>
+         <view class='dl-color f-32 margin-bottom-268 text-center flex-1' >忘记密码
+           <image src='{{uploadpath}}resource/{{res.right}}' class='icon-10 margin-right-40'></image>
+         </view>
+        </view>
+        </view>
+
+        <view class='fixbottom' wx:if='{{show=="yh"}}'>
+        <view class=' mianji margin-left-80 margin-right-80'>
+        <view class='f-32 margin-left-46 margin-top-28 dl-color'>输入手机号</view>
+        </view>
+        <view class='flex-row'>
+         <view class=' mianji margin-left-80 margin-top flex-1 margin-right-26'>
+        <view class='f-32 margin-left-46 margin-top-28 dl-color'>动态验证码</view>
+        </view>
+        <view class='hq-mianji margin-right-80 padding-left-50 padding-right-50 padding-top-14 margin-top-54'>
+        <view class='f-32 txt-white txt-center'>获取</view>
+        </view>
+        </view>
+        <view data-name='zc' bindtap='shouye'>
+        <view class='dl-mianji margin-left-80 margin-top-100 margin-right-80 margin-bottom-268'>
+        <view class=' txt-white text-center f-32 margin-top-28' >注册  
+        </view>   
+        </view>
+        </view>
+        </view>
