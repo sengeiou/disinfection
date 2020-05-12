@@ -279,6 +279,9 @@ button[disabled][type=primary] {
 .padding-top-50{
   padding-top: 50rpx;
 }
+.padding-top-40{
+  padding-top: 40rpx;
+}
 .padding-top-70{
   padding-top: 70rpx;
 }
@@ -287,6 +290,9 @@ button[disabled][type=primary] {
 }
 .padding-bottom-20{
   padding-bottom: 20rpx;
+}
+.padding-bottom-40{
+  padding-bottom: 40rpx;
 }
 .padding-bottom-50{
   padding-bottom: 50rpx;
@@ -309,6 +315,9 @@ button[disabled][type=primary] {
 .padding-right-30{
   padding-right: 30rpx;
 }
+.padding-right-40{
+  padding-right: 40rpx;
+}
 .margin-10{
   margin:10rpx;
 }
@@ -321,8 +330,14 @@ button[disabled][type=primary] {
 .margin-top-20{
   margin-top:20rpx;
 }
+.margin-top-30{
+  margin-top:30rpx;
+}
 .margin-top{
   margin-top:40rpx;
+}
+.margin-top-50{
+  margin-top:50rpx;
 }
 .margin-top-60{
   margin-top:60rpx;
@@ -335,6 +350,9 @@ button[disabled][type=primary] {
 }
 .margin-bottom-20{
   margin-bottom:20rpx;
+}
+.margin-bottom-30{
+  margin-bottom:30rpx;
 }
 .margin-bottom-40{
   margin-bottom:40rpx;
@@ -371,6 +389,9 @@ button[disabled][type=primary] {
 }
 .margin-right-20{
   margin-right:20rpx;
+}
+.margin-right-30{
+  margin-right:30rpx;
 }
 .margin-right-40{
   margin-right:40rpx;
@@ -500,4 +521,14 @@ button[disabled][type=primary] {
 }
 .border-radius-20rpx{
   border-radius: 20rpx;
+}
+.margin-right-80{
+  margin-right: 80rpx;
+} 
+.margin-left-80{
+  margin-left: 80rpx;
+}
+.bj-shadow{
+box-shadow:0px 1px 5px rgba(102,123,162,0.1);
+opacity:1;
 }

@@ -1,4 +1,4 @@
-<view class='f-32 txt-bold text-center margin-top-270'style="color:#091C2B;">设置密码</view>
+<view class='f-32 txt-bold text-center margin-top-270'style="color:#091C2B;">重置密码</view>
 <view class=' mianji margin-left-80 margin-right-80 margin-top-60'>
         <view class='f-32 margin-left-46 margin-top-28 dl-color'>输入手机号</view>
         </view>

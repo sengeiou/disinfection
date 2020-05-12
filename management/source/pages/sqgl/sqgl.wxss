@@ -1,0 +1,44 @@
+page{
+  background:#F5F4F9;
+}
+.sh-dx{
+background:rgba(9,28,43,1);
+box-shadow:0px 1px 5px rgba(102,123,162,0.1);
+opacity:1;
+border-radius:10px 10px 0px 0px;
+}
+.tx-dx{
+background:rgba(255,103,75,1);
+opacity:1;
+border-radius:20px;
+}
+.padding-top-30{
+  padding-top: 30rpx;
+}
+.padding-bottom-30{
+  padding-bottom: 30rpx;
+}
+.border{
+  border-bottom: 1px solid #F1F1F1;
+} 
+.sh-color{
+  color: #3C3F4E;
+}
+.sh-color2{
+  color:#091C2B;
+}
+.sh-color3{
+  color:#C9C9C9
+}
+.border-radius-10-10{
+  border-radius: 0px 0px 10px 10px;
+}
+.border-radius-10{
+  border-radius:10px;
+}
+.padding-right-60{
+  padding-right: 60rpx;
+}
+.padding-left-220{
+  padding-left: 220rpx;
+}

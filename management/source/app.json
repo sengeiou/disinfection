@@ -3,7 +3,6 @@
     "pages/home/home",
     "pages/auth/auth",
     "mta_wechat_sdk",
-    "pages/shouye/shouye",
     "pages/shouyi/shouyi",
     "pages/wode/wode",
     "pages/tuichudenglu/tuichudenglu",
@@ -13,7 +12,18 @@
     "pages/weixinshouquan/weixinshouquan",
     "pages/wjmm/wjmm",
     "pages/zc/zc",
-    "pages/cz/cz"
+    "pages/cz/cz",
+    "pages/wdsh/wdsh",
+    "pages/sbtj/sbtj",
+    "pages/sbdd/sbdd",
+    "pages/fcgl/fcgl",
+    "pages/dlhz/dlhz",
+    "pages/sqgl/sqgl",
+    "pages/xgsj/xgsj",
+    "pages/xgyy/xgyy",
+    "pages/zjxx/zjxx",
+    "pages/wdshson/wdshson",
+    "pages/tjshson/tjshson"
   ],
   "permission": {
     "scope.userLocation": {

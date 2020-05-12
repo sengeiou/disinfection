@@ -1,16 +1,4 @@
-// pages/shouye/shouye.js
-import {
-  AppBase
-} from "../../appbase";
-import {
-  ApiConfig
-} from "../../apis/apiconfig";
-import {
-  ApiUtil
-} from "../../apis/apiutil";
-import {
-  InstApi
-} from "../../apis/inst.api.js";
+// pages/dlhz/dlhz.js
 Page({
 
   /**

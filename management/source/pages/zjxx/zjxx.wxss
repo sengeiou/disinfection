@@ -1,0 +1,9 @@
+.bj-daxiao{
+background:rgba(9,28,43,1);
+box-shadow:0px 1px 5px rgba(102,123,162,0.1);
+
+border-radius:10px 10px 0px 0px;
+}
+.padding-left-220{
+  padding-left: 220;
+}

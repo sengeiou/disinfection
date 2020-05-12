@@ -1,5 +1,5 @@
 <view class='margin-top-20'></view>
-<view class=""style="height:288rpx;width:670rpx;background-color:#091C2B;margin-left:40rpx;border-radius: 30rpx;">
+<view class="bj-size margin-left-40 margin-right-40">
 <view class='flex-row'>
 <view class='mianji margin-left-40 margin-top-70'style='border:1px dashed #FFFFFF;'>
 <view class='mianji  bg-white' style='border-radius:88rpx;'></view>
@@ -8,7 +8,7 @@
 </view>
    <view bindtap="todetails" data-name='shouquan' class='flex-row flex-column'>
       <!-- <view wx:if="{{memberinfo.dfkorder>0}}" class="shuzi">{{memberinfo.dfkorder}}</view> -->
-     <view class="text-center txt-white h5 margin-left-200" style='background-color:#FF674B;border-radius:30rpx;height:48rpx;width:154rpx;'>微信授权 
+     <view class="text-center txt-white h5 margin-left-160 wx-size padding-right-40 padding-left-40">微信授权 
 </view>
     </view>
 
@@ -17,23 +17,23 @@
     <view class='txt-black txt-bold margin-top margin-left-80'>在线客服
     <image class='icon-15  margin-left-400' src='{{uploadpath}}resource/{{res.right}}'></image></view>
   </view>
-    <view class='border'></view>
+    <view class='border margin-left-40 margin-right-40'></view>
 
     <view data-name='wentifankui' bindtap='todetails' class='flex-row'>
     <view class='txt-black  txt-bold margin-top margin-left-80'>问题反馈
    <image src='{{uploadpath}}resource/{{res.right}}' class='icon-15 margin-left-400'></image></view>
   </view>
-    <view class='border'></view>
+    <view class='border margin-left-40 margin-right-40'></view>
 
     <view data-name='guanyuwomen' bindtap='todetails' class='flex-row'>
     <view class='txt-black txt-bold margin-top margin-left-80'>关于我们
     <image class='icon-15 margin-left-400' src='{{uploadpath}}resource/{{res.right}}'></image></view>
   </view>
-    <view class='border'></view>
+    <view class='border margin-left-40 margin-right-40'></view>
 
     <view data-name='tuichudenglu' bindtap='todetails' class='flex-row'>
     <view class='txt-black  txt-bold margin-top margin-left-80'>退出登录
     <image class='icon-15 margin-left-400' src='{{uploadpath}}resource/{{res.right}}'></image></view>
   </view>
-    <view class='border'></view>
+    <view class='border margin-left-40 margin-right-40'></view>
 

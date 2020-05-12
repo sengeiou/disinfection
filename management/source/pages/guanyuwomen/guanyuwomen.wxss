@@ -5,17 +5,9 @@
   .border{
   border-bottom:1rpx solid #ddd;
   padding-bottom:40rpx;
-  margin-left:40rpx;
-  margin-right:40rpx;
 }
 .padding-bottom-180{
   padding-bottom: 180rpx;
-}
-.margin-left-80{
-  margin-left: 80rpx;
-}
-.margin-right-80{
-  margin-right: 80rpx;
 }
 .margin-left-290{
   margin-left: 290rpx;

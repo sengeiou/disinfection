@@ -7,12 +7,6 @@ border-radius:30px;
 .dl-color{
   color:#A5A9B1;
 }
-.margin-left-80{
-margin-left: 80rpx;
-}
-.margin-right-80{
-margin-right: 80rpx;
-}
 .margin-left-46{
 margin-left:46rpx;
 }

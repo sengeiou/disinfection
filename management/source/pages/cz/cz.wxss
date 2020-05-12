@@ -28,9 +28,3 @@ margin-top: 320rpx;
 .margin-top-35{
 margin-top: 35rpx;
 }
-.margin-right-80{
-  margin-right: 80rpx;
-} 
-.margin-left-80{
-  margin-left: 80rpx;
-}

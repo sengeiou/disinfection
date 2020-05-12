@@ -1,7 +1,7 @@
 <view class='f-32 txt-bold text-center margin-top-320'style="color:#091C2B;">设置密码</view>
-<view class='xyh-mianji margin-top-60 margin-right-80 margin-left-80'>
+<view class='xyh-mianji margin-top-60 margin-right-80 margin-left-80'> 
 <view class="f-32 text-center margin-top-28" style='color:#A5A9B1;'>设置6位数字以上的密码</view> 
 </view>
-<view class='logo-mianji margin-top-450 margin-left-300'>
+<view data-name='szmm' bindtap='szmm' class='logo-mianji margin-top-450 margin-left-300'>
 <image src='{{uploadpath}}resource/{{res.left}}' class=' margin-left-50 margin-top-35'style='height:62rpx;width:40rpx'></image>
 </view>

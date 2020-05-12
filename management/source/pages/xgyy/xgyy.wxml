@@ -1,0 +1,20 @@
+<view class='margin-top'></view>
+<view class="xg-size margin-right-40 margin-left-40 txt-white f-32 padding-left-40 padding-top-40 padding-bottom-40 bj-shadow">
+商户信息卡</view>
+<view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' >
+<view class='t-color padding-top-40 f-32 padding-left-40 padding-bottom-40'>客户名称：</view>
+<view class='t-color2 f-32 padding-top-40 padding-left-40 padding-bottom-40'>陈先生</view>
+</view>
+<view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' >
+<view class='t-color padding-top-40 f-32 padding-left-40 padding-bottom-40'>商户名称：</view>
+<view class='t-color2 f-32 padding-top-40 padding-left-40 padding-bottom-40'>星巴克海岸城店</view>
+</view>
+<view class='flex-row bg-white margin-left-40 margin-right-40 border-radius-10 bj-shadow' >
+<view class='t-color padding-top-40 f-32 padding-left-40 padding-bottom-40'>商户地址：</view>
+<view class='t-color2 f-32 padding-top-40 padding-left-40 padding-bottom-40'>深圳市南山大道1105号</view>
+</view>
+<view class="fixbottom">
+<view class='bt-size txt-white f-32 text-center margin-right-40 margin-left-40 margin-bottom-80 padding-top-26 padding-bottom-26'>
+确认修改
+</view>
+</view>

@@ -22,10 +22,23 @@ class Content extends AppBase {
   onMyShow() {
     var that = this;
   }
+  szmm(e) {
+    var name = e.currentTarget.dataset.name;
+    if (name == "szmm") {
+      wx.navigateTo({
+        url: '/pages/tuichudenglu/tuichudenglu',
+      })
+    }
+
+
+  }
 }
+
+
 
 var content = new Content();
 var body = content.generateBodyJson();
 body.onLoad = content.onLoad;
 body.onMyShow = content.onMyShow;
+body.szmm = content.szmm;
 Page(body)

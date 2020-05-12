@@ -16,7 +16,7 @@
           </view>
         </view>
 
-          <view class='fixbottom' wx:if='{{show=="yy"}}'>
+          <view class='margin-top-60' wx:if='{{show=="yy"}}'>
         <view class=' mianji margin-left-80 margin-top margin-right-80'>
         <view class='f-32 margin-left-46 margin-top-28 dl-color'>输入手机号</view>
         </view>
@@ -37,7 +37,7 @@
         </view>
         </view>
 
-        <view class='fixbottom' wx:if='{{show=="yh"}}'>
+        <view class='margin-top-60' wx:if='{{show=="yh"}}'>
         <view class=' mianji margin-left-80 margin-right-80'>
         <view class='f-32 margin-left-46 margin-top-28 dl-color'>输入手机号</view>
         </view>

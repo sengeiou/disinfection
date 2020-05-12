@@ -51,7 +51,7 @@ class Content extends AppBase {
     }
     if (name == "zc") {
       wx.navigateTo({
-        url: '/pages/zc/zc',
+        url: '/pages/cz/cz',
       })
     }
 

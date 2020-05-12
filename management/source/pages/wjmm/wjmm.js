@@ -26,7 +26,7 @@ class Content extends AppBase {
     var name = e.currentTarget.dataset.name;
     if (name == "cz") {
       wx.navigateTo({
-        url: '/pages/cz/cz',
+        url: '/pages/tuichudenglu/tuichudenglu',
       })
     }
 
