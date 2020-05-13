@@ -1,0 +1,14 @@
+/* pages/txcg/txcg.wxss */
+.icon-220{
+  height: 220rpx;
+  width: 354rpx;
+}
+.t-color{
+  color: #B4B8BF;
+}
+.margin-left-200{
+  margin-left: 200rpx;
+}
+.margin-top-280{
+  margin-top: 280rpx;
+}

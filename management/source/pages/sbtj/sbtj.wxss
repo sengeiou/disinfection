@@ -1,1 +1,43 @@
 /* pages/sbtj/sbtj.wxss */
+page{
+  background:#F5F4F9;
+}
+.height-60{
+  height: 60rpx;
+}
+.t-color2{
+  color: #DFDFDF;
+}
+.border-radius-30{
+  border-radius: 30rpx;
+}
+.margin-top-16{
+  margin-top: 16rpx;
+}
+.bg-color{background-color: #091C2B;}
+.bg-color2{background-color: #F3BD2B;}
+.bg-color3{background-color: #FF674B;}
+.padding-left-48{
+  padding-left: 48rpx;
+}
+.padding-right-48{
+  padding-right: 48rpx;
+}
+.margin-left-48{
+  margin-left: 48rpx;
+}
+.margin-right-48{
+  margin-right: 48rpx;
+}
+.border-radius-20{
+border-radius: 20rpx;
+}
+.padding-top-16{
+  padding-top: 16rpx;
+}
+.padding-bottom-16{
+  padding-bottom: 16rpx;
+}
+.w-color{
+  color: #060606;
+}

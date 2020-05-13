@@ -7,3 +7,26 @@ border-radius:10px 10px 0px 0px;
 .padding-left-220{
   padding-left: 220;
 }
+page{
+  background:#F5F4F9;
+}
+.padding-top-30{
+  padding-top: 30rpx;
+}
+.padding-bottom-30{
+  padding-bottom: 30rpx;
+}
+.border{
+  border:1px solid rgba(241,241,241,1);
+}
+.tx-dx{
+background:rgba(255,101,32,1);
+opacity:1;
+border-radius:20px;
+}
+.margin-right-80{
+  margin-right: 80rpx;
+}
+.padding-top-25{
+  padding-top: 25rpx;
+}

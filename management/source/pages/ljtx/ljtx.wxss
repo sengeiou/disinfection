@@ -1,0 +1,16 @@
+.icon-122{
+  width: 122rpx;
+  height: 168rpx;
+}
+.margin-left-284{
+  margin-left: 284rpx;
+}
+page{
+  background:#F5F4F9;
+}
+.border-radius-20{
+  border-radius: 20rpx;
+}
+.t-color{
+  color: #B4B8BF;
+}

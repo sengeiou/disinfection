@@ -23,7 +23,11 @@
     "pages/xgyy/xgyy",
     "pages/zjxx/zjxx",
     "pages/wdshson/wdshson",
-    "pages/tjshson/tjshson"
+    "pages/tjshson/tjshson",
+    "pages/tx/tx",
+    "pages/txjl/txjl",
+    "pages/ljtx/ljtx",
+    "pages/txcg/txcg"
   ],
   "permission": {
     "scope.userLocation": {

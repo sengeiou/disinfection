@@ -1,0 +1,60 @@
+.daxiao{
+  background-color:#FF674B;
+  border-radius:30rpx;
+  height:48rpx;
+
+}
+page{
+  background:#F5F4F9;
+}
+.margin-left-188{
+  margin-left:188rpx;
+}
+.t-color{
+  color: #060606;
+}
+.t-color2{
+  color:  #FF674B;
+}
+.t-color3{
+color:rgba(139,139,139,1);
+}
+.bg-size{
+background:rgba(255,255,255,1);
+box-shadow:0px 1px 8px rgba(102,123,162,0.16);
+opacity:1;
+border-radius:10px;
+}
+.padding-top-24{
+  padding-top: 24rpx;
+}
+.padding-top-16{
+  padding-left: 16rpx;
+}
+.padding-right-16{
+  padding-right: 16rpx;
+}
+.padding-bottom-24{
+  padding-bottom: 24rpx;
+}
+.padding-left-24{
+  padding-left: 24rpx;
+}
+.button{
+  background:rgba(243,189,43,1);
+border-radius:10px;
+
+}
+.button{
+  background:rgba(243,189,43,1);
+border-radius:10px;
+}
+.margin-bottom-80{
+  margin-bottom: 80rpx;
+}
+.padding-top-26{
+  padding-top: 26rpx;
+}
+.padding-bottom-26{
+  padding-bottom: 26rpx;
+}

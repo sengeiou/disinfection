@@ -30,7 +30,7 @@ class Content extends AppBase {
     var name = e.currentTarget.dataset.name;
     if (name == "wodeshanghu") {
       wx.navigateTo({
-        url: '/pages/wdsh/wdsh',
+        url: '/pages/sqgl/sqgl',
       })
     }
     if (name == "shebeitongji") {
@@ -51,6 +51,11 @@ class Content extends AppBase {
     if (name == "dailihezuo") {
       wx.navigateTo({
         url: '/pages/dlhz/dlhz',
+      })
+    }
+    if (name == "tixian") {
+      wx.navigateTo({
+        url: '/pages/tx/tx',
       })
     }
 

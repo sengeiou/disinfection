@@ -11,7 +11,7 @@ class Content extends AppBase {
   setPageTitle() {
     wx.setNavigationBarTitle({
       // title: '',
-      title: '设备统计',
+      title: '申请提现',
     });
   }
   onLoad(options) {
@@ -22,13 +22,18 @@ class Content extends AppBase {
   onMyShow() {
     var that = this;
   }
-  wdsp(e) {
+      wdsp(e) {
     var name = e.currentTarget.dataset.name;
     if (name == "tixianjilu") {
       wx.navigateTo({
         url: '/pages/txjl/txjl',
       })
     }
+        if (name == "lijitixian") {
+          wx.navigateTo({
+            url: '/pages/ljtx/ljtx',
+          })
+        }
 
 
 
