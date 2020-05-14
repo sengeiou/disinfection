@@ -48,7 +48,7 @@ class Content extends AppBase {
     }
 
     if (name == "dl") {
-      wx.navigateTo({
+      wx.switchTab({
         url: '/pages/home/home',
       })
     }

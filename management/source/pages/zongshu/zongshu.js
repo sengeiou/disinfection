@@ -19,14 +19,15 @@ class Content extends AppBase {
     //options.id=5;
     super.onLoad(options);
     var list=[
-      {id:1,status:"未配置",no:'SN000016'},
-      { id: 2, status: "未配置", no: 'SN000016' },
-      { id: 3, status: "未配置", no: 'SN000016' },
-      { id: 4, status: "未配置", no: 'SN000016' },
-      { id: 5, status: "未配置", no: 'SN000016' },
-      { id: 6, status: "未配置", no: 'SN000016' },
-      { id: 7, status: "未配置", no: 'SN000016' },
-      { id: 8, status: "未配置", no: 'SN000016' },
+      {id:1,no:"SN000001",local:"星巴克KKONE店",fin:"3500",money:"5200"},
+      { id: 2, no: "SN000001", local: "星巴克KKONE店", fin: "3500", money: "5200" },
+      { id: 3, no: "SN000001", local: "星巴克KKONE店", fin: "3500", money: "5200" },
+      { id: 4, no: "SN000001", local: "星巴克KKONE店", fin: "3500", money: "5200" },
+      { id: 5, no: "SN000001", local: "星巴克KKONE店", fin: "3500", money: "5200" },
+      { id: 6, no: "SN000001", local: "星巴克KKONE店", fin: "3500", money: "5200" },
+      { id: 7, no: "SN000001", local: "星巴克KKONE店", fin: "3500", money: "5200" },
+      { id: 8, no: "SN000001", local: "星巴克KKONE店", fin: "3500", money: "5200" },
+      { id: 9, no: "SN000001", local: "星巴克KKONE店", fin: "3500", money: "5200" },
     ];
     this.Base.setMyData({list})
   }
@@ -37,12 +38,7 @@ class Content extends AppBase {
     var name = e.currentTarget.dataset.name;
     if (name == "ss") {
       wx.navigateTo({
-        url: '/pages/ss/ss',
-      })
-    }
-    if(name=="zongshu"){
-      wx.navigateTo({
-        url: '/pages/zongshu/zongshu',
+        url: '/pages/sbtjson/sbtjson',
       })
     }
 

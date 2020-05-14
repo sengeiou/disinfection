@@ -1,0 +1,18 @@
+<view class='margin-top-30'></view>
+<view class="flex-row bg-white margin-left-40 margin-right-40 height-60 border-radius-30">
+<view class='flex-1 h6 t-color2 margin-left-40 margin-top-16'>000001</view>
+<image src='{{uploadpath}}resource/{{res.sou}}' class='icon margin-right-20 margin-top-16'></image>
+</view>
+<view  bindtap='sou' data-name="ss" class='bg-white border-radius-30 margin-right-40 margin-left-40 bj-shadow margin-top'>
+<view class='flex-row margin-top-20'>
+<view class='h5 margin-left-20'>设备编号</view>
+<view class="flex-1">SN000001</view>
+<image src='{{uploadpath}}resource/{{res.s}}' class='icon-15 margin-right-20 margin-left-10 '></image>
+<image src='{{uploadpath}}resource/{{res.v}}' class='icon-15 margin-right-30 '></image>
+</view>
+<view class='h6 margin-left-20 margin-top-5 t-color'>星巴克KKONE店</view>
+<view class='flex-row margin-left-20 margin-bottom-30 margin-top-5'>
+<view class='h5 '>完成订单：3500</view>
+<view class='h5  margin-left-80'>盈利总额：5200</view>
+</view>
+</view>

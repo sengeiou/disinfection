@@ -7,10 +7,9 @@ box-shadow:0px 1px 5px rgba(102,123,162,0.1);
 opacity:1;
 border-radius:10px 10px 0px 0px;
 }
-.tx-dx{
-background:rgba(255,103,75,1);
-opacity:1;
-border-radius:20px;
+.icon-140{
+  width: 140rpx;
+  height: 50rpx;
 }
 .padding-top-30{
   padding-top: 30rpx;

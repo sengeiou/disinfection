@@ -1,53 +1,14 @@
 <view class='margin-top'></view>
 <view class='bj-daxiao flex-row  padding-top-30 padding-bottom-30 margin-left-40 margin-right-40 bj-shadow'>
-<view class='f-32 txt-white margin-left-40 flex-1 margin-top-5'>商户信息卡</view>
-<view bindtap='xgxx' data-name="zengjiaxinxi" class='tx-dx txt-white padding-left-20 padding-right-20 margin-right-30 padding-top-5 padding-bottom-5 h6'>
-<image src='{{uploadpath}}resource/{{res.add}}' class='icon-10'></image>
-10</view>
-</view>
-<view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' >
-<view class='sh-color padding-top-30 h5 padding-left-40 padding-bottom-30'>设备编号</view>
-<view class='sh-color h5 padding-top-30 padding-left-40 padding-bottom-30 flex-1'>SN000004</view>
-<view>
-</view>
-<image src='{{uploadpath}}resource/{{res.checkbox}}' class='icon-25  margin-right-80 padding-top-25'>
-<image src='{{uploadpath}}resource/{{res.check}}' class='icon-25'></image>
-</image>
-</view>
-<view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' >
-<view class='sh-color padding-top-30 h5 padding-left-40 padding-bottom-30'>设备编号</view>
-<view class='sh-color h5 padding-top-30 padding-left-40 padding-bottom-30'>SN000004</view>
+  <view class='f-32 txt-white margin-left-40 flex-1 margin-top-5'>商户信息卡</view>
+  <image bindtap='xgxx' data-name="zengjiaxinxi" src='{{uploadpath}}resource/{{res.a8}}' class='icon-96 padding-left-20 margin-right-20 padding-top-5 padding-bottom-5'></image>
 
 </view>
-<view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' >
-<view class='sh-color padding-top-30 h5 padding-left-40 padding-bottom-30'>设备编号</view>
-<view class='sh-color h5 padding-top-30 padding-left-40 padding-bottom-30'>SN000004</view>
-</view>
-<view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' >
-<view class='sh-color padding-top-30 h5 padding-left-40 padding-bottom-30'>设备编号</view>
-<view class='sh-color h5 padding-top-30 padding-left-40 padding-bottom-30'>SN000004</view>
-</view>
-<view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' >
-<view class='sh-color padding-top-30 h5 padding-left-40 padding-bottom-30'>设备编号</view>
-<view class='sh-color h5 padding-top-30 padding-left-40 padding-bottom-30'>SN000004</view>
-</view>
-<view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' >
-<view class='sh-color padding-top-30 h5 padding-left-40 padding-bottom-30'>设备编号</view>
-<view class='sh-color h5 padding-top-30 padding-left-40 padding-bottom-30'>SN000004</view>
-</view>
-<view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' >
-<view class='sh-color padding-top-30 h5 padding-left-40 padding-bottom-30'>设备编号</view>
-<view class='sh-color h5 padding-top-30 padding-left-40 padding-bottom-30'>SN000004</view>
-</view>
-<view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' >
-<view class='sh-color padding-top-30 h5 padding-left-40 padding-bottom-30'>设备编号</view>
-<view class='sh-color h5 padding-top-30 padding-left-40 padding-bottom-30'>SN000004</view>
-</view>
-<view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' >
-<view class='sh-color padding-top-30 h5 padding-left-40 padding-bottom-30'>设备编号</view>
-<view class='sh-color h5 padding-top-30 padding-left-40 padding-bottom-30'>SN000004</view>
-</view>
-<view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' >
-<view class='sh-color padding-top-30 h5 padding-left-40 padding-bottom-30'>设备编号</view>
-<view class='sh-color h5 padding-top-30 padding-left-40 padding-bottom-30'>SN000004</view>
+<view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' wx:for='{{list}}' wx:for-index='idx'>
+  <view class='sh-color padding-top-30 h5 padding-left-40 padding-bottom-30'>{{item.name}}</view>
+  <view class='sh-color h5 padding-top-30 padding-left-40 padding-bottom-30 flex-1'>{{item.no}}</view>
+  <view>
+  </view>
+  <image src='{{uploadpath}}resource/{{item.check==false?res.checkbox:res.check}}' class='icon-25  margin-right-80 padding-top-25' bindtap='dianji' id='{{idx}}'>
+  </image>
 </view>

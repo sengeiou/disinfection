@@ -27,7 +27,12 @@
     "pages/tx/tx",
     "pages/txjl/txjl",
     "pages/ljtx/ljtx",
-    "pages/txcg/txcg"
+    "pages/txcg/txcg",
+    "pages/ss/ss",
+    "pages/sbtjson/sbtjson",
+    "pages/ddxq/ddxq",
+    "pages/zongshu/zongshu",
+    "pages/tjsh/tjsh"
   ],
   "permission": {
     "scope.userLocation": {

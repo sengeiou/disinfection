@@ -8,8 +8,8 @@
 .margin-top-70{
   margin-top:70rpx;
 }
-.margin-left-160{
-  margin-left:440rpx;
+.margin-left-190{
+  margin-left:480rpx;
 }
 
 .border{
@@ -27,8 +27,7 @@
   background-color:#091C2B;
   border-radius: 30rpx;
 }
-.wx-size{
-  background-color:#FF674B;
-  border-radius:30rpx;
-  height:48rpx;
+.icon-154{
+  width: 154rpx;
+  height: 48rpx;
 }

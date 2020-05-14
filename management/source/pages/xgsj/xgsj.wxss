@@ -3,9 +3,9 @@
 page{
   background:#F5F4F9;
 }
-.button{
-  background:rgba(243,189,43,1);
-border-radius:10px;
+.icon-96{
+height: 96rpx;
+width: 670rpx;
 }
 .sj-size{
 background:rgba(9,28,43,1);

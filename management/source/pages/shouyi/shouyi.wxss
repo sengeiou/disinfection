@@ -14,8 +14,14 @@
   background-color:#091C2B;
   border-radius: 30rpx;
 }
-.tx-size{
-  background-color:#FF674B;
-  border-radius:30rpx;
+.icon-48{
   height:48rpx;
+  width: 128rpx;
+
+}
+.margin-left-360{
+  margin-left: 360rpx;
+}
+.padding-rihgt-300{
+  padding-right: 300rpx;
 }

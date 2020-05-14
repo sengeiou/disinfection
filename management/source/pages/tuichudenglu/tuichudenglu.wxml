@@ -24,10 +24,11 @@
         <view class='f-32 margin-left-46 margin-top-28 dl-color'>输入密码</view>
         </view>
       <view data-name='dl' bindtap='shouye'>
-      <view class='dl-mianji margin-left-80 margin-top margin-right-80 margin-bottom-40'>
-        <view class=' txt-white text-center f-32 margin-top-28' >登录      
+      <view   class='dl-mianji margin-left-80 margin-top margin-right-80 margin-bottom-40'>
+        <view class=' txt-white text-center f-32 margin-top-28' >登录  
         </view>
         </view>
+        <!-- <image  src='{[uploadpath}}resource/{{res.a18}}'class="margin-left-80 margin-top margin-right-80 margin-bottom-40"  ></image> -->
       </view>
         
         <view data-name='wjmm' bindtap='shouye' class='flex-row'>

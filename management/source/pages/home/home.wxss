@@ -12,12 +12,11 @@ page{
 .margin-top-70{
   margin-top:70rpx;
 }
-.margin-left-188{
-  margin-left:188rpx;
+.margin-left-140{
+  margin-left:140rpx;
 }
-.daxiao{
-  background-color:#FF674B;
-  border-radius:30rpx;
+.icon-48{
   height:48rpx;
+  width: 128rpx;
 
 }

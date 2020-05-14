@@ -1,12 +1,12 @@
 <view class='margin-top-20'></view>
 <view class="margin-left-40"style="height:288rpx;width:670rpx;background-color:#091C2B;border-radius: 30rpx;">
-<view class="h5 margin-top-60 margin-left-40" style='color:#FF674B;'>可提现余额 </view>
-<view class="txt-white h2 margin-left-40 margin-bottom-40 txt-bold">￥12350.22 </view>
+<view class="h5 margin-top-60 margin-left-40 margin-bottom-10" style='color:#FF674B;'>可提现余额 </view>
+<view class="txt-white h2 margin-left-40 margin-bottom-20 txt-bold">￥12350.22 </view>
 <view class='flex-row'>
-<view class="h5 margin-left-40">累计收入</view>
-<view class="txt-white h5 txt-bold" >+￥12350.22</view>
-<view bindtap='wdsh' data-name="tixian" class="text-center txt-white h5 margin-left-188 daxiao padding-right-40 padding-left-40 padding-top-5 ">提现
-</view>
+<view class="h5 margin-left-40 margin-top-5">累计收入</view>
+<view class="txt-white h5 txt-bold margin-top-5" >+￥12350.22</view>
+<image bindtap='wdsh' data-name="tixian" class="icon-48  margin-left-140 padding-right-20 padding-left-40" src='{{uploadpath}}resource/{{res.a14}}'>
+</image>
 </view>
 </view>
 <view class='flex-row flex-wrap'>

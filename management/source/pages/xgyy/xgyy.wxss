@@ -1,8 +1,4 @@
 /* pages/xgyy/xgyy.wxss */
-.bt-size{
-background:rgba(243,189,43,1);
-border-radius:10px;
-}
 .margin-bottom-80{
   margin-bottom:80rpx;
 }
@@ -29,4 +25,8 @@ border-radius:10px;
 }
 page{
   background:#F5F4F9;
+}
+.icon-96{
+height: 96rpx;
+width: 670rpx;
 }
