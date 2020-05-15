@@ -4,6 +4,7 @@ import { ApiConfig } from "../../apis/apiconfig";
 import { InstApi } from "../../apis/inst.api.js";
 import { ApiUtil } from "../../apis/apiutil";
 import { MemberApi } from "../../apis/member.api.js";
+import { OwnerApi } from "../../apis/owner.api.js";
 class Content extends AppBase {
   constructor() {
     super();
@@ -40,27 +41,44 @@ class Content extends AppBase {
       })
     }
   }
-  shouye(e) {
-    var name = e.currentTarget.dataset.name;
-    if (name == "wjmm") {
-      wx.navigateTo({
-        url: '/pages/wjmm/wjmm',
-      })
-    }
+  denglu() { 
+    var that=this;
+    var mobile=this.Base.getMyData().mobile;
+    var password=this.Base.getMyData().password;
+    var api=new OwnerApi;
+    console.log("denglu",mobile,password);
+    api.login({
+      mobile:mobile,
+      password:password
+    },(ret)=>{
+      console.log(ret,'ret')
+      if(ret.code=="0"){
+        wx.setStorageSync("token", ret.return);
+        wx.switchTab({
+          url: '/pages/home/home'
+        })
 
-    if (name == "dl") {
-      wx.switchTab({
-        url: '/pages/home/home',
-      })
-    }
-    if (name == "zc") {
-      wx.navigateTo({
-        url: '/pages/cz/cz',
-      })
-    }
-
+      }else{
+        this.Base.info(ret.return)
+      }
+    })
   }
-}
+  uName(e){
+     this.Base.setMyData({
+       mobile:e.detail.value
+     })
+
+   } 
+    uPwd(e){
+      this.Base.setMyData({
+       password: e.detail.value
+      })
+
+    } 
+  }
+
+ 
+
 
 
 
@@ -69,5 +87,7 @@ var body = content.generateBodyJson();
 body.onLoad = content.onLoad;
 body.onMyShow = content.onMyShow;
 body.bindshow = content.bindshow;
-body.shouye = content.shouye;
+body.denglu = content.denglu;
+body.uName = content.uName;
+body.uPwd = content.uPwd;
 Page(body)

@@ -22,17 +22,15 @@ class Content extends AppBase {
   onMyShow() {
     var that = this;
   }
-  sqgl(e) {
+  back(e) {
     var name = e.currentTarget.dataset.name;
-    if (name == "shouquanguanli") {
+    if (name == "backone") {
       wx.navigateTo({
-        url: '/pages/sqgl/sqgl',
+        url: '/pages/shanghuguanli/shanghuguanli',
       })
     }
-
-
   }
-}
+  }
 
 
 
@@ -40,5 +38,5 @@ var content = new Content();
 var body = content.generateBodyJson();
 body.onLoad = content.onLoad;
 body.onMyShow = content.onMyShow;
-body.sqgl = content.sqgl;
+body.back = content.back;
 Page(body)

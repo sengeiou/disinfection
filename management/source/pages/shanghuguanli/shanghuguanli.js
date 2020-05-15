@@ -20,16 +20,16 @@ class Content extends AppBase {
     super.onLoad(options);
     var list=[
       {id:1,name:"设备编号",no:"SN000004"},
-      { id: 1, name: "设备编号", no: "SN000001" },
-      { id: 2, name: "设备编号", no: "SN000002" },
-      { id: 3, name: "设备编号", no: "SN000003" },
-      { id: 4, name: "设备编号", no: "SN000004" },
-      { id: 5, name: "设备编号", no: "SN000005" },
-      { id: 6, name: "设备编号", no: "SN000006" },
-      { id: 7, name: "设备编号", no: "SN000007" },
-      { id: 8, name: "设备编号", no: "SN000008" },
-      { id: 9, name: "设备编号", no: "SN000009" },
-      { id: 10, name: "设备编号", no: "SN0000010" },
+      { id: 1, name: "设备编号"},
+      { id: 2, name: "设备编号"},
+      { id: 3, name: "设备编号"},
+      { id: 4, name: "设备编号"},
+      { id: 5, name: "设备编号"},
+      { id: 6, name: "设备编号"},
+      { id: 7, name: "设备编号"},
+      { id: 8, name: "设备编号"},
+      { id: 9, name: "设备编号"},
+      { id:10, name: "设备编号"},
     ];
     this.Base.setMyData({ list })
   }
@@ -40,17 +40,17 @@ class Content extends AppBase {
     var name = e.currentTarget.dataset.name;
     if (name == "xiugaiyonghu") {
       wx.navigateTo({
-        url: '/pages/xgyy/xgyy',
+        url: '/pages/xiugaiyonghuxinxi/xiugaiyonghuxinxi',
       })
     }
     if(name=="xiugaishouji"){
       wx.navigateTo({
-        url: '/pages/xgsj/xgsj',
+        url: '/pages/xiugaixinxi/xiugaixinxi',
       })
     }
     if (name == "zengjiaxinxi") {
       wx.navigateTo({
-        url: '/pages/zjxx/zjxx',
+        url: '/pages/zengjiaxinxi/zengjiaxinxi',
       })
     }
 

@@ -25,7 +25,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.11.0",
-	"appid": "wxb76c39adb7275c20",
+	"appid": "wx6932d0456ac5deb0",
 	"projectname": "%E6%B6%88%E6%AF%92%E5%95%86%E5%AE%B6%E7%AE%A1%E7%90%86%E7%AB%AF",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -50,6 +50,10 @@
 			"currentL": -1,
 			"list": []
 		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
 		"miniprogram": {
 			"current": 0,
 			"list": [
@@ -58,6 +62,12 @@
 					"name": "wode",
 					"pathName": "pages/zjxx/zjxx",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "修改商户",
+					"pathName": "pages/xiugaiyonghuxinxi/xiugaiyonghuxinxi",
 					"scene": null
 				}
 			]

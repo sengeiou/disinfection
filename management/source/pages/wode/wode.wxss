@@ -8,8 +8,8 @@
 .margin-top-70{
   margin-top:70rpx;
 }
-.margin-left-190{
-  margin-left:480rpx;
+.margin-left-210{
+  margin-left:500rpx;
 }
 
 .border{

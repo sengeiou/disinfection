@@ -26,12 +26,12 @@ class Content extends AppBase {
     var name = e.currentTarget.dataset.name;
     if (name == "guanlishouquan") {
       wx.navigateTo({
-        url: '/pages/sqgl/sqgl',
+        url: '/pages/shanghuguanli/shanghuguanli',
       })
     }
     if (name == "tianjiashanghu") {
       wx.navigateTo({
-        url: '/pages/tjshson/tjshson',
+        url: '/pages/tianjiashanghu/tianjiashanghu',
       })
     }
 

@@ -6,7 +6,7 @@
 </view>
 <view class="txt-white h5 txt-bold margin-top-70 margin-left-50" >*********</view>
 </view>
-<image bindtap="todetails" data-name='shouquan' src='{{uploadpath}}resource/{{res.a17}}' class=' icon-154 margin-left-190'></image>
+<image bindtap="todetails" data-name='shouquan' src='{{uploadpath}}resource/{{res.a17}}' class=' icon-154 margin-left-210'></image>
 </view>
 <view data-name='zaixiankefu' bindtap='todetails' class='flex-row'>
     <view class='txt-black txt-bold margin-top margin-left-80'>在线客服

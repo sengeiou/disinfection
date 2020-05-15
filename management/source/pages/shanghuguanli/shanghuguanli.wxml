@@ -6,20 +6,20 @@
 </view>
 <view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' >
 <view class='sh-color padding-top-40 f-32 padding-left-40 padding-bottom-40'>客户名称：</view>
-<view class='sh-color2 f-32 padding-top-40 padding-left-40 padding-bottom-40'>陈先生</view>
+<view class='sh-color2 f-32 padding-top-40 padding-left-40 padding-bottom-40'>{{OwnerInfo.name}}</view>
 </view>
 <view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' >
 <view class='sh-color padding-top-40 f-32 padding-left-40 padding-bottom-40'>商户名称：</view>
-<view class='sh-color2 f-32 padding-top-40 padding-left-40 padding-bottom-40'>星巴克海岸城店</view>
+<view class='sh-color2 f-32 padding-top-40 padding-left-40 padding-bottom-40'>{{OwnerInfo.shopname}}</view>
 </view>
 <view class='flex-row bg-white margin-left-40 margin-right-40 border-radius-10-10 bj-shadow' >
 <view class='sh-color padding-top-40 f-32 padding-left-40 padding-bottom-40'>商户地址：</view>
-<view class='sh-color2 f-32 padding-top-40 padding-left-40 padding-bottom-40'>深圳市南山大道1105号</view>
+<view class='sh-color2 f-32 padding-top-40 padding-left-40 padding-bottom-40'>{{OwnerInfo.shopaddress}}</view>
 </view>
 
 <view class='flex-row bg-white margin-left-40 margin-right-40  border-radius-10 margin-top-20 bj-shadow' >
 <view class='sh-color2 padding-top-40 f-32 padding-left-40 padding-bottom-40'>授权手机号：</view>
-<view class='sh-color3 f-32 padding-top-40 padding-left-10 padding-bottom-40'>13800138000</view>
+<view class='sh-color3 f-32 padding-top-40 padding-left-10 padding-bottom-40'>{{OwnerInfo.mobile}}</view>
 <image bindtap='xgxx' data-name="xiugaishouji" class=' padding-left-50  padding-top-40 padding-bottom-10 icon-140'src='{{uploadpath}}resource/{{res.a11}}'></image>
 </view>
 
@@ -30,7 +30,7 @@
 </view>
 <view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow'wx:for='{{list}}' >
 <view class='sh-color padding-top-30 h5 padding-left-40 padding-bottom-30'>{{item.name}}</view>
-<view class='sh-color h5 padding-top-30 padding-left-40 padding-bottom-30'>{{item.no}}</view>
+<view class='sh-color h5 padding-top-30 padding-left-40 padding-bottom-30'>{{OwnerInfo.devicesnumber}}</view>
 <view class='h6 sh-color2 padding-top-30 padding-bottom-30 padding-left-220 '>
 <image src='{{uploadpath}}resource/{{res.del}}' class='icon-15 margin-right-10'></image>移除
 </view>

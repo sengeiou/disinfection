@@ -19,13 +19,12 @@ class Content extends AppBase {
     //options.id=5;
     super.onLoad(options);
     var list=[
-      { id: 1, name: '设备编号', no: 'SN000001',check:false },
-      { id: 2, name: '设备编号', no: 'SN000002', check: false  },
-      { id: 3, name: '设备编号', no: 'SN000003', check: false },
-      { id: 4, name: '设备编号', no: 'SN000004', check: false},
-      { id: 5, name: '设备编号', no: 'SN000005', check: false},
-      { id: 6, name: '设备编号', no: 'SN000006', check: false},
-      { id: 7, name: '设备编号', no: 'SN000007', check: false},
+      { id: 2, name: '设备编号', check: false},
+      { id: 3, name: '设备编号', check: false},
+      { id: 4, name: '设备编号', check: false},
+      { id: 5, name: '设备编号', check: false},
+      { id: 6, name: '设备编号', check: false},
+      { id: 7, name: '设备编号', check: false},
     ];
     this.Base.setMyData({list})
   }

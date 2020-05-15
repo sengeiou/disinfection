@@ -4,6 +4,7 @@ import { ApiConfig } from "../../apis/apiconfig";
 import { InstApi } from "../../apis/inst.api.js";
 import { ApiUtil } from "../../apis/apiutil";
 import { MemberApi } from "../../apis/member.api.js";
+import { OwnerApi } from "../../apis/owner.api.js";
 class Content extends AppBase {
   constructor() {
     super();
@@ -25,19 +26,41 @@ class Content extends AppBase {
   onMyShow() {
     var that = this;
     var instapi = new InstApi();
+    var ownerapi= new OwnerApi();
+
   }
-  wdsh(e){
+  wodeshanghu(e){
     var name = e.currentTarget.dataset.name;
-    if (name == "wodeshanghu") {
+
+    if (this.Base.getMyData().OwnerInfo.role == 'A') {
       wx.navigateTo({
-        url: '/pages/sqgl/sqgl',
+        url: '/pages/wodeshanghutwo/wodeshanghutwo',
+      })
+    }else{
+      wx.navigateTo({
+        url: '/pages/wodeshanghu/wodeshanghu',
       })
     }
+  
+    
+  }
+  tixian(e){
+    var name = e.currentTarget.dataset.name;
+    if (name == "shouyetixian") {
+      wx.navigateTo({
+        url: '/pages/tixian/tixian',
+      })
+    }
+  }
+  shebeitongji(e) {
+    var name = e.currentTarget.dataset.name;
     if (name == "shebeitongji") {
       wx.navigateTo({
         url: '/pages/sbtj/sbtj',
       })
     }
+  }
+  shebeidingdan(e){
     if (name == "shebeidingdan") {
       wx.navigateTo({
         url: '/pages/sbdd/sbdd',
@@ -48,19 +71,13 @@ class Content extends AppBase {
         url: '/pages/fcgl/fcgl',
       })
     }
-    if (name == "dailihezuo") {
-      wx.navigateTo({
-        url: '/pages/dlhz/dlhz',
-      })
-    }
-    if (name == "tixian") {
-      wx.navigateTo({
-        url: '/pages/tx/tx',
-      })
-    }
-
 
   }
+  
+
+
+
+
 }
 
 
@@ -69,5 +86,6 @@ var content = new Content();
 var body = content.generateBodyJson();
 body.onLoad = content.onLoad;
 body.onMyShow = content.onMyShow;
-body.wdsh=content.wdsh;
+body.wodeshanghu=content.wodeshanghu;
+body.tixian = content.tixian;
 Page(body)

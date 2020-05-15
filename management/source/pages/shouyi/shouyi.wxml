@@ -2,8 +2,8 @@
 <view class="size margin-right-40 margin-left-40">
 <view class='h5 margin-left-40 margin-top-50' style=''>我的余额</view>
 <view class='flex-row'>
-<view class="txt-white h2 txt-bold margin-left-40 flex-1" >￥12350.22</view>
-<image src="{{uploadpath}}resource/{{res.a14}}" class='icon-48 margin-right-40 margin-top-10'></image>
+<view class="txt-white h2 txt-bold margin-left-40 flex-1" >{{OwnerInfo.balance}}</view>
+<image src="{{uploadpath}}resource/{{res.a14}}" class='icon-48 margin-right-20 margin-top-10'></image>
 </view>
 <view class='flex-row margin-top-60 margin-left-40'>
 <view class="h5 flex-row" >本周收益 

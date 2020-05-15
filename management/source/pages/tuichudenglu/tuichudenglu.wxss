@@ -11,13 +11,17 @@
     background-color: #FF674B;
 }
 .mianji{
-height:48px;
+  height: 96rpx;
 background:rgba(246,246,246,1);
 opacity:1;
 border-radius:30px;
 }
 .dl-color{
   color:#A5A9B1;
+}
+.icon-96{
+  height: 96rpx;
+  width: 590rpx;
 }
 .margin-left-46{
 margin-left:46rpx;
