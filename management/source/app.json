@@ -2,7 +2,6 @@
   "pages": [
     "pages/home/home",
     "pages/auth/auth",
-    "mta_wechat_sdk",
     "pages/shouyi/shouyi",
     "pages/wode/wode",
     "pages/tuichudenglu/tuichudenglu",

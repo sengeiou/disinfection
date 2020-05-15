@@ -165,111 +165,12 @@ export class AppBase {
       this.Base.setMyData({ res });
     });
 
-    instapi.info({}, (instinfo) => {
-      if (instinfo == null || instinfo == false) {
+    
 
-        return;
-      }
-      AppBase.InstInfo = instinfo;
-      this.Base.setMyData({ instinfo: instinfo });
-      if (this.Base.pagetitle == null) {
-        this.Base.setPageTitle(instinfo);
-      } else {
-
-      }
-    }, false);
-
-    if (AppBase.UserInfo.openid == undefined) {
-      // 登录
-      console.log("onShow");
-      wx.login({
-        success: res => {
-          // 发送 res.code 到后台换取 openId, sessionKey, unionId
-
-          console.log("res");
-
-          console.log(res);
-
-          wx.getUserInfo({
-            success: userres => {
-              AppBase.UserInfo = userres.userInfo;
-              console.log(userres);
-
-              var memberapi = new MemberApi();
-              memberapi.getuserinfo({ code: res.code, grant_type: "authorization_code" }, data => {
-                console.log("here");
-                console.log(data);
-                AppBase.UserInfo.openid = data.openid;
-                AppBase.UserInfo.session_key = data.session_key;
-                console.log(AppBase.UserInfo);
-                ApiConfig.SetToken(data.openid);
-                console.log("goto update info");
-                //this.loadtabtype();
-
-
-                memberapi.update(AppBase.UserInfo, () => {
-
-                  console.log(AppBase.UserInfo);
-                  that.Base.setMyData({ UserInfo: AppBase.UserInfo });
-
-             
-
-                  that.checkPermission();
-
-                });
-
-                //that.Base.getAddress();
-              });
-            },
-            fail: userloginres => {
-              console.log("auth fail");
-              console.log(userloginres);
-              console.log(res);
-              var memberapi = new MemberApi();
-              memberapi.getuserinfo({ code: res.code, grant_type: "authorization_code" }, data => {
-                console.log("here");
-                console.log(data);
-                AppBase.UserInfo.openid = data.openid;
-                AppBase.UserInfo.session_key = data.session_key;
-                console.log(AppBase.UserInfo);
-                ApiConfig.SetToken(data.openid);
-                console.log("goto update info");
-
-
-                //that.Base.gotoOpenUserInfoSetting();
-                 
-                  that.onMyShow();
-               
-              });
-              //that.getAddress();
-            }
-          });
-
-        }
-      })
-      return false;
-    } else {
-      if (that.setMyData != undefined) {
-        that.setMyData({ UserInfo: AppBase.UserInfo });
-      } else {
-        that.Base.setMyData({ UserInfo: AppBase.UserInfo });
-      }
-      //this.loadtabtype();
-
-      that.Base.setMyData({ UserInfo: AppBase.UserInfo });
-
-      that.checkPermission();
-    }
+   
 
   }
-  checkPermission() {
-    var memberapi = new MemberApi();
-    var that = this;
-    memberapi.info({}, (info) => {
-      this.Base.setMyData({ memberinfo: info }); 
-      that.onMyShow();
-    });
-  }
+  
   loadtabtype() {
     console.log("loadtabtype");
     var memberapi = new MemberApi();
