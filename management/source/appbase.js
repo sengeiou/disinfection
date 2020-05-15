@@ -7,6 +7,9 @@ import { ApiUtil } from "apis/apiutil.js";
 import { InstApi } from "apis/inst.api.js";
 import { MemberApi } from "apis/member.api";
 import { WechatApi } from "apis/wechat.api";
+var mta = require('mta_wechat_sdk/mta_analysis.js')
+import { OwnerApi } from "apis/owner.api.js";
+
 
 export class AppBase {
   static CITYID = 440300;
@@ -20,9 +23,14 @@ export class AppBase {
   static Scene = 1001;
   needauth = false;
   phone=null;
+  needauth = true;
   pagetitle = null;
   app = null;
   options = null;
+
+  OwnerInfo={};
+
+
   data = {
     uploadpath: ApiConfig.GetUploadPath(),
     copyright: { 
@@ -165,10 +173,33 @@ export class AppBase {
       this.Base.setMyData({ res });
     });
 
+
+    var token=wx.getStorageSync("token");
+    if(token==""){
+
+      if (this.Base.needauth == true) {
+        wx.redirectTo({
+          url: '/pages/tuichudenglu/tuichudenglu',
+        })
+        return;
+      }
+    }
     
+    ApiConfig.SetToken(token);
 
    
 
+    var ownerApi=new OwnerApi();
+    ownerApi.info({},(info)=>{
+      if (info == null && this.Base.needauth == true){
+        wx.redirectTo({
+          url: '/pages/tuichudenglu/tuichudenglu',
+        })
+      }
+      this.Base.setMyData({ OwnerInfo:info});
+    });
+    
+    that.onMyShow();
   }
   
   loadtabtype() {
@@ -245,7 +276,7 @@ export class AppBase {
         var memberapi = new MemberApi();
 
         var that = this;
-        memberapi.info({a:"a"}, (info) => {
+        memberapi.info({}, (info) => {
           this.Base.setMyData({ memberinfo: info }); 
           
           this.Base.setMyData({
@@ -271,6 +302,44 @@ export class AppBase {
     }
 
   }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   viewPhoto(e) {
     var img = e.currentTarget.id;

@@ -7,6 +7,7 @@ import { MemberApi } from "../../apis/member.api.js";
 class Content extends AppBase {
   constructor() {
     super();
+    this.needauth=false;
   }
   setPageTitle() {
     wx.setNavigationBarTitle({
