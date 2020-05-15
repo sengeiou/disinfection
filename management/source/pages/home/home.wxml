@@ -5,7 +5,7 @@
 <view class='flex-row'>
 <view class="h5 margin-left-40 margin-top-5">累计收入</view>
 <view class="txt-white h5 txt-bold margin-top-5" >+￥12350.22</view>
-<image bindtap='wdsh' data-name="tixian" class="icon-48  margin-left-140 padding-right-20 padding-left-40" src='{{uploadpath}}resource/{{res.a14}}'>
+<image bindtap='wdsh' data-name="tixian" class="icon-48  margin-left-155 padding-right-20 padding-left-40" src='{{uploadpath}}resource/{{res.a14}}'>
 </image>
 </view>
 </view>

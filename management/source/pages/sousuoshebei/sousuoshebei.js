@@ -1,4 +1,4 @@
-// pages/dlhz/dlhz.js
+// pages/sousuoshebei/sousuoshebei.js
 Page({
 
   /**

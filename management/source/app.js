@@ -1,5 +1,4 @@
 //app.js
-var mta = require('mta_wechat_sdk/mta_analysis.js')
 
 import {
   AppBase

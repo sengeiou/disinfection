@@ -7,7 +7,7 @@ import { ApiUtil } from "apis/apiutil.js";
 import { InstApi } from "apis/inst.api.js";
 import { MemberApi } from "apis/member.api";
 import { WechatApi } from "apis/wechat.api";
-var mta = require('mta_wechat_sdk/mta_analysis.js')
+
 export class AppBase {
   static CITYID = 440300;
   static CITYNAME = "深圳市";
@@ -245,7 +245,7 @@ export class AppBase {
         var memberapi = new MemberApi();
 
         var that = this;
-        memberapi.info({}, (info) => {
+        memberapi.info({a:"a"}, (info) => {
           this.Base.setMyData({ memberinfo: info }); 
           
           this.Base.setMyData({

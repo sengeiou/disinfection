@@ -12,8 +12,8 @@ page{
 .margin-top-70{
   margin-top:70rpx;
 }
-.margin-left-140{
-  margin-left:140rpx;
+.margin-left-155{
+  margin-left:155rpx;
 }
 .icon-48{
   height:48rpx;
