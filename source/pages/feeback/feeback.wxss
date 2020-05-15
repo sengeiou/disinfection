@@ -3,7 +3,7 @@
   bottom: 72rpx;
   width:100vw;
 }
-.btn{
+.en{
   width:276rpx;
   height:64rpx;
   border-radius:40rpx;

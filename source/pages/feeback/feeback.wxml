@@ -6,7 +6,7 @@
 
 <view class='flex-row flex-center margin-top-30'>
   <view class='flex-1'></view>
-  <textarea style='border:2rpx solid #ccc;width:664rpx;height:390rpx' class='radius-10 lan line-height-44 h5 gao' bindinput='shuru'  maxlength='250'></textarea>
+  <textarea style='width:664rpx;height:340rpx' class='radius-10 lan line-height-44 h5 gao' bindinput='shuru'  maxlength='250'></textarea>
   
   <view class='flex-1'></view>
 </view>
@@ -14,17 +14,17 @@
 <view class='text-right margin-right-20'>{{zushu}}/250</view>
 
 <view class='flex-row margin-top margin-left-30 '>
-  <view class='h5'>联系方式（选填）</view>
+    <view class='h5'>联系方式（选填）</view>
+  </view>
+<view class='flex-row flex-center padding-20'>
+ <view class='flex-1'></view>
+ <input style='width:96%' class='radius-10 lan' bindinput='lxfs' ></input>
+  <view class='flex-1'></view>
 </view>
 
-<view class='flex-row flex-center margin-top-10'>
-  <view class='flex-1'></view>
-  <input style='border:2rpx solid #ccc;width:96%' class='radius-10 lan margin-20' bindinput='lxfs' ></input>
-  <view class='flex-1'></view>
-</view>
 
 <view class='di flex-row flex-center'>
   <view class='flex-1'></view>
-  <view class=' txt-white text-center btn padding-top-10 {{aa==true?"active":"bg-gray"}}' bindtap='click' id='true'>提交</view>
+  <view class=' txt-white text-center en padding-top-10 {{aa==true?"active":"bg-gray"}}' bindtap='click' id='true'>提交</view>
   <view class='flex-1'></view>
 </view>

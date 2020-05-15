@@ -24,14 +24,17 @@ class Content extends AppBase {
     var that = this;
     var instapi = new InstApi;
     var memberapi = new MemberApi;
-
+var arr=[];
     memberapi.xuanxianglist({ orderby: 'r_main.seq' }, (xuanxianglist) => {
       this.Base.setMyData({ xuanxianglist })
 
     })
 
     memberapi.zhengshu({}, (zhengshu) => {
-      this.Base.setMyData({ zhengshu })
+      for(var i=0;i<zhengshu.length;i++){
+        arr.push('https://alioss.app-link.org/alucard263096/disinfection/zhengshu/'+zhengshu[i].wenjian) 
+      }
+      this.Base.setMyData({ zhengshu, arr})
     })
 
     instapi.indexbanner({ orderby: 'r_main.seq' }, (indexbanner) => {
@@ -200,6 +203,13 @@ class Content extends AppBase {
     })
 
   }
+
+  showmimg(e){
+    var arr = this.Base.getMyData().arr;
+    var imgs=e.currentTarget.id;
+    this.viewPhoto(arr, imgs)
+
+  }
 }
 var content = new Content();
 var body = content.generateBodyJson();
@@ -212,5 +222,6 @@ body.getUserInfo = content.getUserInfo;
 body.feeback = content.feeback;
 body.getorder = content.getorder;
 body.minReturn=content.minReturn;
-body.jieshuxiaodu=content.jieshuxiaodu;
+body.jieshuxiaodu = content.jieshuxiaodu; 
+body.showmimg = content.showmimg;
 Page(body)
