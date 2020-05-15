@@ -5,24 +5,18 @@ import { WechatApi } from "../apis/wechat.api";
 import { ApiConfig } from "apis/apiconfig.js";
 import { ApiUtil } from "apis/apiutil.js";
 import { InstApi } from "apis/inst.api.js";
-import { MemberApi } from "apis/member.api";
-import { WechatApi } from "apis/wechat.api";
-var mta = require('mta_wechat_sdk/mta_analysis.js')
+import { OwnerApi } from "apis/owner.api.js";
+
 export class AppBase {
-  static CITYID = 440300;
-  static CITYNAME = "深圳市";
-  static CITYSET = false;
-  static BRANDAPPLE = 12;
   static QQMAPKEY = "IDVBZ-TSAKD-TXG43-H442I-74KVK-6LFF5";
-  static UserInfo = {};
   static InstInfo = {};
   unicode = "disinfection";
-  static Scene = 1001;
-  needauth = false;
-  phone=null;
+  needauth = true;
   pagetitle = null;
-  app = null;
-  options = null;
+
+  OwnerInfo={};
+
+
   data = {
     uploadpath: ApiConfig.GetUploadPath(),
     copyright: { 
@@ -165,17 +159,33 @@ export class AppBase {
       this.Base.setMyData({ res });
     });
 
+
+    var token=wx.getStorageSync("token");
+    if(token==""){
+
+      if (this.Base.needauth == true) {
+        wx.redirectTo({
+          url: '/pages/tuichudenglu/tuichudenglu',
+        })
+        return;
+      }
+    }
     
+    ApiConfig.SetToken(token);
 
-   
-
+    var ownerApi=new OwnerApi();
+    ownerApi.info({},(info)=>{
+      if (info == null && this.Base.needauth == true){
+        wx.redirectTo({
+          url: '/pages/tuichudenglu/tuichudenglu',
+        })
+      }
+      this.Base.setMyData({ OwnerInfo:info});
+    });
+    
+    that.onMyShow();
   }
   
-  loadtabtype() {
-    console.log("loadtabtype");
-    var memberapi = new MemberApi();
-    memberapi.update(AppBase.UserInfo, () => {});
-  }
 
   onMyShow() {
     console.log("onMyShow");
@@ -234,44 +244,7 @@ export class AppBase {
 
     });
   }
-  phonenoCallback(mobile, e,result) {
-      
-    if (result == '0') {
-      var memberapi = new MemberApi();
-      memberapi.updateshouji({
-        avatarUrl: mobile
-      }, (updatetouxiang) => {
-
-        var memberapi = new MemberApi();
-
-        var that = this;
-        memberapi.info({}, (info) => {
-          this.Base.setMyData({ memberinfo: info }); 
-          
-          this.Base.setMyData({
-            phone: mobile
-          });
-          
-          wx.showToast({
-            title: '获取成功',
-            icon: 'none'
-          })
-
-        });
-
-
-        
-
-
-
-        //this.checkPermission();
-      });
-    } else {
-      console.log('不出来')
-    }
-
-  }
-
+  
   viewPhoto(e) {
     var img = e.currentTarget.id;
     console.log(img);
@@ -749,18 +722,6 @@ export class AppBase {
     console.log(json);
   }
 
-  checkRealname(callback) {
-    var memberapi = new MemberApi();
-    memberapi.checkrealname({}, (ret) => {
-      if (ret == false) {
-        wx.navigateTo({
-          url: '/pages/signup/signup',
-        })
-      } else {
-        callback();
-      }
-    });
-  }
 
   download(url, callback, open = false) {
     wx.downloadFile({
