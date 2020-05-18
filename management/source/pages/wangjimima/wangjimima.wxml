@@ -1,21 +1,23 @@
-<view class='f-32 txt-bold text-center margin-top-270'style="color:#091C2B;">重置密码</view>
+<view class='f-32 txt-bold text-center margin-top-270' style="color:#091C2B;">重置密码</view>
 <view class=' mianji margin-left-80 margin-right-80 margin-top-60'>
-        <view class='f-32 margin-left-46 margin-top-28 dl-color'>输入手机号</view>
-        </view>
-        <view class='flex-row'>
-         <view class=' mianji margin-left-80 margin-top flex-1 margin-right-26'>
-        <view class='f-32 margin-left-46 margin-top-28 dl-color'>动态验证码</view>
-        </view>
-        <view class='hq-mianji margin-right-80 padding-left-50 padding-right-50 padding-top-14 margin-top-54'>
-        <view class='f-32 txt-white txt-center'>获取</view>
-        </view>
-        </view>
-        <view class='xyh-mianji margin-top-60 margin-left-80 margin-right-80'>
-<view class="f-32 text-center margin-top-28 " style='color:#A5A9B1;'>设置新的密码</view> 
+  <!-- <view class='f-32 margin-left-46 margin-top-28 dl-color'>输入手机号</view> -->
+  <input type="text" placeholder="输入手机号" bindinput="mobile" class="margin-left-46 margin-top-28"></input>
 </view>
-        <view data-name='cz' bindtap='chongzhi'>
-        <view class='dl-mianji margin-left-80 margin-top-100 margin-right-80 margin-bottom-268'>
-        <view class='txt-white text-center f-32 margin-top-28'>重置 
-        </view>   
-        </view>
-        </view>
+<view class='flex-row'>
+  <view class=' mianji margin-left-80 margin-top flex-1 margin-right-26'>
+    <!-- <view class='f-32 margin-left-46 margin-top-28 dl-color'>动态验证码</view> -->
+    <input type="text" name="yanzhengma" bindinput='yanzhengma' placeholder="动态验证码" class="margin-left-46 margin-top-28"></input>
+  </view>
+<!-- wx:if="{{send==false}}" -->
+  <view bindtap="sendmessage" class=" hq-mianji margin-right-80 padding-left-50 padding-right-50 margin-top-54" wx:if="{{send==false}}" >
+    <view class="txt-white margin-top-5" wx:if="{{send==false}}">获取</view>
+      </view>
+    <view class="txt-black  margin-top-70" wx:if="{{reminder>0}}">等待{{reminder}}秒</view>
+    <view class="  margin-top-70" wx:if="{{reminder<=0 && send}}" bindtap="sendmessage">重新发送验证码</view>
+</view>
+<view class='xyh-mianji margin-top-60 margin-left-80 margin-right-80'>
+ <input type="password" placeholder="设置新的密码" bindinput="pwd" class="margin-top-28 margin-left-46"></input>
+</view>
+<view data-name='cz' bindtap='chongzhi'>
+  <image class="dl-mianji margin-left-40 margin-top-100 margin-right-80 margin-bottom-268" src="{{uploadpath}}resource/{{res.a19}}"></image>
+</view>
