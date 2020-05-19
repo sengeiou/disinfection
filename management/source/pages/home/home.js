@@ -8,7 +8,7 @@ import { OwnerApi } from "../../apis/owner.api.js";
 class Content extends AppBase {
   constructor() {
     super();
-    // this.needauth = false;
+    //  this.needauth = false;
   }
   setPageTitle() {
     wx.setNavigationBarTitle({

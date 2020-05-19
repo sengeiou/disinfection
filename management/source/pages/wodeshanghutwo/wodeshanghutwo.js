@@ -4,6 +4,7 @@ import { ApiConfig } from "../../apis/apiconfig";
 import { InstApi } from "../../apis/inst.api.js";
 import { ApiUtil } from "../../apis/apiutil";
 import { MemberApi } from "../../apis/member.api.js";
+import { OwnerApi } from "../../apis/owner.api.js";
 class Content extends AppBase {
   constructor() {
     super();
@@ -18,9 +19,18 @@ class Content extends AppBase {
     this.Base.Page = this;
     //options.id=5;
     super.onLoad(options);
+   // this.Base.setMyData({ iiikkkmkmk:"sdrkfpsldkfl;sdkr;fpl"})
+  
   }
   onMyShow() {
     var that = this;
+    var api=new OwnerApi();
+    api.childlist({
+    },(ret=>{
+      console.log(ret,"ret");
+        this.Base.setMyData({list: ret})
+    }))
+    
   }
   glsq(e) {
     var name = e.currentTarget.dataset.name;
@@ -34,14 +44,8 @@ class Content extends AppBase {
         url: '/pages/tianjiashanghu/tianjiashanghu',
       })
     }
-
-
-  }
-  
+  } 
 }
-
-
-
 var content = new Content();
 var body = content.generateBodyJson();
 body.onLoad = content.onLoad;

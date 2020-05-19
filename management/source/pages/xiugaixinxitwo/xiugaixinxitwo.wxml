@@ -8,6 +8,6 @@
 <input type="text" bindinput="mobile" value="{{OwnerInfo.mobile}}" placeholder-style="t-color" placeholder="请输入" class="padding-top-40 padding-left-40 padding-bottom-40"></input>
 </view>
 <view class="fixbottom">
-<image bindtap="back" data-name="backone" src='{{uploadpath}}resource/{{res.a3}}' class="margin-right-40 margin-left-40 margin-bottom-80 icon-96"></image>
+<image bindtap="querentianjia" data-name="backone" src='{{uploadpath}}resource/{{res.a2}}' class="margin-right-40 margin-left-40 margin-bottom-80 icon-96"></image>
 </view>
 

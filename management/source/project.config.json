@@ -68,6 +68,111 @@
 					"id": -1,
 					"name": "修改商户",
 					"pathName": "pages/xiugaiyonghuxinxi/xiugaiyonghuxinxi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "wjmm",
+					"pathName": "pages/wangjimima/wangjimima",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tuichudenglu/tuichudenglu",
+					"pathName": "pages/tuichudenglu/tuichudenglu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/chongzhi/chongzhi",
+					"pathName": "pages/chongzhi/chongzhi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "关于我们",
+					"pathName": "pages/guanyuwomen/guanyuwomen",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "修改手机授权",
+					"pathName": "pages/xiugaixinxi/xiugaixinxi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "问题反馈",
+					"pathName": "pages/wentifankui/wentifankui",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "添加设备",
+					"pathName": "pages/zengjiaxinxi/zengjiaxinxi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wodeshanghutwo/wodeshanghutwo",
+					"pathName": "pages/wodeshanghutwo/wodeshanghutwo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/xiugaixinxi/xiugaixinxi",
+					"pathName": "pages/xiugaixinxi/xiugaixinxi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "shanghu",
+					"pathName": "pages/wodeshanghutwo/wodeshanghutwo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tianjiashanghu/tianjiashanghu",
+					"pathName": "pages/tianjiashanghu/tianjiashanghu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tianjiashanghu/tianjiashanghu",
+					"pathName": "pages/tianjiashanghu/tianjiashanghu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/xiugaixinxitwo/xiugaixinxitwo",
+					"pathName": "pages/xiugaixinxitwo/xiugaixinxitwo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/zengjiaxinxi/zengjiaxinxi",
+					"pathName": "pages/zengjiaxinxi/zengjiaxinxi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wodeshanghutwo/wodeshanghutwo",
+					"pathName": "pages/wodeshanghutwo/wodeshanghutwo",
 					"scene": null
 				}
 			]

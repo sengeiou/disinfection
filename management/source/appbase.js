@@ -127,6 +127,7 @@ export class AppBase {
     ApiConfig.SetUnicode(this.Base.unicode);
 
 
+
   }
 
   gotoOpenUserInfoSetting() {
@@ -158,6 +159,10 @@ export class AppBase {
     var instapi = new InstApi();
     instapi.resources({}, (res) => {
       this.Base.setMyData({ res });
+    });
+    instapi.info({}, (InstInfo) => {
+      console.log(InstInfo,"wode")
+      this.Base.setMyData({ InstInfo });
     });
 
 

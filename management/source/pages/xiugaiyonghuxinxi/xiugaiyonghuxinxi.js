@@ -43,7 +43,6 @@ class Content extends AppBase {
      this.Base.setMyData({
              name: e.detail.value   
      })
-
   }
   shopname(e) { 
     this.Base.setMyData({

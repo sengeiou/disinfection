@@ -4,7 +4,7 @@ import { ApiConfig } from "../../apis/apiconfig";
 import { InstApi } from "../../apis/inst.api.js";
 import { ApiUtil } from "../../apis/apiutil";
 import { MemberApi } from "../../apis/member.api.js";
-import { OwnerApi } from"../../apis/owner.api.js";
+import { OwnerApi } from "../../apis/owner.api.js";
 class Content extends AppBase {
   constructor() {
     super();
@@ -15,9 +15,9 @@ class Content extends AppBase {
       title: '修改信息',
     });
   }
-  mobile(e){
+  mobile(e) {
     this.Base.setMyData({
-     mobile: e.detail.value
+      mobile: e.detail.value
     })
   }
   onLoad(options) {
@@ -27,33 +27,34 @@ class Content extends AppBase {
   }
   onMyShow() {
     var that = this;
-    var api=new OwnerApi();
+    var api = new OwnerApi();
     ownerApi.info({}, (info) => {
-      var mobile=info.mobile;
+      var mobile = info.mobile;
       this.Base.setMyData({
         mobile
       })
-      // console.log(info, "阿");
+       console.log(info, "wode");
     });
 
   }
-  back() {
-    var mobile=this.Base.getMyData().mobile;
-    var that=this;
-    var api=new OwnerApi();
-    // console.log(mobile); return;
-    api.updatemobile({
-      mobile:mobile
+  querentianjia() {
+    var mobile = this.Base.getMyData().mobile;
+    var that = this;
+    var api = new OwnerApi();
+    api.add({
+      name: this.Base.options.name,
+      shopname: this.Base.options.shopname,
+     shopaddress: this.Base.options.shopaddress,
+      mobile: mobile
     }, (ret) => {
-      console.log(ret, 'ret')
+      // console.log(ret, 'ret')
       if (ret.code == "0") {
-        wx.setStorageSync("token", ret.return);
         wx.showToast({
-        title: '已保存',
-        icon: 'none'
-      })
+          title: '已添加',
+          icon: 'none'
+        })
         wx.navigateBack({
-          })
+        })
       } else {
         wx.showToast({
           title: ret.return,
@@ -63,13 +64,13 @@ class Content extends AppBase {
     })
   }
 }
-    
+
 
 
 var content = new Content();
 var body = content.generateBodyJson();
 body.onLoad = content.onLoad;
 body.onMyShow = content.onMyShow;
-body.back = content.back;
-body.mobile=content.mobile;
+body.querentianjia = content.querentianjia;
+body.mobile = content.mobile;
 Page(body)

@@ -27,7 +27,8 @@
     "pages/sousuoshebei/sousuoshebei",
     "pages/shanghuguanli/shanghuguanli",
     "pages/dingdanxiangqing/dingdanxiangqing",
-    "pages/zongshu/zongshu"
+    "pages/zongshu/zongshu",
+    "pages/xiugaixinxitwo/xiugaixinxitwo"
   ],
   "permission": {
     "scope.userLocation": {
