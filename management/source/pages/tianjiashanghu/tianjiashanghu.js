@@ -40,7 +40,6 @@ class Content extends AppBase {
     })
   }
   querentianjia(e) {
-
      var name=this.Base.getMyData().name;
      var shopname=this.Base.getMyData().shopname;
     var shopaddress= this.Base.getMyData().shopaddress;

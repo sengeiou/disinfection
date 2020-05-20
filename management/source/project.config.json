@@ -173,6 +173,83 @@
 					"id": -1,
 					"name": "pages/wodeshanghutwo/wodeshanghutwo",
 					"pathName": "pages/wodeshanghutwo/wodeshanghutwo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/shanghuguanli/shanghuguanli",
+					"pathName": "pages/shanghuguanli/shanghuguanli",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/xiugaiyonghuxinxi/xiugaiyonghuxinxi",
+					"pathName": "pages/xiugaiyonghuxinxi/xiugaiyonghuxinxi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/xiugaiyonghuxinxi/xiugaiyonghuxinxi",
+					"pathName": "pages/xiugaiyonghuxinxi/xiugaiyonghuxinxi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/xiugaiyonghuxinxi/xiugaiyonghuxinxi",
+					"pathName": "pages/xiugaiyonghuxinxi/xiugaiyonghuxinxi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/xiugaiyonghuxinxi/xiugaiyonghuxinxi",
+					"pathName": "pages/xiugaiyonghuxinxi/xiugaiyonghuxinxi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/xiugaiyonghuxinxi/xiugaiyonghuxinxi",
+					"pathName": "pages/xiugaiyonghuxinxi/xiugaiyonghuxinxi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/xiugaiyonghuxinxi/xiugaiyonghuxinxi",
+					"pathName": "pages/xiugaiyonghuxinxi/xiugaiyonghuxinxi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wodeshanghu/wodeshanghu",
+					"pathName": "pages/wodeshanghu/wodeshanghu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tixian/tixian",
+					"pathName": "pages/tixian/tixian",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tixianjilu/tixianjilu",
+					"pathName": "pages/tixianjilu/tixianjilu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tixianjilu/tixianjilu",
+					"pathName": "pages/tixianjilu/tixianjilu",
 					"scene": null
 				}
 			]

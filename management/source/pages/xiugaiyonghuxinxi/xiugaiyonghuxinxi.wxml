@@ -3,17 +3,17 @@
 商户信息卡</view>
 <view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' >
 <view class='t-color padding-top-40 f-32 padding-left-40 padding-bottom-40'>客户名称：</view>
- <input class="h5 padding-top-40 padding-left-40 padding-bottom-40" placeholder="请输入" bindinput="name" value="{{OwnerInfo.name}}" placeholder-style="color:#CCCCCC">
+ <input class="h5 padding-top-40 padding-left-40 padding-bottom-40" placeholder="请输入客户名称" value="{{list.name}}" bindinput="name"  placeholder-style="color:#CCCCCC">
  </input>
 </view>
 <view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' >
 <view class='t-color padding-top-40 f-32 padding-left-40 padding-bottom-40'>商户名称：</view>
-<input class="h5 padding-top-40 padding-left-40 padding-bottom-40" placeholder="请输入" bindinput="shopname" value="{{OwnerInfo.shopname}}" placeholder-style="color:#CCCCCC">
+<input class="h5 padding-top-40 padding-left-40 padding-bottom-40" placeholder="请输入商户名称" bindinput="shopname" value="{{list.shopname}}" placeholder-style="color:#CCCCCC">
  </input>
 </view>
 <view class='flex-row bg-white margin-left-40 margin-right-40 border-radius-10 bj-shadow' >
 <view class='t-color padding-top-40 f-32 padding-left-40 padding-bottom-40'>商户地址：</view>
-<input class="h5 padding-top-40 padding-left-40 padding-bottom-40" placeholder="请输入" bindinput="shopaddress" value="{{OwnerInfo.shopaddress}}" placeholder-style="color:#CCCCCC">
+<input class="h5 padding-top-40 padding-left-40 padding-bottom-40" placeholder="请输入商户地址" bindinput="shopaddress" value="{{list.shopaddress}}" placeholder-style="color:#CCCCCC">
  </input>
 </view>
 <view class="fixbottom">

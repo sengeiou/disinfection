@@ -4,7 +4,7 @@
 <view class="txt-white h2 margin-left-40 margin-bottom-40 txt-bold">￥{{OwnerInfo.balance}}</view>
 <view class='flex-row'>
 <view class="h5 margin-left-40">提现最低额度为10元</view>
-<view bindtap='wdsp' data-name="tixianjilu" class="text-center txt-white h5 margin-left-188 daxiao padding-right-30 padding-left-30 padding-top-5">提现记录
+<view bindtap='tixianjilu'  class="text-center txt-white h5 margin-left-188 daxiao padding-right-30 padding-left-30 padding-top-5">提现记录
 </view>
 </view>
 </view>
@@ -13,7 +13,8 @@
 <view class=' margin-right-40 h5'>全部</view>
 </view>
 <view class='bg-size margin-left-40 margin-right-40 margin-top'>
-<view class=' txt-bold t-color2 padding-bottom-24 padding-top-24 padding-left-40'>¥{{OwnerInfo.balance}}</view>
+<!-- <view class=' txt-bold t-color2 padding-bottom-24 padding-top-24 padding-left-40'>¥{{OwnerInfo.balance}}</view> -->
+   <input class='txt-bold t-color2 padding-bottom-24 padding-top-24 padding-left-40' bindinput="amount" type="digit" placeholder-class='pc' value='{{amount}}' name="aa" placeholder='请输入'></input>
 </view>
 <view class='flex-row margin-left-40 margin-top'>
 <view class='flex-1 t-color txt-bold f-32'>提现须知</view> 
@@ -26,7 +27,7 @@
    延迟到账，请耐心等待。</view>
 </view>
 <view class="fixbottom">
-<view bindtap='wdsp' data-name="lijitixian" class='button txt-white f-32 text-center margin-right-40 margin-left-40 margin-bottom-80 padding-top-26 padding-bottom-26'>
+<view bindtap='lijitixian' class='button txt-white f-32 text-center margin-right-40 margin-left-40 margin-bottom-80 padding-top-26 padding-bottom-26'>
 立即提现
 </view>
 </view>

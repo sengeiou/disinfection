@@ -28,12 +28,17 @@ class Content extends AppBase {
   onMyShow() {
     var that = this;
     var api=new OwnerApi();
-    ownerApi.info({}, (info) => {
-      var mobile=info.mobile;
+    api.info({
+      owner_id: this.Base.options.owner_id
+    }, (ret) => {  
+      console.log(ret, "看看先");
+      var mobile=ret.mobile;
+      // console.log(mobile)
+      // return;
+      this.Base.setMyData({ list: ret })
       this.Base.setMyData({
         mobile
       })
-      // console.log(info, "阿");
     });
 
   }
@@ -41,8 +46,8 @@ class Content extends AppBase {
     var mobile=this.Base.getMyData().mobile;
     var that=this;
     var api=new OwnerApi();
-    // console.log(mobile); return;
     api.updatemobile({
+      owner_id:this.Base.options.owner_id,
       mobile:mobile
     }, (ret) => {
       console.log(ret, 'ret')

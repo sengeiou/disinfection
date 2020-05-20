@@ -1,30 +1,12 @@
+<view  wx:for="{{list}}">
 <view data-name='zaixiankefu' bindtap='todetails' class='flex-row'>
-    <view class='txt-black margin-top margin-left-30 flex-1 size-color'>发起提现200元
+  <view class='txt-black margin-top margin-left-30 flex-1 size-color'>发起提现{{item.amount}}元
   </view>
- <view class='margin-right-60 margin-top'>
-  <image src='{{uploadpath}}resource/{{res.jxz}}' class='padding-left-20 icon-116'></image>
-    </view>
-    </view>
-  <view class='h6 margin-left-30'>2019-01-01  14：25</view>
-   <view class='border margin-left-30 margin-right-30'></view>
-    <view class='margin-left-30 margin-left-40 margin-right-40'></view>
-    <view data-name='wentifankui' bindtap='todetails' class='flex-row'>
-    <view class='txt-black margin-top margin-left-30 flex-1 size-color'>发起提现200元
+  <view class='margin-right-60 margin-top'>
+    <image src='{{uploadpath}}resource/{{item.status=="A"?res.jxz:res.ywc}}' class='padding-left-20 icon-116'></image>
+  </view>
 </view>
- <view class='margin-right-60 margin-top'>
-  <image src='{{uploadpath}}resource/{{res.ywc}}' class='padding-left-20 icon-116'></image>
-    </view>
-        </view>
-         <view class='h6 margin-left-30'>2019-01-01  14：25</view>
-              <view class='border margin-left-30 margin-right-30'></view>
-         <view data-name='wentifankui' bindtap='todetails' class='flex-row'>
-    <view class='txt-black margin-top margin-left-30 flex-1 size-color'>发起提现200元
+<view class='h6 margin-left-30'>{{item.addtime}}</view>
+<view class='border margin-left-30 margin-right-30'></view>
+<view class='margin-left-30 margin-left-40 margin-right-40'></view>
 </view>
- <view class='margin-right-60 margin-top'>
-  <image src='{{uploadpath}}resource/{{res.ywc}}' class='padding-left-20 icon-116'></image>
-    </view>
-    </view>
- <view class='h6 margin-left-30'>2019-01-01  14：25</view>
-     <view class='border margin-left-30 margin-right-30'></view>
-     <view class="h5 w-color3 text-center margin-top-30">没有更多了</view>
-

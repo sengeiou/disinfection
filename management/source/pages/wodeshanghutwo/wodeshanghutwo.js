@@ -27,16 +27,19 @@ class Content extends AppBase {
     var api=new OwnerApi();
     api.childlist({
     },(ret=>{
-      console.log(ret,"ret");
+      console.log(ret,"看看");
         this.Base.setMyData({list: ret})
     }))
     
   }
   glsq(e) {
+    console.log(e)
     var name = e.currentTarget.dataset.name;
+    var id=e.currentTarget.id;
+    // return
     if (name == "guanlishouquan") {
       wx.navigateTo({
-        url: '/pages/shanghuguanli/shanghuguanli',
+        url: '/pages/shanghuguanli/shanghuguanli?owner_id='+id,
       })
     }
     if (name == "tianjiashanghu") {

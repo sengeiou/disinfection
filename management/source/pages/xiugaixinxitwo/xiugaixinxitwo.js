@@ -53,10 +53,12 @@ class Content extends AppBase {
           title: '已添加',
           icon: 'none'
         })
-        wx.navigateBack({
+        wx.navigateTo({
+          url: '/pages/wodeshanghutwo/wodeshanghutwo',
+        })({
         })
       } else {
-        wx.showToast({
+        wx.showToast({ 
           title: ret.return,
           icon: 'none'
         })

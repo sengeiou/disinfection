@@ -4,6 +4,7 @@ import { ApiConfig } from "../../apis/apiconfig";
 import { InstApi } from "../../apis/inst.api.js";
 import { ApiUtil } from "../../apis/apiutil";
 import { MemberApi } from "../../apis/member.api.js";
+import { OwnerApi } from "../../apis/owner.api.js";
 class Content extends AppBase {
   constructor() {
     super();
@@ -18,36 +19,40 @@ class Content extends AppBase {
     this.Base.Page = this;
     //options.id=5;
     super.onLoad(options);
-    var list=[
-      {id:1,name:"设备编号",no:"SN000004"},
+    var l=[
+      {id:1,name:"设备编号"},
       { id: 1, name: "设备编号"},
-      { id: 2, name: "设备编号"},
-      { id: 3, name: "设备编号"},
-      { id: 4, name: "设备编号"},
-      { id: 5, name: "设备编号"},
-      { id: 6, name: "设备编号"},
-      { id: 7, name: "设备编号"},
-      { id: 8, name: "设备编号"},
-      { id: 9, name: "设备编号"},
-      { id:10, name: "设备编号"},
+
     ];
-    this.Base.setMyData({ list })
+    this.Base.setMyData({ l })
   }
   onMyShow() {
     var that = this;
+    var api=new OwnerApi();
+    api.info({
+      owner_id:this.Base.options.owner_id,
+
+    }, (ret => {
+      console.log(ret, "看看");
+      this.Base.setMyData({ list: ret })
+    }))
+
+
+  }
+  xiugaiyonghu(e){
+    var id=e.currentTarget.id;
+    wx.navigateTo({
+      url: '/pages/xiugaiyonghuxinxi/xiugaiyonghuxinxi?owner_id='+id,
+    })
+  }
+  xiugaishouji(e){
+    var id=e.currentTarget.id;
+    wx.navigateTo({
+      url: '/pages/xiugaixinxi/xiugaixinxi?owner_id='+id,
+    })
   }
   xgxx(e) {
     var name = e.currentTarget.dataset.name;
-    if (name == "xiugaiyonghu") {
-      wx.navigateTo({
-        url: '/pages/xiugaiyonghuxinxi/xiugaiyonghuxinxi',
-      })
-    }
-    if(name=="xiugaishouji"){
-      wx.navigateTo({
-        url: '/pages/xiugaixinxi/xiugaixinxi',
-      })
-    }
     if (name == "zengjiaxinxi") {
       wx.navigateTo({
         url: '/pages/zengjiaxinxi/zengjiaxinxi',
@@ -56,6 +61,17 @@ class Content extends AppBase {
 
 
   }
+  yichu(e){
+    var api=new OwnerApi();
+    api.owndevice({    
+      owner_id:this.Base.options.owner_id,
+    },(res)=>{
+      wx.showToast({
+        title: '已删除',
+        icon: 'none'
+    })
+  })
+}
 }
 
 
@@ -65,4 +81,7 @@ var body = content.generateBodyJson();
 body.onLoad = content.onLoad;
 body.onMyShow = content.onMyShow;
 body.xgxx = content.xgxx;
+body.xiugaiyonghu = content.xiugaiyonghu;
+body.xiugaishouji = content.xiugaishouji;
+body.yichu=content.yichu;
 Page(body)

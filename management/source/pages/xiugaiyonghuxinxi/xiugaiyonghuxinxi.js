@@ -22,18 +22,33 @@ class Content extends AppBase {
   }
   onMyShow() {
     var that = this;
-    var ownerApi = new OwnerApi();
-    ownerApi.info({}, (info) => {
-      var name=info.name;
-      var shopname = info.shopname;
-      var shopaddress= info.shopaddress;
-      this.Base.setMyData({
-        name,shopname,shopaddress
-      })
+    var api = new OwnerApi();
+    // api.childlist({
+    // }, (childlist) => {
+    //   owner_id: this.Base.options.owner_id;
+    //   var name = childlist.name;
+    //   var shopname = childlist.shopname;
+    //   var shopaddress = childlist.shopaddress;
+    //   this.Base.setMyData({
+    //     name,shopname,shopaddress
+    //   })
 
-      console.log(info, "阿达");
-      //this.Base.setMyData({ OwnerInfo: info });
-    });
+    //   console.log(childlist, "阿达");
+    //   return;
+    //   //this.Base.setMyData({ OwnerInfo: info });
+    // });
+    api.info({
+      owner_id: this.Base.options.owner_id,
+    }, (ret => {
+      console.log(ret, "看看");
+     var name = ret.name;
+     var shopname = ret.shopname;
+     var shopaddress = ret.shopaddress;
+      this.Base.setMyData({ list: ret })
+        this.Base.setMyData({
+         name,shopname,shopaddress
+     })
+    }))
 
     
   
@@ -62,6 +77,7 @@ class Content extends AppBase {
     var that = this;
     var api = new OwnerApi;
     api.baseupdate({
+      owner_id: this.Base.options.owner_id,
       name: name,
       shopname: shopname,
       shopaddress:shopaddress
