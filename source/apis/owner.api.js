@@ -1,15 +1,15 @@
 /*******使用方法，下面两句复制到page的js文件的头部
 
 import { ApiConfig } from '../../apis/apiconfig';
-import { InstApi } from '../../apis/member.api';
+import { InstApi } from '../../apis/owner.api';
 
-var memberApi=new MemberApi();
+var ownerApi=new OwnerApi();
 *******/
 import { ApiConfig } from 'apiconfig';
-export class MemberApi{
+export class OwnerApi{
 
 
-    aboutus(json, callback, showLoading = true) {
+    activeaccount(json, callback, showLoading = true) {
 
         if (showLoading)
             ApiConfig.ShowLoading();
@@ -18,7 +18,7 @@ export class MemberApi{
         console.log(header);
         console.log(json);
         wx.request({
-            url: ApiConfig.GetApiUrl() + 'member/aboutus',
+            url: ApiConfig.GetApiUrl() + 'owner/activeaccount',
             data: json,
             method: 'POST',
             dataType: 'json',
@@ -41,7 +41,7 @@ export class MemberApi{
         })
     }
 
-    fankui(json, callback, showLoading = true) {
+    add(json, callback, showLoading = true) {
 
         if (showLoading)
             ApiConfig.ShowLoading();
@@ -50,7 +50,7 @@ export class MemberApi{
         console.log(header);
         console.log(json);
         wx.request({
-            url: ApiConfig.GetApiUrl() + 'member/fankui',
+            url: ApiConfig.GetApiUrl() + 'owner/add',
             data: json,
             method: 'POST',
             dataType: 'json',
@@ -73,7 +73,7 @@ export class MemberApi{
         })
     }
 
-    getuserinfo(json, callback, showLoading = true) {
+    baseupdate(json, callback, showLoading = true) {
 
         if (showLoading)
             ApiConfig.ShowLoading();
@@ -82,7 +82,135 @@ export class MemberApi{
         console.log(header);
         console.log(json);
         wx.request({
-            url: ApiConfig.GetApiUrl() + 'member/getuserinfo',
+            url: ApiConfig.GetApiUrl() + 'owner/baseupdate',
+            data: json,
+            method: 'POST',
+            dataType: 'json',
+            header: header,
+            success: function (res) {
+                if (callback != null) {
+                    callback(res.data);
+                }
+            },
+            fail: function (res) {
+                console.log(res);
+                callback(false);
+            },
+            complete: function (res) {
+                console.log(res);
+            
+                if (showLoading)
+                    ApiConfig.CloseLoading();
+            }
+        })
+    }
+
+    binddevice(json, callback, showLoading = true) {
+
+        if (showLoading)
+            ApiConfig.ShowLoading();
+
+        var header = ApiConfig.GetHeader();
+        console.log(header);
+        console.log(json);
+        wx.request({
+            url: ApiConfig.GetApiUrl() + 'owner/binddevice',
+            data: json,
+            method: 'POST',
+            dataType: 'json',
+            header: header,
+            success: function (res) {
+                if (callback != null) {
+                    callback(res.data);
+                }
+            },
+            fail: function (res) {
+                console.log(res);
+                callback(false);
+            },
+            complete: function (res) {
+                console.log(res);
+            
+                if (showLoading)
+                    ApiConfig.CloseLoading();
+            }
+        })
+    }
+
+    canchoosedevicelist(json, callback, showLoading = true) {
+
+        if (showLoading)
+            ApiConfig.ShowLoading();
+
+        var header = ApiConfig.GetHeader();
+        console.log(header);
+        console.log(json);
+        wx.request({
+            url: ApiConfig.GetApiUrl() + 'owner/canchoosedevicelist',
+            data: json,
+            method: 'POST',
+            dataType: 'json',
+            header: header,
+            success: function (res) {
+                if (callback != null) {
+                    callback(res.data);
+                }
+            },
+            fail: function (res) {
+                console.log(res);
+                callback(false);
+            },
+            complete: function (res) {
+                console.log(res);
+            
+                if (showLoading)
+                    ApiConfig.CloseLoading();
+            }
+        })
+    }
+
+    childlist(json, callback, showLoading = true) {
+
+        if (showLoading)
+            ApiConfig.ShowLoading();
+
+        var header = ApiConfig.GetHeader();
+        console.log(header);
+        console.log(json);
+        wx.request({
+            url: ApiConfig.GetApiUrl() + 'owner/childlist',
+            data: json,
+            method: 'POST',
+            dataType: 'json',
+            header: header,
+            success: function (res) {
+                if (callback != null) {
+                    callback(res.data);
+                }
+            },
+            fail: function (res) {
+                console.log(res);
+                callback(false);
+            },
+            complete: function (res) {
+                console.log(res);
+            
+                if (showLoading)
+                    ApiConfig.CloseLoading();
+            }
+        })
+    }
+
+    feedback(json, callback, showLoading = true) {
+
+        if (showLoading)
+            ApiConfig.ShowLoading();
+
+        var header = ApiConfig.GetHeader();
+        console.log(header);
+        console.log(json);
+        wx.request({
+            url: ApiConfig.GetApiUrl() + 'owner/feedback',
             data: json,
             method: 'POST',
             dataType: 'json',
@@ -114,7 +242,71 @@ export class MemberApi{
         console.log(header);
         console.log(json);
         wx.request({
-            url: ApiConfig.GetApiUrl() + 'member/info',
+            url: ApiConfig.GetApiUrl() + 'owner/info',
+            data: json,
+            method: 'POST',
+            dataType: 'json',
+            header: header,
+            success: function (res) {
+                if (callback != null) {
+                    callback(res.data);
+                }
+            },
+            fail: function (res) {
+                console.log(res);
+                callback(false);
+            },
+            complete: function (res) {
+                console.log(res);
+            
+                if (showLoading)
+                    ApiConfig.CloseLoading();
+            }
+        })
+    }
+
+    login(json, callback, showLoading = true) {
+
+        if (showLoading)
+            ApiConfig.ShowLoading();
+
+        var header = ApiConfig.GetHeader();
+        console.log(header);
+        console.log(json);
+        wx.request({
+            url: ApiConfig.GetApiUrl() + 'owner/login',
+            data: json,
+            method: 'POST',
+            dataType: 'json',
+            header: header,
+            success: function (res) {
+                if (callback != null) {
+                    callback(res.data);
+                }
+            },
+            fail: function (res) {
+                console.log(res);
+                callback(false);
+            },
+            complete: function (res) {
+                console.log(res);
+            
+                if (showLoading)
+                    ApiConfig.CloseLoading();
+            }
+        })
+    }
+
+    owndevice(json, callback, showLoading = true) {
+
+        if (showLoading)
+            ApiConfig.ShowLoading();
+
+        var header = ApiConfig.GetHeader();
+        console.log(header);
+        console.log(json);
+        wx.request({
+            url: ApiConfig.GetApiUrl() + 'owner/owndevice',
             data: json,
             method: 'POST',
             dataType: 'json',
@@ -146,7 +338,7 @@ export class MemberApi{
         console.log(header);
         console.log(json);
         wx.request({
-            url: ApiConfig.GetApiUrl() + 'member/register',
+            url: ApiConfig.GetApiUrl() + 'owner/register',
             data: json,
             method: 'POST',
             dataType: 'json',
@@ -169,7 +361,7 @@ export class MemberApi{
         })
     }
 
-    sendregverifycode(json, callback, showLoading = true) {
+    reset(json, callback, showLoading = true) {
 
         if (showLoading)
             ApiConfig.ShowLoading();
@@ -178,7 +370,7 @@ export class MemberApi{
         console.log(header);
         console.log(json);
         wx.request({
-            url: ApiConfig.GetApiUrl() + 'member/sendregverifycode',
+            url: ApiConfig.GetApiUrl() + 'owner/reset',
             data: json,
             method: 'POST',
             dataType: 'json',
@@ -201,7 +393,7 @@ export class MemberApi{
         })
     }
 
-    setvalue(json, callback, showLoading = true) {
+    updatemobile(json, callback, showLoading = true) {
 
         if (showLoading)
             ApiConfig.ShowLoading();
@@ -210,7 +402,7 @@ export class MemberApi{
         console.log(header);
         console.log(json);
         wx.request({
-            url: ApiConfig.GetApiUrl() + 'member/setvalue',
+            url: ApiConfig.GetApiUrl() + 'owner/updatemobile',
             data: json,
             method: 'POST',
             dataType: 'json',
@@ -233,7 +425,7 @@ export class MemberApi{
         })
     }
 
-    update(json, callback, showLoading = true) {
+    withdrawlist(json, callback, showLoading = true) {
 
         if (showLoading)
             ApiConfig.ShowLoading();
@@ -242,7 +434,7 @@ export class MemberApi{
         console.log(header);
         console.log(json);
         wx.request({
-            url: ApiConfig.GetApiUrl() + 'member/update',
+            url: ApiConfig.GetApiUrl() + 'owner/withdrawlist',
             data: json,
             method: 'POST',
             dataType: 'json',
@@ -265,7 +457,7 @@ export class MemberApi{
         })
     }
 
-    updatelocation(json, callback, showLoading = true) {
+    withdrew(json, callback, showLoading = true) {
 
         if (showLoading)
             ApiConfig.ShowLoading();
@@ -274,7 +466,7 @@ export class MemberApi{
         console.log(header);
         console.log(json);
         wx.request({
-            url: ApiConfig.GetApiUrl() + 'member/updatelocation',
+            url: ApiConfig.GetApiUrl() + 'owner/withdrew',
             data: json,
             method: 'POST',
             dataType: 'json',
@@ -297,7 +489,7 @@ export class MemberApi{
         })
     }
 
-    xiaofeijilu(json, callback, showLoading = true) {
+    removedevice(json, callback, showLoading = true) {
 
         if (showLoading)
             ApiConfig.ShowLoading();
@@ -306,103 +498,7 @@ export class MemberApi{
         console.log(header);
         console.log(json);
         wx.request({
-            url: ApiConfig.GetApiUrl() + 'member/xiaofeijilu',
-            data: json,
-            method: 'POST',
-            dataType: 'json',
-            header: header,
-            success: function (res) {
-                if (callback != null) {
-                    callback(res.data);
-                }
-            },
-            fail: function (res) {
-                console.log(res);
-                callback(false);
-            },
-            complete: function (res) {
-                console.log(res);
-            
-                if (showLoading)
-                    ApiConfig.CloseLoading();
-            }
-        })
-    }
-
-    xiugai(json, callback, showLoading = true) {
-
-        if (showLoading)
-            ApiConfig.ShowLoading();
-
-        var header = ApiConfig.GetHeader();
-        console.log(header);
-        console.log(json);
-        wx.request({
-            url: ApiConfig.GetApiUrl() + 'member/xiugai',
-            data: json,
-            method: 'POST',
-            dataType: 'json',
-            header: header,
-            success: function (res) {
-                if (callback != null) {
-                    callback(res.data);
-                }
-            },
-            fail: function (res) {
-                console.log(res);
-                callback(false);
-            },
-            complete: function (res) {
-                console.log(res);
-            
-                if (showLoading)
-                    ApiConfig.CloseLoading();
-            }
-        })
-    }
-
-    xuanxianglist(json, callback, showLoading = true) {
-
-        if (showLoading)
-            ApiConfig.ShowLoading();
-
-        var header = ApiConfig.GetHeader();
-        console.log(header);
-        console.log(json);
-        wx.request({
-            url: ApiConfig.GetApiUrl() + 'member/xuanxianglist',
-            data: json,
-            method: 'POST',
-            dataType: 'json',
-            header: header,
-            success: function (res) {
-                if (callback != null) {
-                    callback(res.data);
-                }
-            },
-            fail: function (res) {
-                console.log(res);
-                callback(false);
-            },
-            complete: function (res) {
-                console.log(res);
-            
-                if (showLoading)
-                    ApiConfig.CloseLoading();
-            }
-        })
-    }
-
-    zhengshu(json, callback, showLoading = true) {
-
-        if (showLoading)
-            ApiConfig.ShowLoading();
-
-        var header = ApiConfig.GetHeader();
-        console.log(header);
-        console.log(json);
-        wx.request({
-            url: ApiConfig.GetApiUrl() + 'member/zhengshu',
+            url: ApiConfig.GetApiUrl() + 'owner/removedevice',
             data: json,
             method: 'POST',
             dataType: 'json',
