@@ -23,18 +23,14 @@ class Content extends AppBase {
   onMyShow() {
     var that = this;
     var api=new OwnerApi();
-    api.withdrawlist({
+    api.withdrawlist( { 
+      owner_id:this.Base.options.owner_id
     },(ret=>{
-      console.log(ret,"看看");
-   
-        this.Base.setMyData({list: ret})
-        console.log(ret.lenght+"hhhhhh")
-       if(api.withdrawlist!=0){
-         wx.navigateTo({
-           url: '/pages/txcg/txcg',
-         })
-       }
+        this.Base.setMyData({list: []})
+        // console.log(ret.lenght+"hhhhhh")
+      //  }
     }))
+
   }
 }
 

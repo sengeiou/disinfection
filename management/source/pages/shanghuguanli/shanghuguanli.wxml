@@ -1,37 +1,37 @@
 <view class='margin-top'></view>
 <view class='sh-dx flex-row  padding-top-30 padding-bottom-30 margin-left-40 margin-right-40 bj-shadow'>
-<view class='f-32 txt-white margin-left-40 flex-1 margin-top-5'>商户信息卡</view>
-<image bindtap='xiugaiyonghu' id="{{list.id}}" class=' padding-left-30 margin-right-30 padding-top-10 padding-bottom-10 icon-140'src='{{uploadpath}}resource/{{res.a11}}'></image>
+  <view class='f-32 txt-white margin-left-40 flex-1 margin-top-5'>商户信息卡</view>
+  <image bindtap='xiugaiyonghu' id="{{l.id}}" class=' padding-left-30 margin-right-30 padding-top-10 padding-bottom-10 icon-140' src='{{uploadpath}}resource/{{res.a11}}'></image>
 
 </view>
-<view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' >
-<view class='sh-color padding-top-40 f-32 padding-left-40 padding-bottom-40'>客户名称：</view>
-<view class='sh-color2 f-32 padding-top-40 padding-left-40 padding-bottom-40'>{{list.name}}</view>
+<view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow'>
+  <view class='sh-color padding-top-40 f-32 padding-left-40 padding-bottom-40'>客户名称：</view>
+  <view class='sh-color2 f-32 padding-top-40 padding-left-40 padding-bottom-40'>{{l.name}}</view>
 </view>
-<view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' >
-<view class='sh-color padding-top-40 f-32 padding-left-40 padding-bottom-40'>商户名称：</view>
-<view class='sh-color2 f-32 padding-top-40 padding-left-40 padding-bottom-40'>{{list.shopname}}</view>
-</view> 
-<view class='flex-row bg-white margin-left-40 margin-right-40 border-radius-10-10 bj-shadow' >
-<view class='sh-color padding-top-40 f-32 padding-left-40 padding-bottom-40'>商户地址：</view>
-<view class='sh-color2 f-32 padding-top-40 padding-left-40 padding-bottom-40'>{{list.shopaddress}}</view>
+<view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow'>
+  <view class='sh-color padding-top-40 f-32 padding-left-40 padding-bottom-40'>商户名称：</view>
+  <view class='sh-color2 f-32 padding-top-40 padding-left-40 padding-bottom-40'>{{l.shopname}}</view>
+</view>
+<view class='flex-row bg-white margin-left-40 margin-right-40 border-radius-10-10 bj-shadow'>
+  <view class='sh-color padding-top-40 f-32 padding-left-40 padding-bottom-40'>商户地址：</view>
+  <view class='sh-color2 f-32 padding-top-40 padding-left-40 padding-bottom-40'>{{l.shopaddress}}</view>
 </view>
 
-<view class='flex-row bg-white margin-left-40 margin-right-40  border-radius-10 margin-top-20 bj-shadow' >
-<view class='sh-color2 padding-top-40 f-32 padding-left-40 padding-bottom-40'>授权手机号：</view>
-<view class='sh-color3 f-32 padding-top-40 padding-left-10 padding-bottom-40'>{{list.mobile}}</view>
-<image bindtap='xiugaishouji' id="{{list.id}}" class=' padding-left-50  padding-top-40 padding-bottom-10 icon-140'src='{{uploadpath}}resource/{{res.a11}}'></image>
+<view class='flex-row bg-white margin-left-40 margin-right-40  border-radius-10 margin-top-20 bj-shadow'>
+  <view class='sh-color2 padding-top-40 f-32 padding-left-40 padding-bottom-40'>授权手机号：</view>
+  <view class='sh-color3 f-32 padding-top-40 padding-left-10 padding-bottom-40'>{{l.mobile}}</view>
+  <image bindtap='xiugaishouji' id="{{l.id}}" class=' padding-left-50  padding-top-40 padding-bottom-10 icon-140' src='{{uploadpath}}resource/{{res.a11}}'></image>
 </view>
 
 <view class='margin-top-30'></view>
 <view class='sh-dx flex-row  padding-top-30 padding-bottom-30 margin-left-40 margin-right-40 bj-shadow'>
-<view class='f-32 txt-white margin-left-40 flex-1 margin-top-5'>商户信息卡</view>
-<image bindtap='xgxx' data-name="zengjiaxinxi" class='   padding-bottom-10 padding-top-10 margin-right-30 icon-140'src='{{uploadpath}}resource/{{res.a12}}'></image>
+  <view class='f-32 txt-white margin-left-40 flex-1 margin-top-5'>商户信息卡</view>
+  <image bindtap='zengjia' id="{{l.id}}" class='   padding-bottom-10 padding-top-10 margin-right-30 icon-140' src='{{uploadpath}}resource/{{res.a12}}'></image>
 </view>
-<view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' wx:for='{{l}}' >
-<view class='sh-color padding-top-30 h5 padding-left-40 padding-bottom-30'>{{item.name}}</view>
-<view class='sh-color h5 padding-top-30 padding-left-40 padding-bottom-30'>{{list.devicesnumber}}</view>
-<view class='h6 sh-color2 padding-top-30 padding-bottom-30 padding-left-220 '>
-<image bindtap="yichu" src='{{uploadpath}}resource/{{res.del}}' class='icon-15 margin-right-10'></image>移除
-</view>
+<view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' wx:for="{{list}}">
+  <view class='sh-color padding-top-30 h5 padding-left-40 padding-bottom-30'>设备编号：</view>
+  <view class='sh-color h5 padding-top-30 padding-left-40 padding-bottom-30'>{{item.xiaoduji_id_name}}</view>
+  <view class='h6 sh-color2 padding-top-30 padding-bottom-30 padding-left-220 '>
+    <image bindtap="yichu" id="{{item.xiaoduji_id}}" src='{{uploadpath}}resource/{{res.del}}' class='icon-15 margin-right-10'></image>移除
+  </view>
 </view>

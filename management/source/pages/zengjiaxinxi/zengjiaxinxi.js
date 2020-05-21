@@ -4,6 +4,7 @@ import { ApiConfig } from "../../apis/apiconfig";
 import { InstApi } from "../../apis/inst.api.js";
 import { ApiUtil } from "../../apis/apiutil";
 import { MemberApi } from "../../apis/member.api.js";
+import { OwnerApi } from "../../apis/owner.api.js";
 class Content extends AppBase {
   constructor() {
     super();
@@ -18,18 +19,17 @@ class Content extends AppBase {
     this.Base.Page = this;
     //options.id=5;
     super.onLoad(options);
-    var list=[
-      { id: 2, name: '设备编号', check: false},
-      { id: 3, name: '设备编号', check: false},
-      { id: 4, name: '设备编号', check: false},
-      { id: 5, name: '设备编号', check: false},
-      { id: 6, name: '设备编号', check: false},
-      { id: 7, name: '设备编号', check: false},
-    ];
-    this.Base.setMyData({list})
+    ownerb_id: this.Base.options.owner_id
   }
   onMyShow() {
     var that = this;
+    var api=new OwnerApi();
+    api.canchoosedevicelist({
+      // 
+    },ret=>{
+      console.log(ret,"llll")
+      this.Base.setMyData({list:ret})
+    })
   }
   wdsh(e) {
     var name = e.currentTarget.dataset.name;

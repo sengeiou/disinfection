@@ -31,6 +31,7 @@ class Content extends AppBase {
     amount
      })
       console.log(amount+"先看看")
+     
     })
 
   }
@@ -38,21 +39,43 @@ class Content extends AppBase {
     this.Base.setMyData({
       amount: e.detail.value
     })
-  }
-     tixianjilu(e) {
-       var amount = this.Base.getMyData().amount; 
-      wx.navigateTo({
-        url: '/pages/tixianjilu/tixianjilu?amount='+amount,
-      })
+ 
   }
   
-  lijitixian(e){
-    var amount = Number(this.Base.getMyData().amount); 
+     tixianjilu(e) {
+       var api=new OwnerApi();
+       var owner_id = this.Base.getMyData().OwnerInfo.id
+       console.log(owner_id+"eeeeeeeee")
+      //  return
+       var amount = this.Base.getMyData().amount; 
+      // wx.navigateTo({
+      //   url: '/pages/tixianjilu/tixianjilu?amount=' + amount + '&owner_id='+owner_id,
+      // })
+       api.withdrawlist({
+       },ret=>{
+       this.Base.setMyData({list:ret})
+       
+         wx.navigateTo({
+           url: '/pages/tixianjilu/tixianjilu?amount=' + amount + '&owner_id=' + owner_id,
+         })
+      
+       })
+
+  }
+  
+  lijitixian(){
+    var amount = Number(this.Base.getMyData().amount);
     var api=new OwnerApi();
     api.withdrew({
       amount:amount
     },(ret)=>{
-      wx.navigateBack({
+      if (amount == "") {
+        this.Base.toast("提现金额不能为空");
+        return
+      }
+     
+      wx.navigateTo({
+        url: '/pages/lijitixian/lijitixian',
       })
 
     })

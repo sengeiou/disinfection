@@ -19,24 +19,24 @@ class Content extends AppBase {
     this.Base.Page = this;
     //options.id=5;
     super.onLoad(options);
-    var l=[
-      {id:1,name:"设备编号"},
-      { id: 1, name: "设备编号"},
-
-    ];
-    this.Base.setMyData({ l })
   }
   onMyShow() {
     var that = this;
     var api=new OwnerApi();
     api.info({
-      owner_id:this.Base.options.owner_id,
-
+      owner_id:this.Base.options.owner_id, 
     }, (ret => {
       console.log(ret, "看看");
-      this.Base.setMyData({ list: ret })
+      this.Base.setMyData({ l: ret })
     }))
 
+    api.owndevice({
+      ownerb_id: this.Base.options.owner_id, 
+    },(ret)=>{
+      console.log(ret,"qqqqqqqqq");
+      // return
+      this.Base.setMyData({ list: ret })
+    }) 
 
   }
   xiugaiyonghu(e){
@@ -51,25 +51,19 @@ class Content extends AppBase {
       url: '/pages/xiugaixinxi/xiugaixinxi?owner_id='+id,
     })
   }
-  xgxx(e) {
-    var name = e.currentTarget.dataset.name;
-    if (name == "zengjiaxinxi") {
+  zengjia(e) {
+    var id=e.currentTarget.id;
       wx.navigateTo({
-        url: '/pages/zengjiaxinxi/zengjiaxinxi',
+        url: '/pages/zengjiaxinxi/zengjiaxinxi?owner_id='+id,
       })
-    }
-
 
   }
   yichu(e){
     var api=new OwnerApi();
-    api.owndevice({    
-      owner_id:this.Base.options.owner_id,
-    },(res)=>{
-      wx.showToast({
-        title: '已删除',
-        icon: 'none'
-    })
+    api.removedevice({   
+    ownerb_id:this.Base.options.owner_id,
+    xiaoduji_id:e.currentTarget.id
+    },(ret)=>{  
   })
 }
 }
@@ -80,7 +74,7 @@ var content = new Content();
 var body = content.generateBodyJson();
 body.onLoad = content.onLoad;
 body.onMyShow = content.onMyShow;
-body.xgxx = content.xgxx;
+body.zengjia = content.zengjia;
 body.xiugaiyonghu = content.xiugaiyonghu;
 body.xiugaishouji = content.xiugaishouji;
 body.yichu=content.yichu;
