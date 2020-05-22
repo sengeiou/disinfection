@@ -22,7 +22,7 @@ class Content extends AppBase {
    // this.Base.setMyData({ iiikkkmkmk:"sdrkfpsldkfl;sdkr;fpl"})
   
   }
-  onMyShow() {
+  onMyShow() { 
     var that = this;
     var api=new OwnerApi();
     api.childlist({

@@ -25,3 +25,15 @@
 .padding-rihgt-300{
   padding-right: 300rpx;
 }
+.margin-left-100{
+  margin-left: 100rpx;
+}
+.margin-left-170{
+  margin-left: 170rpx;
+}
+.t-color{
+  color: #FF674B;
+}
+.t-color2{
+  color:#F2BD2B;
+}

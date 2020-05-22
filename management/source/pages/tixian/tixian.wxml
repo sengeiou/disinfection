@@ -10,19 +10,18 @@
 </view>
 <view class='flex-row margin-left-40 margin-top'>
 <view class='flex-1 t-color txt-bold f-32'>提现金额</view> 
-<view bindtap="quanbu" class=' margin-right-40 h5'>全部</view>
+<!-- <view bindtap="quanbu" class=' margin-right-40 h5'>全部</view> -->
 </view>
 <view class='bg-size margin-left-40 margin-right-40 margin-top'>
 <!-- <view class=' txt-bold t-color2 padding-bottom-24 padding-top-24 padding-left-40'>¥{{OwnerInfo.balance}}</view> -->
-   <input class='txt-bold t-color2 padding-bottom-24 padding-top-24 padding-left-40' bindinput="amount" type="digit" placeholder='请输入'></input>
+   <input class='txt-bold t-color2 padding-bottom-24 padding-top-24 padding-left-40' bindinput="amount" type="number" placeholder='请输入' ></input>
 </view>
 <view class='flex-row margin-left-40 margin-top'>
 <view class='flex-1 t-color txt-bold f-32'>提现须知</view> 
 </view>
 <view class='bg-size margin-left-40 margin-right-40 margin-top felx-row'>
-<view class='h5  t-color3 padding-top-20 padding-left-24 padding-right-16'>1. 提现最低金额为50元。</view>
-<view class='h5  t-color3 padding-top-20 padding-left-24 padding-right-16'>2. 提现金额按10的倍数提取，如50，60，70...以此
-类推。</view>
+<view class='h5  t-color3 padding-top-20 padding-left-24 padding-right-16'>1. 提现最低金额为10元。</view>
+<view class='h5  t-color3  padding-left-24 padding-right-16'>2. 提现金额需按（元）整数提取，不包含小数。</view>
 <view class='h5 t-color3 padding-bottom-30 padding-top-16 padding-left-24 padding-right-16'>3. 提现申请将在两天内到账，如遇高峰期，可能会
    延迟到账，请耐心等待。</view>
 </view>

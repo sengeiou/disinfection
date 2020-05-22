@@ -21,6 +21,14 @@ class Content extends AppBase {
   }
   onMyShow() {
     var that = this;
+    var api=new InstApi();
+    api.aboutus({},
+    ret=>{
+        this.Base.setMyData({
+          gywm:ret
+        })
+    })
+    
   }
 }
 

@@ -1,24 +1,22 @@
 <view class='margin-top'></view>
 <view class='border margin-left-40 margin-right-40'>
-<view  bindtap='glsq' data-name="tianjiashanghu" class='tj-size margin-top-50 margin-left-300 margin-bottom-20'>
-<image src='{{uploadpath}}resource/{{res.add}}' class='icon-17 margin-left-18 margin-top-18'></image>
+  <view bindtap='glsq' data-name="tianjiashanghu" class='tj-size margin-top-50 margin-left-300 margin-bottom-20'>
+    <image src='{{uploadpath}}resource/{{res.add}}' class='icon-17 margin-left-18 margin-top-18'></image>
+  </view>
+  <view class='t-color f-32 margin-bottom-40 text-center'>添加商户</view>
 </view>
-<view class='t-color f-32 margin-bottom-40 text-center'>添加商户</view>
-</view>
- 
+
 
 <block wx:for="{{list}}">
 
-<view class='size margin-top margin-left-40 margin-right-40'>
-<view class='f-32 txt-white margin-left-24 margin-top-34'>{{item.name}}  {{item.shopname}}</view>
-<view class='flex-row h5 txt-white margin-left-24 margin-top-14'>设备数量：{{OwnerInfo.devicesnumber}}
-<view bindtap='glsq' data-name="guanlishouquan" id="{{item.id}}" class='h6 txt-white padding-top-8 padding-bottom-8 padding-left-20 padding-right-20 margin-left-310 gl-size'>管理授权</view>
-</view>
-<view class='h6 txt-white margin-left-24 margin-top-14 flex-row margin-bottom-30'>完成订单：{{OwnerInfo.completeorder}}
-<view class='h6 txt-white margin-left-20'>盈利总额：{{OwnerInfo.totalprofit}}</view>
-</view>
-</view>
+  <view class='size margin-top margin-left-40 margin-right-40'>
+    <view class='f-32 txt-white margin-left-24 margin-top-34'>{{item.name}} {{item.shopname}}</view>
+    <view class='flex-row h5 txt-white margin-left-24 margin-top-14'>设备数量：{{item.devicesnumber}}
+      <view bindtap='glsq' data-name="guanlishouquan" id="{{item.id}}" class='h6 txt-white padding-top-8 padding-bottom-8 padding-left-20 padding-right-20 margin-left-310 gl-size'>管理授权</view>
+    </view>
+    <view class='h6 txt-white margin-left-24 margin-top-14 flex-row margin-bottom-30'>完成订单：{{OwnerInfo.completeorder}}
+      <view class='h6 txt-white margin-left-20'>盈利总额：{{OwnerInfo.totalprofit}}</view>
+    </view>
+  </view>
 
 </block>
-
-

@@ -1,45 +1,45 @@
 <view class='margin-top-20'></view>
 <view class="size margin-right-40 margin-left-40">
-<view class='h5 margin-left-40 margin-top-50' style=''>我的余额</view>
-<view class='flex-row'>
-<view class="txt-white h2 txt-bold margin-left-40 flex-1" >{{OwnerInfo.balance}}</view>
-<image src="{{uploadpath}}resource/{{res.a14}}" class='icon-48 margin-right-20 margin-top-10'></image>
-</view>
-<view class='flex-row margin-top-60 margin-left-40'>
-<view class="h5 flex-row" >本周收益 
-<view class='flex-row'>
-<image src='{{uploadpath}}resource/{{res.sc}}'class="icon-15 flex-row"></image>+25%
-</view>
-</view>
-</view>
-<view class='h5 txt-white margin-left-40 padding-right-300'>+￥156.23</view>
-
-<view class='flex-row margin-left-360'>
-<view class="h5 flex-row" >本周收益 
-<view class='flex-row'>
-<image src='{{uploadpath}}resource/{{res.xz}}'class="icon-15 flex-row"></image>+25%
-</view>
-</view>
-</view>
-<view class='h5 txt-white margin-left-360'>+￥156.23</view>
-
-
-<view class='flex-row margin-left-40'>
-<view class="txt-white h5 txt-bold" >总收益</view>
-<view class=" txt-white h5 " style=''>+22350.22</view>
-</view>
+  <view class='h5 margin-left-40 margin-top-50' style=''>我的余额</view>
+  <view class='flex-row'>
+    <view class="txt-white h2 txt-bold margin-left-40 flex-1">{{OwnerInfo.balance}}</view>
+    <image src="{{uploadpath}}resource/{{res.a14}}" class='icon-48 margin-right-20 margin-top-10'></image>
+  </view>
+    <view class='flex-row margin-top-60 margin-left-40'>
+      <view class="h5 flex-row">本周收益
+        <view class='flex-row'>
+          <image src='{{uploadpath}}resource/{{res.sc}}' class="icon-15 flex-row margin-left-5"></image>
+         <view class="h6 t-color">+25%</view> 
+        </view>
+      </view>
+      <view class="margin-left-80 txt-white">|</view>
+         <view class="h5 flex-row margin-left-40">本周收益
+        <view class='flex-row'>
+          <image src='{{uploadpath}}resource/{{res.xz}}' class="icon-15 flex-row margin-left-30 "></image>
+          <view class="h6 t-color2">+25%</view> 
+        </view>
+      </view>
+    </view>
+     <view class='flex-row margin-top-5 margin-left-40'>
+      <view class="h5 txt-white">+¥156.23</view>
+      <view class="margin-left-170 txt-white">|</view>
+      <view class="h5 txt-white margin-left-40">+¥1688.22
+      </view>
+    </view>
+  <view class='flex-row margin-left-40 margin-top-20'>
+    <view class="txt-white h5 txt-bold">总收益</view>
+    <view class=" txt-white h5 " style=''>+22350.22</view>
+  </view>
 </view>
 <view class='txt-black txt-bold margin-left-40 margin-top-60'>收益趋势图</view>
 <view class='flex-row margin-top'>
-<view class="flex-1 border text-center " style='background-color:#091C2B;'>
-<view class='margin-top-5' style='color:#F2BD2B;'>天</view>
+  <view class="flex-1 border text-center " style='background-color:#091C2B;'>
+    <view class=' flex-column margin-top-5' style='color:#F2BD2B;'>天</view>
+  </view>
+  <view class="flex-1 border text-center bg-color">
+    <view class='flex-column margin-top-5'>周</view>
+  </view>
+  <view class="flex-1 border text-center margin-right-40 bg-color">
+    <view class='flex-column margin-top-5'>月</view>
+  </view>
 </view>
-<view class="flex-1 border text-center bg-color">
-<view class='margin-top-5'>周</view>
-</view>
-<view class="flex-1 border text-center margin-right-40 bg-color" >
-<view class='margin-top-5'>月</view>
-</view>
-</view>
-
-

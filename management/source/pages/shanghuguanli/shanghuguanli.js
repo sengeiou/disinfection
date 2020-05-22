@@ -52,11 +52,10 @@ class Content extends AppBase {
     })
   }
   zengjia(e) {
-    var id=e.currentTarget.id;
+    var ownerb_id=this.Base.options.owner_id;
       wx.navigateTo({
-        url: '/pages/zengjiaxinxi/zengjiaxinxi?owner_id='+id,
-      })
-
+        url: '/pages/zengjiaxinxi/zengjiaxinxi?ownerb_id=' + ownerb_id
+  })
   }
   yichu(e){
     var api=new OwnerApi();

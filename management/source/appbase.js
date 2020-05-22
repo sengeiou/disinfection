@@ -192,6 +192,7 @@ export class AppBase {
       this.Base.setMyData({ OwnerInfo:info});
     });
     
+    
     that.onMyShow();
   }
   
@@ -934,9 +935,110 @@ export class AppBase {
    }
 
   getUserInfo(e) {
-    console.log(666666666);
-    AppBase.UserInfo.openid = undefined;
-    this.onShow();
+      var that=this;
+    // if (AppBase.UserInfo.openid == undefined) {
+      // 登录
+      console.log("onShow");
+      wx.login({
+        success: res => {
+          // 发送 res.code 到后台换取 openId, sessionKey, unionId
+
+          console.log("res");
+
+          console.log(res);
+
+          wx.getUserInfo({
+            success: userres => {
+              AppBase.UserInfo = userres.userInfo;
+              console.log(userres);
+
+              var memberapi = new MemberApi();
+              memberapi.getuserinfo({
+                code: res.code,
+                grant_type: "authorization_code"
+              }, data => {
+                console.log("here");
+                console.log(data);
+                AppBase.UserInfo.openid = data.openid;
+                AppBase.UserInfo.session_key = data.session_key;
+                console.log(AppBase.UserInfo);
+                ApiConfig.SetToken(data.openid);
+                console.log("goto update info");
+                //this.loadtabtype();
+
+
+                memberapi.update(AppBase.UserInfo, () => {
+
+                  console.log(AppBase.UserInfo);
+                  that.Base.setMyData({
+                    UserInfo: AppBase.UserInfo
+                  });
+
+
+
+                  // that.checkPermission();
+
+                });
+
+                //that.Base.getAddress();
+              });
+            },
+            fail: userloginres => {
+              console.log("auth fail");
+              console.log(userloginres);
+              console.log(res);
+              var memberapi = new MemberApi();
+              memberapi.getuserinfo({
+                code: res.code,
+                grant_type: "authorization_code"
+              }, data => {
+                console.log("here");
+                console.log(data);
+                AppBase.UserInfo.openid = data.openid;
+                AppBase.UserInfo.session_key = data.session_key;
+                console.log(AppBase.UserInfo);
+                ApiConfig.SetToken(data.openid);
+                console.log("goto update info");
+
+                memberapi.update(AppBase.UserInfo, () => {
+                  if (this.Base.needauth == true) {
+                    // wx.redirectTo({
+                    //   url: '/pages/auth/auth',
+                    // })
+                  } else {
+                    that.onMyShow();
+                  }
+                });
+
+
+              });
+              //that.getAddress();
+            }
+          });
+
+        }
+      })
+
+    //   return false;
+    // } else {
+    //   if (that.setMyData != undefined) {
+    //     that.setMyData({
+    //       UserInfo: AppBase.UserInfo
+    //     });
+    //   } else {
+    //     that.Base.setMyData({
+    //       UserInfo: AppBase.UserInfo
+    //     });
+    //   }
+      //this.loadtabtype();
+
+      // that.Base.setMyData({
+      //   UserInfo: AppBase.UserInfo
+      // });
+
+      // that.checkPermission();
+    // 
+    // this.onShow();
     //this.checkPermission();
   }
 }

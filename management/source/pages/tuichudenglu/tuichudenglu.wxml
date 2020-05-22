@@ -19,7 +19,7 @@
           <view wx:if='{{show=="yy"}}'>
         <view class=' mianji margin-left-80 margin-top margin-right-80'>
         <!-- <view class='f-32 margin-left-46 margin-top-28 dl-color'>输入手机号</view> -->
-        <input class="f-32 padding-left-40 margin-top-20" placeholder-style="color:#A5A9B1;" type="text" bindinput="uName" placeholder='输入手机号'></input>
+        <input class="f-32 padding-left-40 margin-top-20" placeholder-style="color:#A5A9B1;" type="number" bindinput="uName" placeholder='输入手机号'></input>
         </view>
         <view class=' mianji margin-left-80 margin-top margin-right-80'>
         <input class="f-32 padding-left-40 margin-top-20" placeholder-style="color:#A5A9B1;" type="password" bindinput="uPwd" placeholder='输入密码'></input>

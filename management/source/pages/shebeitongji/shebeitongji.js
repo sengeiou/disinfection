@@ -33,21 +33,10 @@ class Content extends AppBase {
   onMyShow() {
     var that = this;
   }
-  sou(e) {
-    var name = e.currentTarget.dataset.name;
-    if (name == "ss") {
+  sousuoshebei() {   
       wx.navigateTo({
-        url: '/pages/ss/ss',
+        url: '/pages/sousuoshebei/sousuoshebei',
       })
-    }
-    if(name=="zongshu"){
-      wx.navigateTo({
-        url: '/pages/zongshu/zongshu',
-      })
-    }
-
-
-
   }
 }
 
@@ -57,5 +46,5 @@ var content = new Content();
 var body = content.generateBodyJson();
 body.onLoad = content.onLoad;
 body.onMyShow = content.onMyShow;
-body.sou = content.sou;
+body.sousuoshebei = content.sousuoshebei;
 Page(body)

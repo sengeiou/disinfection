@@ -334,6 +334,83 @@
 					"id": -1,
 					"name": "pages/zengjiaxinxi/zengjiaxinxi",
 					"pathName": "pages/zengjiaxinxi/zengjiaxinxi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tixian/tixian",
+					"pathName": "pages/tixian/tixian",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/wode",
+					"pathName": "pages/wode/wode",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/wode",
+					"pathName": "pages/wode/wode",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/hometwo/hometwo",
+					"pathName": "pages/hometwo/hometwo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/shouyi/shouyi",
+					"pathName": "pages/shouyi/shouyi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/zengjiaxinxi/zengjiaxinxi",
+					"pathName": "pages/zengjiaxinxi/zengjiaxinxi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/shanghuguanli/shanghuguanli",
+					"pathName": "pages/shanghuguanli/shanghuguanli",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/lijitixian/lijitixian",
+					"pathName": "pages/lijitixian/lijitixian",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/lijitixian/lijitixian",
+					"pathName": "pages/lijitixian/lijitixian",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/zengjiaxinxi/zengjiaxinxi",
+					"pathName": "pages/zengjiaxinxi/zengjiaxinxi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/guanyuwomen/guanyuwomen",
+					"pathName": "pages/guanyuwomen/guanyuwomen",
 					"scene": null
 				}
 			]

@@ -26,7 +26,7 @@ class Content extends AppBase {
     api.withdrawlist( { 
       owner_id:this.Base.options.owner_id
     },(ret=>{
-        this.Base.setMyData({list: []})
+        this.Base.setMyData({list: ret})
         // console.log(ret.lenght+"hhhhhh")
       //  }
     }))

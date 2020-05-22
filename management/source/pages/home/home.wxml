@@ -9,12 +9,13 @@
 </image>
 </view>
 </view>
+<view wx:if="{{OwnerInfo.role=='A'}}">
 <view class='flex-row flex-wrap'>
 <view class='text-center flex-1 mianji white-block flex-row margin-left-40 margin-top' bindtap='wodeshanghu' data-name="wodeshanghu">
 <image src='{{uploadpath}}resource/{{res.aa}}' class='icon-40 margin-left-40 margin-top-50'></image>
 <view class='margin-left-30 txt-bold h5 txt-color margin-top-70'>我的商户</view>
 </view>
-<view class='text-center flex-1 mianji white-block flex-row margin-right-40 margin-left-40 margin-top' bindtap='sbtj' data-name="shebeitongji">
+<view class='text-center flex-1 mianji white-block flex-row margin-right-40 margin-left-40 margin-top' bindtap='shebeitongji'>
 <image src='{{uploadpath}}resource/{{res.bb}}' class='icon-40 margin-left-40 margin-top-50'></image>
 <view class='margin-left-30 txt-bold h5 txt-color margin-top-70'>设备统计</view>
 </view>
@@ -33,4 +34,28 @@
 <view class='text-center flex-1 mianji white-block flex-row margin-left-40 margin-top'>
 <image src='{{uploadpath}}resource/{{res.dd}}' class='icon-40 margin-left-40 margin-top-50'></image>
 <view class='margin-left-30 txt-bold h5 txt-color margin-top-70'>代理合作</view>
+</view>
+</view>
+<view wx:if="{{OwnerInfo.role=='B'}}">
+<view class='flex-row flex-wrap'>
+<view class='text-center flex-1 mianji white-block flex-row margin-left-40 margin-top' bindtap='wodeshanghu' data-name="wodeshanghu">
+<image src='{{uploadpath}}resource/{{res.aa}}' class='icon-40 margin-left-40 margin-top-50'></image>
+<view class='margin-left-30 txt-bold h5 txt-color margin-top-70'>我的商户</view>
+</view>
+<view class='text-center flex-1 mianji white-block flex-row margin-right-40 margin-left-40 margin-top' bindtap='shebeitongji'>
+<image src='{{uploadpath}}resource/{{res.bb}}' class='icon-40 margin-left-40 margin-top-50'></image>
+<view class='margin-left-30 txt-bold h5 txt-color margin-top-70'>设备统计</view>
+</view>
+</view>
+<view class='flex-row flex-wrap'>
+<view class='text-center flex-1 mianji white-block flex-row margin-left-40 margin-top' bindtap='sbdd' data-name="shebeidingdan">
+<image src='{{uploadpath}}resource/{{res.cc}}' class='icon-40 margin-left-40 margin-top-50'></image>
+<view class='margin-left-30 txt-bold h5 txt-color margin-top-70'>设备订单</view>
+</view>
+<view class='text-center flex-1 mianji white-block flex-row margin-left-40 margin-top margin-right-40'>
+<image src='{{uploadpath}}resource/{{res.dd}}' class='icon-40 margin-left-40 margin-top-50'></image>
+<view class='margin-left-30 txt-bold h5 txt-color margin-top-70'>代理合作</view>
+</view>
+
+</view>
 </view>

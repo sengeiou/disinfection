@@ -48,18 +48,9 @@ class Content extends AppBase {
        console.log(owner_id+"eeeeeeeee")
       //  return
        var amount = this.Base.getMyData().amount; 
-      // wx.navigateTo({
-      //   url: '/pages/tixianjilu/tixianjilu?amount=' + amount + '&owner_id='+owner_id,
-      // })
-       api.withdrawlist({
-       },ret=>{
-       this.Base.setMyData({list:ret})
-       
-         wx.navigateTo({
-           url: '/pages/tixianjilu/tixianjilu?amount=' + amount + '&owner_id=' + owner_id,
-         })
-      
-       })
+      wx.navigateTo({
+        url: '/pages/tixianjilu/tixianjilu?amount=' + amount + '&owner_id='+owner_id,
+      })
 
   }
   
@@ -69,11 +60,26 @@ class Content extends AppBase {
     api.withdrew({
       amount:amount
     },(ret)=>{
-      if (amount == "") {
+      //  console.log(ret,'返回值')
+      //return
+      if (amount=="") {
         this.Base.toast("提现金额不能为空");
+        return;
+      }
+      if(amount<10){
+          this.Base.toast("提现最低金额为10元")
+          return;
+      }
+      if(ret.code=="-1"){
+        this.Base.toast(ret.return)
         return
       }
-     
+ 
+      // if(amount==amount.toFixed(2)){
+      //   this.Base.toast("请输入整数")
+      //   return;
+      // }
+             
       wx.navigateTo({
         url: '/pages/lijitixian/lijitixian',
       })

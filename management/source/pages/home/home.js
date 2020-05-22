@@ -54,12 +54,10 @@ class Content extends AppBase {
     }
   }
   shebeitongji(e) {
-    var name = e.currentTarget.dataset.name;
-    if (name == "shebeitongji") {
       wx.navigateTo({
-        url: '/pages/sbtj/sbtj',
+        url: '/pages/shebeitongji/shebeitongji',
       })
-    }
+
   }
   shebeidingdan(e){
     if (name == "shebeidingdan") {
@@ -89,4 +87,5 @@ body.onLoad = content.onLoad;
 body.onMyShow = content.onMyShow;
 body.wodeshanghu=content.wodeshanghu;
 body.tixian = content.tixian;
+body.shebeitongji=content.shebeitongji;
 Page(body)

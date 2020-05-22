@@ -28,7 +28,8 @@
     "pages/shanghuguanli/shanghuguanli",
     "pages/dingdanxiangqing/dingdanxiangqing",
     "pages/zongshu/zongshu",
-    "pages/xiugaixinxitwo/xiugaixinxitwo"
+    "pages/xiugaixinxitwo/xiugaixinxitwo",
+    "pages/hometwo/hometwo"
   ],
   "permission": {
     "scope.userLocation": {
