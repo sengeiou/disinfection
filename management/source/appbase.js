@@ -156,6 +156,15 @@ export class AppBase {
   } minimm
   onShow() {
     var that = this;
+    wx.getUserInfo({
+      success: userres => {
+        console.log("loginres3", userres);
+        this.Base.setMyData({ UserInfo: userres.userInfo })
+      }
+    });
+
+
+
     var instapi = new InstApi();
     instapi.resources({}, (res) => {
       this.Base.setMyData({ res });
