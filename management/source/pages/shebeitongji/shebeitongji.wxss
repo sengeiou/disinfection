@@ -11,8 +11,8 @@ page{
 .border-radius-30{
   border-radius: 30rpx;
 }
-.margin-top-16{
-  margin-top: 16rpx;
+.margin-top-7{
+  margin-top: 7rpx;
 }
 .bg-color{background-color: #091C2B;}
 .bg-color2{background-color: #F3BD2B;}

@@ -53,10 +53,17 @@ class Content extends AppBase {
       })
     }
   }
-  shebeitongji(e) {
+  shebeitongji() {
+    if(this.Base.getMyData().OwnerInfo.role=="A"){
+      wx.navigateTo({
+        url: '/pages/shebeitongjitwo/shebeitongjitwo',
+      })
+    }else{
       wx.navigateTo({
         url: '/pages/shebeitongji/shebeitongji',
       })
+    }
+     
 
   }
   shebeidingdan(e){

@@ -42,7 +42,7 @@ class Content extends AppBase {
         url: '/pages/shanghuguanli/shanghuguanli?owner_id='+id,
       })
     }
-    if (name == "tianjiashanghu") {
+    if (name == "tianjiashanghu") { 
       wx.navigateTo({
         url: '/pages/tianjiashanghu/tianjiashanghu',
       })

@@ -1,0 +1,9 @@
+page{
+  background:#F5F4F9;
+}
+.border-radius-30{
+  border-radius: 30rpx;
+}
+.t-color{
+  color: #556482;
+}

@@ -2,18 +2,16 @@
 <view class="bj-size margin-left-40 margin-right-40">
   <view class='flex-row'>
     <!-- <view class='mianji margin-left-40 margin-top-70' style='border:1px dashed #FFFFFF;'> -->
-      <view class='mianji  bg-white margin-left-40 margin-top-70' style='border-radius:88rpx;'></view>
-      <!--写好 <image src="{{memberinfo.avatarUrl}}" wx:if="{{memberinfo.avatarUrl!=''}}" class="mianji" style="border-radius:88rpx;"></image>
+    <view class='mianji  bg-white margin-left-40 margin-top-70' style='border-radius:88rpx;'></view>
+    <!--写好 <image src="{{memberinfo.avatarUrl}}" wx:if="{{memberinfo.avatarUrl!=''}}" class="mianji" style="border-radius:88rpx;"></image>
       <view wx:if="{{memberinfo.avatarUrl}}" class="mianji bg-white" style="border-radius:88rpx;"></view> -->
     <!-- </view> -->
     <view class="txt-white h5 txt-bold margin-top-70 margin-left-50">*********</view>
     <!-- 写好<view wx:if="{{memberinfo.nickName!=''}}" class="h5 txt-white txt-bold margin-top-70 margin-left-50">{{memberinfo.nickName}}</view>
     <view wx:if="{{memberinfo.nickName==''}}" class="h5 txt-white txt-bold margin-top-70 margin-left-50"></view> -->
-    <view></view>
-
   </view>
-  <button class="clear-button" hover-class="clear-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
-    <image bindtap="todetails" data-name='shouquan' src='{{uploadpath}}resource/{{res.a17}}' class=' icon-154 margin-left-210'></image>
+  <button hover-class="clear-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+    <image bindtap="todetails" data-name='shouquan' src='{{uploadpath}}resource/{{res.a17}}' class='icon-154 margin-left-210'></image>
   </button>
 </view>
 
