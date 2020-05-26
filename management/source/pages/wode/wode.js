@@ -57,10 +57,19 @@ class Content extends AppBase {
       })
     }
   }
+  getUserInfo(){
+    wx.getUserInfo({
+      success: userres => {
+        console.log("loginres3", userres);
+        this.Base.setMyData({ UserInfo: userres.userInfo })
+      }
+    });
+  }
 }
 var content = new Content();
 var body = content.generateBodyJson();
 body.onLoad = content.onLoad;
-body.onMyShow = content.onMyShow;
+body.onMyShow = content.onMyShow; 
 body.todetails = content.todetails;
+body.getUserInfo = content.getUserInfo;
 Page(body)
