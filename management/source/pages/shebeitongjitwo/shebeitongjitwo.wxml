@@ -19,15 +19,15 @@
     <view class='h5 txt-white text-center padding-bottom-16'>{{list3.length}}</view>
   </view>
 </view>
-<block wx:for="{{list.allsubowner}}">
-  <view bindtap="dianpushebei" class='bg-white border-radius-30 margin-right-40 margin-left-40 bj-shadow margin-top margin-bottom-20'>
+<block wx:for="{{list}}">
+  <view class='bg-white border-radius-30 margin-right-40 margin-left-40 bj-shadow margin-top margin-bottom-20'>
     <view class='flex-row margin-top-20'>
       <view class='h5 margin-left-20'>设备编号</view>
-      <view class="flex-1">{{list4.name}}</view>
+      <view class="flex-1">{{item.name}}</view>
       <image src='{{uploadpath}}resource/{{res.s}}' class='icon-15 margin-right-20 margin-left-10 '></image>
       <image src='{{uploadpath}}resource/{{res.v}}' class='icon-15 margin-right-30 '></image>
     </view>
-    <view class='h6 margin-left-20 margin-top-5 t-color'>{{item.shopname}}</view>
+    <view class='h6 margin-left-20 margin-top-5 t-color'>{{item.owner_shopname}}</view>
     <view class='flex-row margin-left-20 margin-bottom-30 margin-top-5'>
       <view class='h5 '>完成订单：{{item.completeorder}}</view>
       <view class='h5  margin-left-80'>盈利总额：{{item.totalprofit}}</view>

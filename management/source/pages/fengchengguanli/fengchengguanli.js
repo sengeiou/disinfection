@@ -16,6 +16,7 @@ class Content extends AppBase {
         isDown:false,
         percent:40,
       },
+      
       startDown: function (e) {
         this.setData({
           isDown: true,
@@ -31,6 +32,15 @@ class Content extends AppBase {
   }
   onMyShow() {
     var that = this;
+    var pageData = {}
+    for (var i = 1; i < 5; ++i) {
+      (function (index) {
+        pageData[`slider${index}change`] = function (e) {
+          console.log(`slider${index}发生change事件，携带值为`, e.detail.value)
+        }
+      })(i);
+    }
+    Page(pageData)
   }
 }
 

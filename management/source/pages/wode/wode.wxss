@@ -31,3 +31,9 @@
   width: 154rpx;
   height: 48rpx;
 }
+.margin-left-220{
+  margin-left:220rpx;
+}
+.margin-top-200{
+  margin-top: 200rpx;
+}
