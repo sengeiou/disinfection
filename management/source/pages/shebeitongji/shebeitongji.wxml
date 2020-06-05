@@ -22,12 +22,12 @@
   <view class='f-32 w-color margin-left-20'>{{list.allsubowner.length}}</view>
 </view>
 
-<view wx:for="{{list.allsubowner}}" class='bg-color border-radius-30 margin-top margin-left-40 margin-right-40'>
+<view wx:for="{{list.allsubowner}}" bindtap="chakan" id="{{item.id}}" class='bg-color border-radius-30 margin-top margin-left-40 margin-right-40'>
   <view class='f-32 txt-white margin-top-30 margin-left-20'>{{item.name}} {{item.shopname}}</view>
   <view class='flex-row margin-left-20 margin-top-16'>
     <view class='h6 txt-white flex-1 margin-top-3'>设备数量：{{item.devicecount}}</view>
     <view class='h6 w-color2 margin-top-3'>查看</view>
-    <image bindtap="chakan" src='{{uploadpath}}resource/{{res.xy}}' class='icon margin-right-30 margin-left-10 '></image>
+    <image  src='{{uploadpath}}resource/{{res.xy}}' class='icon margin-right-30 margin-left-10 '></image>
   </view>
   <view class='flex-row margin-left-20 margin-bottom-30 margin-top-10'>
     <view class='h6 txt-white'>工作中：{{item.workingdevice}}</view>
@@ -40,7 +40,7 @@
   <view class='f-32 w-color margin-left-20'>{{list2.length}}</view>
 </view>
 
-<view wx:for="{{list2}}" class='flex-row bg-white border-radius-20 margin-right-40 margin-left-40 bj-shadow margin-bottom-20'>
+<view wx:for="{{listinstore}}" class='flex-row bg-white border-radius-20 margin-right-40 margin-left-40 bj-shadow margin-bottom-20'>
   <view class='h5 w-color3 flex-1 margin-left-30 margin-top-20 margin-bottom-20'>未配置</view>
   <view class='h5 w-color3 margin-top-20'>设备编号</view>
   <view class='f-32 w-color3 margin-top-18 margin-right-30'>{{item.name}}</view>

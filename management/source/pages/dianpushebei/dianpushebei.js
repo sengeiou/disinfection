@@ -24,8 +24,9 @@ class Content extends AppBase {
   onMyShow(e) {
     var that = this;
     var api = new OwnerApi();
-    api.devicesummary({}, ret => {
-      var owner_id = ret.id;
+    api.devicesummary({
+      owner_id:this.Base.options.ownerb_id
+    }, ret => {
       this.Base.setMyData({ list: ret })
     })
   }

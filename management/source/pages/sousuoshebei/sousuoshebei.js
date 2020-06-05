@@ -19,25 +19,28 @@ class Content extends AppBase {
     this.Base.Page = this;
     //options.id=5;
     super.onLoad(options);
+    this.Base.setMyData({name:this.Base.options.name})
   }
 
   onMyShow(e) {
     var that = this;
     var api = new OwnerApi();
     api.devicesummary({
-      name:this.Base.options.name
+      name:this.Base.getMyData().name
     }, ret => {
       // console.log(name)
-      this.Base.setMyData({ list: ret , name:this.Base.options.name})
+      this.Base.setMyData({ list: ret })
    
     })
   }
   searchtxt(e) {
     this.Base.setMyData({
-      search: e.detail.value
+      name: e.detail.value
     })
   }
-
+  tijiao(){
+    this.onMyShow();
+  }
 }
 
 

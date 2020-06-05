@@ -1,8 +1,8 @@
-<block wx:for="{{list.allsubowner}}">
+<block wx:for="{{list}}">
   <view bindtap="" class='bg-white border-radius-30 margin-right-40 margin-left-40 bj-shadow margin-top margin-bottom-20'>
     <view class='flex-row margin-top-20'>
       <view class='h5 margin-left-20'>设备编号</view>
-      <view class="flex-1">{{item.id}}</view>
+      <view class="flex-1">{{item.deviceno}}</view>
       <image src='{{uploadpath}}resource/{{res.s}}' class='icon-15 margin-right-20 margin-left-10 '></image>
       <image src='{{uploadpath}}resource/{{res.v}}' class='icon-15 margin-right-30 '></image>
     </view>

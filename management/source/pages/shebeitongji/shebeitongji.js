@@ -1,10 +1,22 @@
 // pages/content/content.js
-import { AppBase } from "../../appbase";
-import { ApiConfig } from "../../apis/apiconfig";
-import { InstApi } from "../../apis/inst.api.js";
-import { ApiUtil } from "../../apis/apiutil";
-import { MemberApi } from "../../apis/member.api.js";
-import { OwnerApi } from "../..//apis/owner.api.js";
+import {
+  AppBase
+} from "../../appbase";
+import {
+  ApiConfig
+} from "../../apis/apiconfig";
+import {
+  InstApi
+} from "../../apis/inst.api.js";
+import {
+  ApiUtil
+} from "../../apis/apiutil";
+import {
+  MemberApi
+} from "../../apis/member.api.js";
+import {
+  OwnerApi
+} from "../..//apis/owner.api.js";
 class Content extends AppBase {
   constructor() {
     super();
@@ -22,44 +34,49 @@ class Content extends AppBase {
   }
   onMyShow() {
     var that = this;
-    var api=new OwnerApi();
-    api.devicesummary({
-    }
-    ,ret=>{
-    console.log(ret,"22")
-    this.Base.setMyData
-    ({  list:ret     })
+    var api = new OwnerApi();
+    api.devicesummary({}, ret => {
+      console.log(ret, "22")
+      this.Base.setMyData({
+        list: ret
+      })
       var arr = [];
-    for(var i=0;i<ret.alldevice.length;i++){
-        if(ret.alldevice[i].ownerb_id==0){ 
+      for (var i = 0; i < ret.alldevice.length; i++) {
+        if (ret.alldevice[i].ownerb_id == 0) {
           //  ret.alldevice.splice(i,1)
-        
+
           arr.push(ret.alldevice[i]);
-          
-          
-      
+
+
+
         }
-   }
+      }
       console.log(arr, "7777")
-      this.Base.setMyData({ list2: arr })
-                 var arr=[];
-           var arr2=[];
-      for (var i=1;i<ret.alldevice.length;i++) {
-        if (ret.alldevice[i].workingtype=="WORK") {
+      this.Base.setMyData({
+        listinstore: arr
+      })
+      var arr = [];
+      var arr2 = [];
+      for (var i = 1; i < ret.alldevice.length; i++) {
+        if (ret.alldevice[i].workingtype == "WORK") {
           // console.log(ret, "6666666666666")
           arr.push(ret.alldevice[i])
         }
-        if(ret.alldevice[i].workingtype=="ON"){
+        if (ret.alldevice[i].workingtype == "ON") {
           arr2.push(ret.alldevice[i])
         }
         // console.log(ret, "6666666666666")
         // this.Base.setMyData({
         //   list4:ret.alldevice
         // })
-        }
-   
-      this.Base.setMyData({  list2:arr })
-      this.Base.setMyData({ list3:arr2 })
+      }
+
+      this.Base.setMyData({
+        list2: arr
+      })
+      this.Base.setMyData({
+        list3: arr2
+      })
 
     })
 
@@ -71,12 +88,12 @@ class Content extends AppBase {
     })
   }
   // chakan()
-  dianji(e){
+  dianji(e) {
     var txt = this.Base.getMyData().search;
     // console.log(txt+"11")
     var that = this;
     var list2 = this.Base.getMyData().list2;
-    var search=this.Base.getMyData().search;
+    var search = this.Base.getMyData().search;
     // var name = list2.name;
     // console.log(list2,name,"2222222")
     // return;
@@ -85,20 +102,21 @@ class Content extends AppBase {
         title: '请输入搜索内容',
         icon: 'none'
       })
-return
+      return
     }
     wx.navigateTo({
-      url: '/pages/sousuoshebei/sousuoshebei?name='+search,
+      url: '/pages/sousuoshebei/sousuoshebei?name=' + search,
     })
   }
-  shebeitongji(){
+  shebeitongji() {
     wx.navigateTo({
       url: '/pages/shebeitongjitwo/shebeitongjitwo',
     })
   }
-  chakan(){
+  chakan(e) {
+    var id=e.currentTarget.id;
     wx.navigateTo({
-      url: '/pages/dianpushebei/dianpushebei',
+      url: '/pages/dianpushebei/dianpushebei?ownerb_id=' + id,
     })
   }
 }
@@ -109,8 +127,8 @@ var content = new Content();
 var body = content.generateBodyJson();
 body.onLoad = content.onLoad;
 body.onMyShow = content.onMyShow;
-body.shebeitongji=content.shebeitongji;
-body.dianji=content.dianji;
-body.searchtxt=content.searchtxt;
-body.chakan=content.chakan;
+body.shebeitongji = content.shebeitongji;
+body.dianji = content.dianji;
+body.searchtxt = content.searchtxt;
+body.chakan = content.chakan;
 Page(body)
