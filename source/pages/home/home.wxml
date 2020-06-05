@@ -5,8 +5,7 @@
 		</swiper-item>
 	</block>
 </swiper>
-
-
+<block wx:if="{{xiaoduji_id>0}}">
 <button wx:if="{{memberinfo==undefined||memberinfo.avatarUrl==''}}" class="clear-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
 	<view class='' wx:for='{{xuanxianglist}}' wx:key='k'>
 
@@ -42,7 +41,7 @@
 	</view>
 
 </view>
-
+</block>
 
 <view class='flex-1'></view>
 <view class='height-70 bg-white margin-sibian flex-row flex-center' style='border-radius:22rpx' bindtap='xiaofei'>
