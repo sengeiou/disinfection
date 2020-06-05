@@ -25,7 +25,7 @@
 
 <view class='margin-top-30'></view>
 <view class='sh-dx flex-row  padding-top-30 padding-bottom-30 margin-left-40 margin-right-40 bj-shadow'>
-  <view class='f-32 txt-white margin-left-40 flex-1 margin-top-5'>商户信息卡</view>
+  <view class='f-32 txt-white margin-left-40 flex-1 margin-top-5'>拥有设备</view>
   <image bindtap='zengjia' id="{{l.id}}" class='   padding-bottom-10 padding-top-10 margin-right-30 icon-140' src='{{uploadpath}}resource/{{res.a12}}'></image>
 </view>
 <view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' wx:for="{{list}}">

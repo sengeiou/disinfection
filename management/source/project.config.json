@@ -411,6 +411,14 @@
 					"id": -1,
 					"name": "pages/guanyuwomen/guanyuwomen",
 					"pathName": "pages/guanyuwomen/guanyuwomen",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/zengjiaxinxi/zengjiaxinxi",
+					"pathName": "pages/zengjiaxinxi/zengjiaxinxi",
+					"query": "ownerb_id=15",
 					"scene": null
 				}
 			]

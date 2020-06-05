@@ -53,9 +53,9 @@ class Content extends AppBase {
           title: '已添加',
           icon: 'none'
         })
+        console.log("wodeshanghutwo", '/pages/zengjiaxinxi/zengjiaxinxi?from=new&ownerb_id=' + ret.return)
         wx.navigateTo({
-          url: '/pages/wodeshanghutwo/wodeshanghutwo',
-        })({
+          url: '/pages/zengjiaxinxi/zengjiaxinxi?from=new&ownerb_id='+ret.return,
         })
       } else {
         wx.showToast({ 

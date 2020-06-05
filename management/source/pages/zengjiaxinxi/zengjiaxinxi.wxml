@@ -1,15 +1,19 @@
 <view class='margin-top'></view>
-<view class='bj-daxiao flex-row  padding-top-30 padding-bottom-30 margin-left-40 margin-right-40 bj-shadow'>
-  <view class='f-32 txt-white margin-left-40 flex-1 margin-top-5'>商户信息卡</view>
-  <image bindtap='zengjiaxinxi' src='{{uploadpath}}resource/{{res.a8}}' class='icon-96 padding-left-20 margin-right-20 padding-top-5 padding-bottom-5'></image>
-
+<view class='bj-daxiao flex-row flex-center  padding-top-30 padding-bottom-30 margin-left-40 margin-right-40 bj-shadow'>
+  <view class='f-32 txt-white margin-left-40 flex-1 margin-top-5'>可选设备</view>
+  <view class="txt-white bgselect h7 margin-right-20 text-center ">
+    {{checkcount}}/{{list.length}}
+  </view>
 </view>
+<scroll-view style="height:70vh" scroll-y="{{true}}" >
 <view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' wx:for='{{list}}' wx:for-index='idx'>
-  <view class='sh-color padding-top-30 h5 padding-left-40 padding-bottom-30'>设备编号：</view>
+  <view class='sh-color padding-top-30 h5 padding-left-40 padding-bottom-30'>设备编号</view>
   <view class='sh-color h5 padding-top-30 padding-left-40 padding-bottom-30 flex-1'>{{item.xiaoduji_id_name}}</view>
   <view>
   </view>
-  <image src='{{uploadpath}}resource/{{item.id==ownerb_id?res.check:res.checkbox}}' class='icon-25  margin-right-80 padding-top-25' bindtap='dianji' id='{{idx}}'>
+  <image src='{{uploadpath}}resource/{{item.checked==true?res.check:res.checkbox}}' class='icon-25  margin-right-80 padding-top-25' bindtap='dianji' id='{{idx}}'>
   </image>
 </view>
+
+</scroll-view>
 <image bindtap="querentianjia" src='{{uploadpath}}resource/{{res.a2}}' class="margin-right-40 margin-left-40 margin-bottom-80 margin-top icon-600"></image>

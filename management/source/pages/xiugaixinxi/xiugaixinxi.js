@@ -52,7 +52,6 @@ class Content extends AppBase {
     }, (ret) => {
       console.log(ret, 'ret')
       if (ret.code == "0") {
-        wx.setStorageSync("token", ret.return);
         wx.showToast({
         title: '已保存',
         icon: 'none'
