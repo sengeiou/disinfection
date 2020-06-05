@@ -53,25 +53,31 @@ class Content extends AppBase {
       })
     }
   }
-  shebeitongji(e) {
+  shebeitongji() {
+    if(this.Base.getMyData().OwnerInfo.role=="A"){
       wx.navigateTo({
         url: '/pages/shebeitongji/shebeitongji',
       })
+    }else{
+      wx.navigateTo({
+        url: '/pages/shebeitongjitwo/shebeitongjitwo',
+      })
+    }
+     
 
   }
   shebeidingdan(e){
-    if (name == "shebeidingdan") {
       wx.navigateTo({
-        url: '/pages/sbdd/sbdd',
+        url: '/pages/shebeidingdan/shebeidingdan',
       })
-    }
-    if (name == "fengchengguanli") {
+  }
+  fengchengguanli(){
       wx.navigateTo({
-        url: '/pages/fcgl/fcgl',
+        url: '/pages/fengchengguanli/fengchengguanli',
       })
     }
 
-  }
+
   
 
 
@@ -88,4 +94,6 @@ body.onMyShow = content.onMyShow;
 body.wodeshanghu=content.wodeshanghu;
 body.tixian = content.tixian;
 body.shebeitongji=content.shebeitongji;
+body.shebeidingdan = content.shebeidingdan;
+body.fengchengguanli = content.fengchengguanli;
 Page(body)

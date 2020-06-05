@@ -7,7 +7,11 @@
 <view class='h6  txt-white'>设备数量：20</view>
 <view class='h6  txt-white margin-left-40'>总盈利：200元</view>
 </view>
-<progress class='margin-left-20' color='#F3BD2B' percent="100" show-info="{{true}}" active='true'/>
+<view class="section section_gap">
+         <view class="body-view">
+  <slider bindchange="slider3change" selected-color="yellow" show-value/>
+            </view>
+        </view>
 </view>
 <view class='bg-color border-radius-30 margin-right-40 margin-left-40 bj-shadow margin-top-20'>
 <view class='flex-row margin-top-20'>
@@ -18,6 +22,10 @@
 <view class='h6  txt-white'>设备数量：20</view>
 <view class='h6  txt-white margin-left-40'>总盈利：200元</view>
 </view>
-<progress class='margin-left-20' color='#F3BD2B' percent="100" show-info="{{true}}" active='true'/>
+<view class="section section_gap">
+         <view class="body-view">
+  <slider bindchange="slider3change" selected-color="yellow" show-value/>
+            </view>
+        </view>
 </view>
 

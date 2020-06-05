@@ -4,6 +4,7 @@ import { ApiConfig } from "../../apis/apiconfig";
 import { InstApi } from "../../apis/inst.api.js";
 import { ApiUtil } from "../../apis/apiutil";
 import { MemberApi } from "../../apis/member.api.js";
+import { OwnerApi } from "../../apis/owner.api.js"
 class Content extends AppBase {
   constructor() {
     super();
@@ -19,19 +20,14 @@ class Content extends AppBase {
     //options.id=5;
     super.onLoad(options);
   }
-  onMyShow() {
+
+  onMyShow(e) {
     var that = this;
-  }
-  sou(e) {
-    var name = e.currentTarget.dataset.name;
-    if (name == "ss") {
-      wx.navigateTo({
-        url: '/pages/sbtjson/sbtjson',
-      })
-    }
-
-
-
+    var api = new OwnerApi();
+    api.devicesummary({}, ret => {
+      var owner_id = ret.id;
+      this.Base.setMyData({ list: ret })
+    })
   }
 }
 

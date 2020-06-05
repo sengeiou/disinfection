@@ -1,14 +1,7 @@
-<view class='margin-top-30'></view>
-<view class="flex-row bg-white margin-left-40 margin-right-40 height-60 border-radius-30">
-  <input class="h6 t-color2 margin-left-40 flex-1 margin-top-7" bindinput="searchtxt" placeholder="请输入您要搜索的内容" bindconfirm="tijiao"></input>
-    <image bindtap='tijiao' src='{{uploadpath}}resource/{{res.sou}}' class='icon margin-right-20 margin-top-15'>
-    </image>
-</view>
-
 <block wx:for="{{list.allsubowner}}">
   <view bindtap="" class='bg-white border-radius-30 margin-right-40 margin-left-40 bj-shadow margin-top margin-bottom-20'>
     <view class='flex-row margin-top-20'>
-      <view class='h5 margin-left-20'>设备编号{{name}}-----</view>
+      <view class='h5 margin-left-20'>设备编号</view>
       <view class="flex-1">{{item.id}}</view>
       <image src='{{uploadpath}}resource/{{res.s}}' class='icon-15 margin-right-20 margin-left-10 '></image>
       <image src='{{uploadpath}}resource/{{res.v}}' class='icon-15 margin-right-30 '></image>
