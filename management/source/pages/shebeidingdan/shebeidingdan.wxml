@@ -1,43 +1,34 @@
-<view class='flex-row margin-top margin-left-40 margin-right-40'>
-  <view bindtap='qjxz' class=' bg-white border-radius-10 height-48 padding-left-40 padding-right-40'>
-    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
-      <view class="picker 'h6 t-color text-center padding-top-8 padding-bottom-6">
-        2020-02-02{{date}}
+<view class='flex-row flex-center margin-top margin-left-40 margin-right-40'>
+  <view  class=' bg-white border-radius-10 height-48 padding-left-20 padding-right-20'>
+    <picker id="startdate" mode="date" value="{{startdate}}"  end="{{enddate}}" bindchange="bindDateChange">
+      <view class="picker 'h6 t-color text-center ">
+        {{startdate}}
       </view>
     </picker>
   </view>
 
   <view class='h5 t-color margin-left-20 margin-right-20'>至</view>
-  <view bindtap='qjxz' class='h6 text-center t-color bg-white border-radius-10 height-48 padding-left-38 padding-right-40'>
-    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
-      <view class="picker h6 text center t-color padding-top-8 padding-bottom-6">
-        2020-02-02{{date}}
+  <view  class='h6 text-center t-color bg-white border-radius-10 height-48 padding-left-38 padding-right-20'>
+    <picker  id="enddate" mode="date" value="{{enddate}}" start="{{startdate}}" end="{{maxdate}}" bindchange="bindDateChange">
+      <view class="picker h6 text center t-color ">
+        {{enddate}}
       </view>
     </picker>
   </view>
   <image bindtap='qjxz' data-name="qd" src='{{uploadpath}}resource/{{res.a13}}' class='icon-120 margin-left-50 txt-white'></image>
 </view>
-<view class='bg-white border-radius-20 margin-right-40 margin-left-40 margin-top'>
-  <view class='flex-row margin-top-16 border padding-bottom-10 padding-top-10'>
-    <view class='h6 flex-1 margin-top-3 t-color  margin-left-40 margin-right-50'>订单号：1264-4882-1145</view>
-    <view class='h6 margin-top-3 t-color flex-1'>2020-02-02 19:25:55</view>
-  </view>
-  <view class='h5 txt-bold margin-top-20 margin-left-40'>设备：SN000001 星巴克KKONE店</view>
-  <view class='flex-row margin-left-40 margin-bottom-30 margin-top-10'>
-    <view class='h5 txt-bold flex-1'>费用：￥0.99</view>
-    <image src='{{uploadpath}}resource/{{res.jxz}}' class='icon-116 margin-right-30 margin-left-10 '>
-    </image>
-  </view>
-</view>
+
 <view class='bg-white border-radius-20 margin-right-40 margin-left-40 margin-top-20' wx:for="{{list}}">
   <view class='flex-row margin-top-16 border padding-bottom-10 padding-top-10'>
-    <view class='h6 flex-1 margin-top-3 t-color  margin-left-40 margin-right-50'>订单号：{{item.no}}</view>
-    <view class='h6 margin-top-3 t-color flex-1'>{{item.time}}</view>
+    <view class='h6 flex-1 margin-top-3 t-color  margin-left-40  flex-1 '>订单号：{{item.orderno}}</view>
+    <view class='h6 margin-top-3 t-color margin-right-50'>{{item.pay_time_formatting}}</view>
   </view>
-  <view class='h5 txt-bold margin-top-20 margin-left-40'>设备：{{item.shebei}}</view>
+  <view class='h5 txt-bold margin-top-20 margin-left-40 '>设备：{{item.xiaoduji_deviceno}} {{item.ownerb_shopname}}</view>
   <view class='flex-row margin-left-40 margin-bottom-30 margin-top-10'>
-    <view class='h5 txt-bold flex-1'>费用：{{item.money}}</view>
-    <image src='{{uploadpath}}resource/{{res.ywc}}' class='icon-116 margin-right-30 margin-left-10 '>
+    <view class='h5 txt-bold flex-1'>费用：¥{{item.amount}}</view>
+    <image src='{{uploadpath}}resource/{{res.jxz}}' class='icon-116 margin-right-30 margin-left-10 ' wx:if="{{item.xiaoduzhuantai=='B'}}">
+    </image>
+    <image src='{{uploadpath}}resource/{{res.ywc}}' class='icon-116 margin-right-30 margin-left-10 ' wx:if="{{item.xiaoduzhuantai=='C'}}">
     </image>
   </view>
 </view>

@@ -198,11 +198,11 @@ export class AppBase {
           url: '/pages/tuichudenglu/tuichudenglu',
         })
       }
-      this.Base.setMyData({ OwnerInfo:info});
+      this.Base.setMyData({ OwnerInfo: info });
+      that.onMyShow();
     });
     
     
-    that.onMyShow();
   }
   
   loadtabtype() {

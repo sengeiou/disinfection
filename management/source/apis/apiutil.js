@@ -54,11 +54,20 @@ export class ApiUtil {
   }
 
   static FormatDateTime(val) {
-    return val.getFullYear() + "-" + (val.getMonth() + 1) + "-" + val.getDate() +
-      " " + val.getHours() + ":" + val.getMinutes() + ":" + val.getSeconds();
+    var year=val.getFullYear();
+    var month = (val.getMonth() + 1) > 9 ? (val.getMonth() + 1) : ("0" + (val.getMonth() + 1));
+    var date = val.getDate() > 9 ? val.getDate() : ("0" + val.getDate());
+    var hour = val.getHours() > 9 ? val.getHours() : ("0" + val.getHours());
+    var minute = val.getMinutes() > 9 ? val.getMinutes() : ("0" + val.getMinutes());
+    var second = val.getSeconds() > 9 ? val.getSeconds() : ("0" + val.getSeconds());
+    return year+"-"+month+"-"+date+" "+hour+":"+minute+":"+second;
   }
   static FormatDate(val) {
-    return val.getFullYear() + "-" + (val.getMonth() + 1) + "-" + val.getDate() ;
+    var year = val.getFullYear();
+    var month = (val.getMonth() + 1) > 9 ? (val.getMonth() + 1) : ("0" + (val.getMonth() + 1));
+    var date = val.getDate() > 9 ? val.getDate() : ("0" + val.getDate());
+   
+    return year + "-" + month + "-" + date;
   }
 
   static IsMobileNo(str) {

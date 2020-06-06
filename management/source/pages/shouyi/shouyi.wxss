@@ -37,3 +37,26 @@
 .t-color2{
   color:#F2BD2B;
 }
+.container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.sx{
+  background-color:#091C2B;
+}
+.sxc{
+  color:#F2BD2B;
+}
