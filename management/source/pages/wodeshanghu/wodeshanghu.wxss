@@ -1,8 +1,8 @@
 .bj-size{
  background:rgba(9,28,43,1);
-  box-shadow:0px 1px 5px rgba(102,123,162,0.1);
+  box-shadow:0rpx 2rpx 10rpx rgba(102,123,162,0.1);
   opacity:1;
-  border-radius:10px 10px 0px 0px;
+  border-radius:20rpx 20rpx 0rpx 0rpx;
 }
 .word-color{
   color: #3C3F4E;
@@ -14,12 +14,12 @@ page{
   background:#F5F4F9;
 }
 .border{
-  border-bottom: 1px solid #F1F1F1;
+  border-bottom: 2rpx solid #F1F1F1;
 }  
 .shadow{
- box-shadow:0px 1px 5px rgba(102,123,162,0.1);
+ box-shadow:0rpx 2rpx 10rpx rgba(102,123,162,0.1);
 opacity:1;
 }
 .border-radius-10{
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0rpx 0rpx 20rpx 20rpx;
 }

@@ -1,66 +1,64 @@
 <image src='{{uploadpath}}resource/{{res.logo}}' class='icon-100 margin-left-290'></image>
 <view class='h4-5 text-center' style='color:#585858;'>牛牛消毒商家版</view>
 
-        <view class='flex-1 flex-row flex-center margin-top-60'>
+<view class='flex-1 flex-row flex-center margin-top-60'>
 
-          <view class='flex-1 flex-row flex-column' bindtap='bindshow' data-type='yy'>
-            <view class='   flex-1 f-32 padding-10 margin-bottom-5 {{show=="yy"?"":"wdj-color"}} dj-color'>已有账号</view>
-            <view wx:if='{{show=="yy"}}' class='bj-color' style='width:160rpx;height:8rpx;border-radius:4rpx;'></view>
-            <view wx:if='{{show!="yy"}}' class='' style='width:160rpx;height:8rpx;'></view>
-          </view>
+  <view class='flex-1 flex-row flex-column' bindtap='bindshow' data-type='yy'>
+    <view class='   flex-1 f-32 padding-10 margin-bottom-5 {{show=="yy"?"":"wdj-color"}} dj-color'>已有账号</view>
+    <view wx:if='{{show=="yy"}}' class='bj-color' style='width:160rpx;height:8rpx;border-radius:4rpx;'></view>
+    <view wx:if='{{show!="yy"}}' class='' style='width:160rpx;height:8rpx;'></view>
+  </view>
 
-          <view class='flex-1 flex-row flex-column' bindtap='bindshow' data-type='yh'>
-            <view class='   flex-1 f-32 padding-10 margin-bottom-5 {{show=="yh"?"":"wdj-color"}} dj-color'>新用户</view>
-            <view wx:if='{{show=="yh"}}' class='bj-color' style='width:160rpx;height:8rpx;border-radius:4rpx;'></view>
-            <view wx:if='{{show!="yh"}}' class='' style='width:160rpx;height:8rpx;'></view>
-          </view>
-        </view>
+  <view class='flex-1 flex-row flex-column' bindtap='bindshow' data-type='yh'>
+    <view class='   flex-1 f-32 padding-10 margin-bottom-5 {{show=="yh"?"":"wdj-color"}} dj-color'>新用户</view>
+    <view wx:if='{{show=="yh"}}' class='bj-color' style='width:160rpx;height:8rpx;border-radius:4rpx;'></view>
+    <view wx:if='{{show!="yh"}}' class='' style='width:160rpx;height:8rpx;'></view>
+  </view>
+</view>
 
-          <view wx:if='{{show=="yy"}}'>
-        <view class=' mianji margin-left-80 margin-top margin-right-80'>
-        <!-- <view class='f-32 margin-left-46 margin-top-28 dl-color'>输入手机号</view> -->
-        <input class="f-32 padding-left-40 margin-top-20" placeholder-style="color:#A5A9B1;" type="number" bindinput="uName" placeholder='输入手机号'></input>
-        </view>
-        <view class=' mianji margin-left-80 margin-top margin-right-80'>
-        <input class="f-32 padding-left-40 margin-top-20" placeholder-style="color:#A5A9B1;" type="password" bindinput="uPwd" placeholder='输入密码'></input>
-        </view>
-      <view data-name='dl' bindtap='denglu'>
-        <!-- <image  src='{{uploadpath}}resource/{{res.a18}}'class="icon-96 margin-left-80 margin-top margin-right-80 margin-bottom-40"  ></image> -->
-       <view class="dl-mianji margin-right-80 margin-left-80 margin-bottom-40 margin-top-100">
-       <view class="txt-white text-center margin-top-28">登录</view>
-       </view>
+<view wx:if='{{show=="yy"}}'>
+  <view class=' mianji margin-left-80 margin-top margin-right-80'>
+    <!-- <view class='f-32 margin-left-46 margin-top-28 dl-color'>输入手机号</view> -->
+    <input class="f-32 padding-left-40 margin-top-28" placeholder-style="color:#A5A9B1;" type="number" bindinput="uName" placeholder='输入手机号'></input>
+  </view>
+  <view class=' mianji margin-left-80 margin-top margin-right-80'>
+    <input class="f-32 padding-left-40 margin-top-28" placeholder-style="color:#A5A9B1;" type="password" bindinput="uPwd" placeholder='输入密码'></input>
+  </view>
+  <view data-name='dl' bindtap='denglu'>
+    <!-- <image  src='{{uploadpath}}resource/{{res.a18}}'class="icon-96 margin-left-80 margin-top margin-right-80 margin-bottom-40"  ></image> -->
+    <view class="dl-mianji margin-right-80 margin-left-80 margin-bottom-40 margin-top-100">
+      <view class="txt-white text-center margin-top-28">登录</view>
+    </view>
 
-      </view>
-        
-        <view data-name='wjmm' bindtap='wangjimima' class='flex-row'>
-         <view class='dl-color f-32 margin-bottom-268 text-center flex-1' >忘记密码
-           <image src='{{uploadpath}}resource/{{res.rightrow}}' class='icon-10 margin-right-40'></image>
-         </view>
-        </view>
-        </view>
+  </view>
 
-        <view wx:if='{{show=="yh"}}'>
-        <view class=' mianji margin-left-80 margin-right-80 margin-top'>
-        <input class="f-32 padding-left-40 margin-top-20" placeholder-style="color:#A5A9B1;" type="text" bindinput="uName" placeholder='输入手机号'></input>
-        </view>
-        <view class='flex-row'>
-         <view class=' mianji margin-left-80 margin-top flex-1 margin-right-26'>
-        <!-- <view class='f-32 margin-left-46 margin-top-28 dl-color'>动态验证码</view> -->
-        <input name="yanzhengma" bindinput='yanzhengma' placeholder="动态验证码" type="text"  class="margin-left-46 margin-top-28" placeholder-style="color:#A5A9B1;"></input>
-        </view>
+  <view data-name='wjmm' bindtap='wangjimima' class='flex-row'>
+    <view class='dl-color f-32 margin-bottom-268 text-center flex-1'>忘记密码
+      <image src='{{uploadpath}}resource/{{res.rightrow}}' class='icon-10 margin-right-40'></image>
+    </view>
+  </view>
+</view>
 
-        <view bindtap="sendmessage" class='hq-mianji margin-right-80 padding-left-50 padding-right-50 padding-top-14 margin-top-54' wx:if="{{send==false}}">
-        <view class='f-32 txt-white txt-center' wx:if="{{send==false}}">获取</view>
-        </view>
-        <view class="txt-black  margin-top-70" wx:if="{{reminder>0}}">{{reminder}}秒</view>
-        <view class="  margin-top-70" wx:if="{{reminder<=0 && send}}" bindtap="sendmessage">重新发送验证码</view>
+<view wx:if='{{show=="yh"}}'>
+  <view class=' mianji margin-left-80 margin-right-80 margin-top'>
+    <input class="f-32 padding-left-40 margin-top-28" placeholder-style="color:#A5A9B1;" type="text" bindinput="uName" placeholder='输入手机号'></input>
+  </view>
+
+  <view class='flex-row'>
+    <view class=' wx:if="{{send==false}}" mianjitwo margin-left-80 margin-top flex-1 margin-right-26'>
+      <input name="yanzhengma" bindinput='yanzhengma' placeholder="动态验证码" type="text" class="margin-left-40 margin-top-28" placeholder-style="color:#A5A9B1;"></input>
+    </view>
+
+    <view bindtap="sendmessage" class='hq-mianji margin-right-80 padding-left-50 padding-right-50 padding-top-14 margin-top-50' wx:if="{{send==false && reminder==0}}">
+      <view class='h5 txt-white txt-center margin-top-5' wx:if="{{send==false}}">获取</view>
+    </view>
 
 
+    <view class="txt-black  margin-top-50  margin-right-80  padding-top-14 margin-left-40 " wx:if="{{reminder>0}}" style="width:150rpx;">{{reminder}}秒</view>
 
-
-        </view>
-        <view data-name='zc' bindtap='zhuce' class="dl-mianji margin-right-80 margin-left-80 margin-bottom-40 margin-top-100">
-         <!-- <image  src='{{uploadpath}}resource/{{res.a20}}'class="icon-96 margin-left-80 margin-top margin-right-80 margin-bottom-40"  ></image> -->
-       <view class="txt-white text-center margin-top-28">登录</view>
-        </view>
-        </view>
+    <view class="margin-top-70 h5 margin-right-40" wx:if="{{send==true && reminder<=0}}" bindtap="sendmessage">重新发送验证码</view>
+  </view>
+  <view data-name='zc' bindtap='zhuce' class="dl-mianji margin-right-80 margin-left-80 margin-bottom-40 margin-top-100">
+    <view class="txt-white text-center margin-top-28">登录</view>
+  </view>
+</view>
