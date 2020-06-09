@@ -4,5 +4,5 @@
 <input placeholder="设置6位数字的密码" bindinput="password" class="text-center margin-top-28" type="password"></input>
 </view>
 <view data-name='szmm' bindtap='szmm' class='logo-mianji margin-top-450 margin-left-300'>
-<image src='{{uploadpath}}resource/{{res.left}}' class=' margin-left-50 margin-top-35'style='height:62rpx;width:40rpx'></image>
+<image src='{{uploadpath}}resource/{{res.left}}' class=' margin-left-40 margin-top-35 icon-30'></image>
 </view>

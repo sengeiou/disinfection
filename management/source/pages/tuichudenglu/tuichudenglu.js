@@ -31,6 +31,9 @@ class Content extends AppBase {
       send: false,
       reminder: 0
     });
+    if (wx.canIUse('hideHomeButton')) {
+      wx.hideHomeButton()
+    }
   }
   bindshow(e) {
     var type = e.currentTarget.dataset.type;

@@ -49,6 +49,9 @@ border-radius:24px;
 .margin-top-100{
   margin-top: 100rpx;
 }
+.margin-top-180{
+  margin-top: 180rpx;
+}
 .xyh-mianji{
 height:48px;
 background:rgba(255,255,255,1);

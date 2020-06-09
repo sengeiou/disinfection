@@ -25,12 +25,16 @@
         <input class="f-32 padding-left-40 margin-top-20" placeholder-style="color:#A5A9B1;" type="password" bindinput="uPwd" placeholder='输入密码'></input>
         </view>
       <view data-name='dl' bindtap='denglu'>
-        <image  src='{{uploadpath}}resource/{{res.a18}}'class="icon-96 margin-left-80 margin-top margin-right-80 margin-bottom-40"  ></image>
+        <!-- <image  src='{{uploadpath}}resource/{{res.a18}}'class="icon-96 margin-left-80 margin-top margin-right-80 margin-bottom-40"  ></image> -->
+       <view class="dl-mianji margin-right-80 margin-left-80 margin-bottom-40 margin-top-100">
+       <view class="txt-white text-center margin-top-28">登录</view>
+       </view>
+
       </view>
         
         <view data-name='wjmm' bindtap='wangjimima' class='flex-row'>
          <view class='dl-color f-32 margin-bottom-268 text-center flex-1' >忘记密码
-           <image src='{{uploadpath}}resource/{{res.right}}' class='icon-10 margin-right-40'></image>
+           <image src='{{uploadpath}}resource/{{res.rightrow}}' class='icon-10 margin-right-40'></image>
          </view>
         </view>
         </view>
@@ -55,7 +59,8 @@
 
 
         </view>
-        <view data-name='zc' bindtap='zhuce'>
-         <image  src='{{uploadpath}}resource/{{res.a20}}'class="icon-96 margin-left-80 margin-top margin-right-80 margin-bottom-40"  ></image>
+        <view data-name='zc' bindtap='zhuce' class="dl-mianji margin-right-80 margin-left-80 margin-bottom-40 margin-top-100">
+         <!-- <image  src='{{uploadpath}}resource/{{res.a20}}'class="icon-96 margin-left-80 margin-top margin-right-80 margin-bottom-40"  ></image> -->
+       <view class="txt-white text-center margin-top-28">登录</view>
         </view>
         </view>

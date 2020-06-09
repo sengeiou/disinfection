@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -24,7 +24,7 @@
 		"preloadBackgroundData": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.11.0",
+	"libVersion": "2.11.1",
 	"appid": "wx6932d0456ac5deb0",
 	"projectname": "%E6%B6%88%E6%AF%92%E5%95%86%E5%AE%B6%E7%AE%A1%E7%90%86%E7%AB%AF",
 	"debugOptions": {
@@ -75,6 +75,34 @@
 					"id": -1,
 					"name": "pages/shouyi/shouyi",
 					"pathName": "pages/shouyi/shouyi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tuichudenglu/tuichudenglu",
+					"pathName": "pages/tuichudenglu/tuichudenglu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wangjimima/wangjimima",
+					"pathName": "pages/wangjimima/wangjimima",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/chongzhi/chongzhi",
+					"pathName": "pages/chongzhi/chongzhi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tuichudenglu/tuichudenglu",
+					"pathName": "pages/tuichudenglu/tuichudenglu",
 					"scene": null
 				}
 			]

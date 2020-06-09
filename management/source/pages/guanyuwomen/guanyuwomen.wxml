@@ -1,8 +1,8 @@
-<image src='{{uploadpath}}aboutus/{{gywm.logo_id}}' class='icon-100 margin-left-290'></image>
+<image src='{{uploadpath}}aboutus/{{gywm.logo2_id}}' class='icon-100 margin-left-290'></image>
 <!-- <image src='{{gywm.logo_id}}' class='icon-100 margin-left-290'></image> -->
-<view class='h4-5 text-center margin-top' style='color:#585858;'>{{gywm.name_id}}</view>
-<view class='h6 text-center margin-top-5' style='color:#9B9B9B;'>{{gywm.banben_id}}</view>
-<view class='h5 number-color margin-top margin-left-40 margin-right-40'>{{gywm.xiangqing_id}}</view>
+<view class='h4-5 text-center margin-top' style='color:#585858;'>{{gywm.name2_id}}</view>
+<view class='h6 text-center margin-top-5' style='color:#9B9B9B;'>{{gywm.banben2_id}}</view>
+<view class='h5 number-color margin-top margin-left-40 margin-right-40'>{{gywm.xiangqing2_id}}</view>
 <view class='fixbottom'>
 <view class='padding-left-40 padding-right-40 padding-bottom-180'>
 <view class='flex-row'>
