@@ -103,6 +103,20 @@
 					"id": -1,
 					"name": "pages/tuichudenglu/tuichudenglu",
 					"pathName": "pages/tuichudenglu/tuichudenglu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wangjimima/wangjimima",
+					"pathName": "pages/wangjimima/wangjimima",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tuichudenglu/tuichudenglu",
+					"pathName": "pages/tuichudenglu/tuichudenglu",
 					"scene": null
 				}
 			]

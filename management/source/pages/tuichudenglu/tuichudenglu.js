@@ -23,14 +23,12 @@ class Content extends AppBase {
     super.onLoad(options);
     this.Base.setMyData({
       show:"yy",
+      send: false,
+      reminder: 0
     })
   }
   onMyShow() {
     var that = this;
-    this.Base.setMyData({
-      send: false,
-      reminder: 0
-    });
     if (wx.canIUse('hideHomeButton')) {
       wx.hideHomeButton()
     }
@@ -106,10 +104,10 @@ class Content extends AppBase {
     })
   }
   setInVerify() {
-    var reminder = this.getMyData().reminder;
     var k = setInterval(() => {
+      var reminder = this.getMyData().reminder;
       if (reminder >= 0) {
-        var mm = reminder--;
+        var mm = --reminder;
         this.setMyData({
           reminder: mm
         })
@@ -119,6 +117,13 @@ class Content extends AppBase {
       }
 
     }, 1000);
+  }
+  onUnload() {
+    this.Base.setMyData({
+      show: false,
+      send: false,
+      reminder: 0
+    });
   }
   denglu() { 
     var that=this;

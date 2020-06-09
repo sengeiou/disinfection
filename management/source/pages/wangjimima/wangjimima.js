@@ -21,14 +21,14 @@ class Content extends AppBase {
     this.Base.Page = this;
     //options.id=5;
     super.onLoad(options);
+    this.Base.setMyData({
+      show: false,
+      send: false,
+      reminder: 0
+    });
   }
   onMyShow() {
     var that = this;
-    this.Base.setMyData({
-      show:false,
-      send:false,
-      reminder:0
-    });
   }
   yanzhengma(e){
     console.log(e)
@@ -78,10 +78,11 @@ class Content extends AppBase {
     })
   }
   setInVerify() {
-    var reminder = this.getMyData().reminder;
     var k = setInterval(() => {
+      var reminder = this.getMyData().reminder;
+      console.log(reminder);
       if (reminder >= 0) {
-        var mm = reminder--;
+        var mm = --reminder;
         this.setMyData({
           reminder: mm
         })
@@ -91,6 +92,13 @@ class Content extends AppBase {
       }
 
     }, 1000);
+  }
+  onUnload(){
+    this.Base.setMyData({
+      show: false,
+      send: false,
+      reminder: 0
+    });
   }
  chongzhi(e) {
    console.log(this.Base.getMyData());

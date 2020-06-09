@@ -30,6 +30,7 @@
     <view class="txt-black  margin-top-50  margin-right-80  padding-top-14 margin-left-40 " wx:if="{{reminder>0}}" style="width:150rpx;">{{reminder}}秒</view>
 
     <view class="  margin-top-70 h5 margin-right-40" wx:if="{{send==true && reminder<=0}}" bindtap="sendmessage">重新发送验证码</view>
+       {{send?"t":"g"}}-{{reminder}}
   </view>
 
 <view class='xyh-mianji margin-top margin-left-80 margin-right-80'>
