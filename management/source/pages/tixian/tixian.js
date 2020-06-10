@@ -66,7 +66,7 @@ class Content extends AppBase {
         this.Base.toast("提现金额不能为空");
         return;
       }
-      if(amount<10){
+      if(amount<=10){
           this.Base.toast("提现最低金额为10元")
           return;
       }

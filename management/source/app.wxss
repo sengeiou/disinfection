@@ -423,6 +423,9 @@ button[disabled][type=primary] {
 .margin-right-60{
   margin-right: 60rpx;
 }
+.margin-left-5{
+  margin-left:5rpx;
+}
 .margin-left-15{
   margin-left:15rpx;
 }

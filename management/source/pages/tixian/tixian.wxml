@@ -4,7 +4,7 @@
 <view class="txt-white h2 margin-left-40 margin-bottom-40 txt-bold">￥{{OwnerInfo.balance}}</view>
 <view class='flex-row'>
 <view class="h5 margin-left-40">提现最低额度为10元</view>
-<view bindtap='tixianjilu' class="text-center txt-white h5 margin-left-188 daxiao padding-right-30 padding-left-30 padding-top-5">提现记录
+<view bindtap='tixianjilu' class="text-center txt-white h5 margin-left-188 daxiao padding-right-30 padding-left-30 padding-top-5">提现记录 
 </view>
 </view>
 </view>

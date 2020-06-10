@@ -10,6 +10,12 @@
 .bj-color{
     background-color: #FF674B;
 }
+.margin-left-15{
+  margin-left: 15rpx;
+}
+.margin-left-35{
+  margin-left: 35rpx;
+}
 .mianji{
   height: 96rpx;
 background:rgba(246,246,246,1);
@@ -18,7 +24,6 @@ border-radius:60rpx;
 }
 .mianjitwo{
   height: 96rpx;
-  width: 408rpx;
 background:rgba(246,246,246,1);
 opacity:1;
 border-radius:60rpx;

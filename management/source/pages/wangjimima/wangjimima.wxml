@@ -17,8 +17,8 @@
  <input type="password" placeholder="设置新的密码" bindinput="pwd" class="margin-top-28 margin-left-46"></input>
 </view> -->
 
-  <view class='flex-row'>
-    <view class=' wx:if="{{send==false}}" mianjitwo margin-left-80 margin-top flex-1 margin-right-26'>
+    <view class='flex-row'>
+    <view class=' wx:if="{{send==false}}" mianjitwo margin-left-80 margin-top flex-1 margin-right-26'style="width:180rpx;">
       <input name="yanzhengma" bindinput='yanzhengma' placeholder="动态验证码" type="text" class="margin-left-40 margin-top-28" placeholder-style="color:#A5A9B1;"></input>
     </view>
 
@@ -27,10 +27,10 @@
     </view>
 
 
-    <view class="txt-black  margin-top-50  margin-right-80  padding-top-14 margin-left-40 " wx:if="{{reminder>0}}" style="width:150rpx;">{{reminder}}秒</view>
+    <view class="txt-black  margin-top-50 margin-left-15 margin-right-40  padding-top-14  " wx:if="{{reminder>0}}" style="width:180rpx;">{{reminder}}秒</view>
 
-    <view class="  margin-top-70 h5 margin-right-40" wx:if="{{send==true && reminder<=0}}" bindtap="sendmessage">重新发送验证码</view>
-       {{send?"t":"g"}}-{{reminder}}
+    <view class="margin-top-70 h6 margin-right-40 margin-left-20" wx:if="{{send==true && reminder<=0}}" bindtap="sendmessage">重新发送验证码</view>
+    <!-- {{send?"t":"g"}}-{{reminder}} -->
   </view>
 
 <view class='xyh-mianji margin-top margin-left-80 margin-right-80'>

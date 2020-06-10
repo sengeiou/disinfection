@@ -20,3 +20,10 @@ page{
   width: 128rpx;
 
 }
+.size{
+width:128rpx;
+height:48rpx;
+background:rgba(255,103,75,1);
+opacity:1;
+border-radius:30rpx;
+}

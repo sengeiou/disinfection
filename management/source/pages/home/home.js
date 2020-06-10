@@ -46,12 +46,9 @@ class Content extends AppBase {
     
   }
   tixian(e){
-    var name = e.currentTarget.dataset.name;
-    if (name == "shouyetixian") {
       wx.navigateTo({
         url: '/pages/tixian/tixian',
       })
-    }
   }
   shebeitongji() {
     if(this.Base.getMyData().OwnerInfo.role=="A"){

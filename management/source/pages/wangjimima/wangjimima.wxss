@@ -13,6 +13,10 @@ margin-left:46rpx;
 .margin-top-28{
   margin-top: 28rpx;
 }
+.margin-left-15{
+  margin-left: 15rpx;
+}
+
 .dl-mianji{
 height:96rpx;
 background:rgba(9,28,43,1);
@@ -21,7 +25,6 @@ border-radius:60rpx;
 }
 .mianjitwo{
   height: 96rpx;
-  width: 408rpx;
 background:rgba(246,246,246,1);
 opacity:1;
 border-radius:60rpx;
