@@ -1,0 +1,73 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/auth/auth",
+    "pages/shouyi/shouyi",
+    "pages/wode/wode",
+    "pages/tuichudenglu/tuichudenglu",
+    "pages/wentifankui/wentifankui",
+    "pages/zaixiankefu/zaixiankefu",
+    "pages/guanyuwomen/guanyuwomen",
+    "pages/weixinshouquan/weixinshouquan",
+    "pages/wangjimima/wangjimima",
+    "pages/chongzhi/chongzhi",
+    "pages/wodeshanghu/wodeshanghu",
+    "pages/shebeitongji/shebeitongji",
+    "pages/shebeitongjitwo/shebeitongjitwo",
+    "pages/shebeidingdan/shebeidingdan",
+    "pages/fengchengguanli/fengchengguanli",
+    "pages/xiugaixinxi/xiugaixinxi",
+    "pages/xiugaiyonghuxinxi/xiugaiyonghuxinxi",
+    "pages/zengjiaxinxi/zengjiaxinxi",
+    "pages/wodeshanghutwo/wodeshanghutwo",
+    "pages/tianjiashanghu/tianjiashanghu",
+    "pages/tixian/tixian",
+    "pages/lijitixian/lijitixian",
+    "pages/tixianchenggong/tixianchenggong",
+    "pages/sousuoshebei/sousuoshebei",
+    "pages/shanghuguanli/shanghuguanli",
+    "pages/dingdanxiangqing/dingdanxiangqing",
+    "pages/zongshu/zongshu",
+    "pages/xiugaixinxitwo/xiugaixinxitwo",
+    "pages/hometwo/hometwo",
+    "pages/dianpushebei/dianpushebei"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "牛牛消毒获取您的位置，为您推荐附近优质的结构"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true,
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#91959B",
+    "selectedColor": "#91959B",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/home/home",
+        "iconPath": "images/icons/d-d.png",
+        "selectedIconPath": "images/icons/d.png"
+      },
+      {
+        "text": "收益",
+        "pagePath": "pages/shouyi/shouyi",
+        "iconPath": "images/icons/c-c.png",
+        "selectedIconPath": "images/icons/c.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/wode/wode",
+        "iconPath": "images/icons/e-e.png",
+        "selectedIconPath": "images/icons/e.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,81 @@
+.margin-left-290{
+  margin-left: 290rpx;
+}
+.dj-color{
+  color: #FF674B;
+}
+.wdj-color{
+  color: #A5A9B1;
+}
+.bj-color{
+    background-color: #FF674B;
+}
+.margin-left-15{
+  margin-left: 15rpx;
+}
+.margin-left-35{
+  margin-left: 35rpx;
+}
+.mianji{
+  height: 96rpx;
+background:rgba(246,246,246,1);
+opacity:1;
+border-radius:60rpx;
+}
+.mianjitwo{
+  height: 96rpx;
+background:rgba(246,246,246,1);
+opacity:1;
+border-radius:60rpx;
+}
+.dl-color{
+  color:#A5A9B1;
+}
+.icon-96{
+  height: 96rpx;
+  width: 590rpx;
+}
+
+.margin-top-28{
+  margin-top: 28rpx;
+}
+.dl-mianji{
+height:96rpx;
+background:rgba(9,28,43,1);
+opacity:1;
+border-radius:60rpx;
+}
+.margin-left-300{
+margin-left: 300rpx;
+}
+.margin-bottom-255{
+  margin-bottom: 230rpx;
+}
+.margin-bottom-268{
+  margin-bottom: 268rpx;
+}
+.hq-mianji{
+height:68rpx;
+background:rgba(255,103,75,1);
+opacity:1;
+border-radius:48rpx;
+}
+
+.padding-right-50{
+  padding-right: 50rpx;
+}
+.padding-top-14{
+  padding-top: 14rpx;
+}
+.margin-top-50{
+  margin-top: 50rpx;
+}
+.margin-right-26{
+  margin-right: 26rpx;
+}
+.margin-top-100{
+  margin-top: 100rpx;
+}
+.margin-top-2{
+  margin-top: 4rpx;
+}

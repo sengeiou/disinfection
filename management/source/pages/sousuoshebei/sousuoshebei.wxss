@@ -1,0 +1,21 @@
+page{
+  background:#F5F4F9;
+}
+.height-60{
+  height: 60rpx;
+}
+.t-color2{
+ color:rgba(223,223,223,1);
+}
+.border-radius-30{
+  border-radius: 30rpx;
+}
+.margin-top-7{
+  margin-top: 7rpx;
+}
+.margin-top-15{
+  margin-top: 15rpx;
+}
+.t-color{
+  color: #556482;
+}

@@ -1,16 +1,13 @@
 page {
   background: #f2f2f2;
 }
-
-.di {
-  position: fixed;
-  bottom: 30rpx;
-  width: 100vw;
-}
-
-.blocks {
+.margin-sibian{
   margin: 30rpx 30rpx 0 30rpx; 
 }
-.aa{
-  width:218rpx;height:266rpx
+.img-wh{
+  width:218rpx;
+  height:286rpx
+}
+.margin-right-20{
+  margin-right: 20rpx;
 }

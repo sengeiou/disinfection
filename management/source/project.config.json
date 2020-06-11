@@ -1,0 +1,125 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"preloadBackgroundData": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.11.1",
+	"appid": "wx6932d0456ac5deb0",
+	"projectname": "%E6%B6%88%E6%AF%92%E5%95%86%E5%AE%B6%E7%AE%A1%E7%90%86%E7%AB%AF",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/shebeidingdan/shebeidingdan",
+					"pathName": "pages/shebeidingdan/shebeidingdan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/fengchengguanli/fengchengguanli",
+					"pathName": "pages/fengchengguanli/fengchengguanli",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/shouyi/shouyi",
+					"pathName": "pages/shouyi/shouyi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tuichudenglu/tuichudenglu",
+					"pathName": "pages/tuichudenglu/tuichudenglu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wangjimima/wangjimima",
+					"pathName": "pages/wangjimima/wangjimima",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/chongzhi/chongzhi",
+					"pathName": "pages/chongzhi/chongzhi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tuichudenglu/tuichudenglu",
+					"pathName": "pages/tuichudenglu/tuichudenglu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wangjimima/wangjimima",
+					"pathName": "pages/wangjimima/wangjimima",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tuichudenglu/tuichudenglu",
+					"pathName": "pages/tuichudenglu/tuichudenglu",
+					"scene": null
+				}
+			]
+		}
+	}
+}

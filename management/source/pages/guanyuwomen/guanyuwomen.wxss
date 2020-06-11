@@ -1,0 +1,14 @@
+/* pages/guanyuwomen/guanyuwomen.wxss */
+  .number-color{
+    color: #AFAFAF;
+  }
+  .border{
+  border-bottom:1rpx solid #ddd;
+  padding-bottom:40rpx;
+}
+.padding-bottom-180{
+  padding-bottom: 180rpx;
+}
+.margin-left-290{
+  margin-left: 290rpx;
+}

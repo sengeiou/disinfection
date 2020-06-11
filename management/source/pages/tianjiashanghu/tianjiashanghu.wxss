@@ -1,0 +1,28 @@
+/* pages/tjshson/tjshson.wxss */
+.t-color{
+  color: #3C3F4E;
+}
+.t-color2{
+  color: #C9C9C9;
+}
+page{
+  background:#F5F4F9;
+}
+.border-radius-top{
+  border-radius: 10px 10px 0 0;
+}
+.border-radius-bottom{
+  border-radius: 0px 0px 10px 0px;
+}
+.border{
+  border:1px solid rgba(241,241,241,1);
+}
+.padding-bottom-80{
+  padding-bottom:80rpx;
+}
+.bt-dx{
+
+background:rgba(243,189,43,1);
+border-radius:20rpx;
+
+}

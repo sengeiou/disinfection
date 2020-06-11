@@ -1,0 +1,25 @@
+<view class='margin-top'></view>
+<view bindtap='wdsh' data-name="wdshson" class="bg-white margin-right-40 margin-left-40 text-center f-32 padding-left-40 padding-top-40 padding-bottom-40 bj-shadow t-color border-radius-top">
+添加商户信息卡
+</view>
+<view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' >
+<view class='t-color padding-top-40 f-32 padding-left-40 padding-bottom-40'>客户名称：</view>
+<!-- <view class='t-color2 f-32 padding-top-40 padding-left-40 padding-bottom-40'>点击输入客户名称</view> -->
+<input type="text" bindinput="name" placeholder="点击输入客户名称" placeholder-style="t-color2" class="padding-top-40 padding-left-40 padding-bottom-40"></input>
+</view>
+<view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' >
+<view class='t-color padding-top-40 f-32 padding-left-40 padding-bottom-40'>商户名称：</view>
+<!-- <view class='t-color2 f-32 padding-top-40 padding-left-40 padding-bottom-40'>点击输入商户名称</view> -->
+<input type="text" bindinput="shopname" placeholder="点击输入商户名称" placeholder-style="t-color2" class="padding-top-40 padding-left-40 padding-bottom-40"></input>
+</view>
+<view class='flex-row bg-white margin-left-40 margin-right-40 border-radius-bottom bj-shadow' >
+<view class='t-color padding-top-40 f-32 padding-left-40 padding-bottom-40'>商户地址：</view>
+<!-- <view class='t-color2 f-32 padding-top-40 padding-left-40 padding-bottom-40'>点击输入商户地址</view> -->
+<input type="text" bindinput="shopaddress" placeholder="点击输入商户地址" placeholder-style="t-color2" class="padding-top-40 padding-left-40 padding-bottom-40"></input>
+</view>
+
+<view bindtap="querentianjia"  class='fixbottom'>
+<view class='padding-left-40 padding-right-40 padding-bottom-80'>
+<button class='bt-dx txt-white padding-top-10 padding-bottom-10'>确认添加</button>
+</view>
+</view>

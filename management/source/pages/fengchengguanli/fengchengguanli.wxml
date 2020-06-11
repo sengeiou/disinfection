@@ -1,0 +1,44 @@
+<block wx:if="{{OwnerInfo.role=='A'}}">
+
+  <view class='bg-color border-radius-30 margin-right-40 margin-left-40 bj-shadow margin-top' wx:for="{{list}}" wx:key='k'wx:for-index='idx' >
+    <view class='flex-row margin-top-20'>
+      <view class='h5 margin-left-20 flex-1 txt-white margin-top-20'>{{item.name}} {{item.shopname}}</view>
+      <image  id="{{idx}}"  src='{{uploadpath}}resource/{{res.a10}}' class='icon-160 margin-right-20 margin-top-20' bindtap="updaterate"></image>
+    </view>
+    <view class='flex-row margin-left-20 margin-bottom-30 margin-top-5'>
+      <view class='h6  txt-white'>设备数量：{{item.devicecount}}</view>
+      <view class='h6  txt-white margin-left-40'>总盈利：{{item.totalprofit}}元</view>
+    </view>
+    <view class="section section_gap padding-20">
+      <view class="body-view">
+        <slider  selected-color="yellow" value='{{item.payrate}}' block-size='16' bindchange='payratechange' id="{{idx}}" show-value/>
+      </view>
+    </view>
+  </view>
+
+
+</block>
+
+
+<block wx:if="{{OwnerInfo.role=='B'}}">
+
+
+  <view class='bg-color border-radius-30 margin-right-40 margin-left-40 bj-shadow margin-top' wx:for="{{list}}" wx:key='k'wx:for-index='idx' >
+    <view class='flex-row margin-top-20'>
+      <view class='h5 margin-left-20 flex-1 txt-white margin-top-20'>{{OwnerInfo.name}} {{OwnerInfo.shopname}}</view>
+     
+    </view>
+    <view class='flex-row margin-left-20 margin-bottom-30 margin-top-5'>
+      <view class='h6  txt-white'>设备数量：{{OwnerInfo.devicecount}}</view>
+      <view class='h6  txt-white margin-left-40'>总盈利：{{OwnerInfo.totalprofit}}元</view>
+    </view>
+    <view class="section section_gap padding-20">
+      <view class="body-view">
+        <slider  selected-color="yellow" value='{{item.payrate}}' block-size='16' disabled="disabled" show-value/>
+      </view>
+    </view>
+  </view>
+
+
+
+</block>

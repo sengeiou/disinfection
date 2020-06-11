@@ -1,0 +1,29 @@
+.mianji{
+  width:314rpx;
+  height:176rpx;
+  border-radius: 30rpx;
+}
+page{
+  background:#F5F4F9;
+}
+.txt-color{
+  color:#232323;
+}
+.margin-top-70{
+  margin-top:70rpx;
+}
+.margin-left-155{
+  margin-left:155rpx;
+}
+.icon-48{
+  height:48rpx;
+  width: 128rpx;
+
+}
+.size{
+width:128rpx;
+height:48rpx;
+background:rgba(255,103,75,1);
+opacity:1;
+border-radius:30rpx;
+}

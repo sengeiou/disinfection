@@ -1,0 +1,25 @@
+.bj-size{
+ background:rgba(9,28,43,1);
+  box-shadow:0rpx 2rpx 10rpx rgba(102,123,162,0.1);
+  opacity:1;
+  border-radius:20rpx 20rpx 0rpx 0rpx;
+}
+.word-color{
+  color: #3C3F4E;
+}
+.word-color2{
+  color:#091C2B;
+}
+page{
+  background:#F5F4F9;
+}
+.border{
+  border-bottom: 2rpx solid #F1F1F1;
+}  
+.shadow{
+ box-shadow:0rpx 2rpx 10rpx rgba(102,123,162,0.1);
+opacity:1;
+}
+.border-radius-10{
+  border-radius: 0rpx 0rpx 20rpx 20rpx;
+}

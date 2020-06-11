@@ -1,0 +1,62 @@
+/* pages/shouyi/shouyi.wxss */
+.border{
+  height:72rpx;
+  width:192rpx;
+  border-radius:20rpx;
+  margin-left: 44rpx;
+}
+.bg-color{
+  color:#57628D;
+  background-color:#FBF0EE;
+}
+.size{
+  height:408rpx;
+  background-color:#091C2B;
+  border-radius: 30rpx;
+}
+.icon-48{
+  height:48rpx;
+  width: 128rpx;
+
+}
+.margin-left-360{
+  margin-left: 360rpx;
+}
+.padding-rihgt-300{
+  padding-right: 300rpx;
+}
+.margin-left-100{
+  margin-left: 100rpx;
+}
+.margin-left-170{
+  margin-left: 170rpx;
+}
+.t-color{
+  color: #FF674B;
+}
+.t-color2{
+  color:#F2BD2B;
+}
+.container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.sx{
+  background-color:#091C2B;
+}
+.sxc{
+  color:#F2BD2B;
+}

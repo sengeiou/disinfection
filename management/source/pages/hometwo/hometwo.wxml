@@ -1,0 +1,32 @@
+<view class='margin-top-20'></view>
+<view class="margin-left-40"style="height:288rpx;width:670rpx;background-color:#091C2B;border-radius: 30rpx;">
+<view class="h5 margin-top-60 margin-left-40 margin-bottom-10" style='color:#FF674B;'>可提现余额 </view>
+<view class="txt-white h2 margin-left-40 margin-bottom-20 txt-bold">{{OwnerInfo.balance}}</view>
+<view class='flex-row'>
+<view class="h5 margin-left-40 margin-top-5">累计收入</view>
+<view class="txt-white h5 txt-bold margin-top-5 flex-1" >+{{OwnerInfo.totalincome}}</view>
+<image bindtap='tixian' data-name="shouyetixian" class="icon-48  margin-left-155 padding-right-20 padding-left-40" src='{{uploadpath}}resource/{{res.a14}}'>
+</image>
+</view>
+</view>
+<view class='flex-row flex-wrap'>
+<view class='text-center flex-1 mianji white-block flex-row margin-left-40 margin-top' bindtap='wodeshanghu' data-name="wodeshanghu">
+<image src='{{uploadpath}}resource/{{res.aa}}' class='icon-40 margin-left-40 margin-top-50'></image>
+<view class='margin-left-30 txt-bold h5 txt-color margin-top-70'>我的商户</view>
+</view>
+<view class='text-center flex-1 mianji white-block flex-row margin-right-40 margin-left-40 margin-top' bindtap='shebeitongji'>
+<image src='{{uploadpath}}resource/{{res.bb}}' class='icon-40 margin-left-40 margin-top-50'></image>
+<view class='margin-left-30 txt-bold h5 txt-color margin-top-70'>设备统计</view>
+</view>
+</view>
+<view class='flex-row flex-wrap'>
+<view class='text-center flex-1 mianji white-block flex-row margin-left-40 margin-top' bindtap='sbdd' data-name="shebeidingdan">
+<image src='{{uploadpath}}resource/{{res.cc}}' class='icon-40 margin-left-40 margin-top-50'></image>
+<view class='margin-left-30 txt-bold h5 txt-color margin-top-70'>设备订单</view>
+</view>
+<view class='text-center flex-1 mianji white-block flex-row margin-left-40 margin-top margin-right-40'>
+<image src='{{uploadpath}}resource/{{res.dd}}' class='icon-40 margin-left-40 margin-top-50'></image>
+<view class='margin-left-30 txt-bold h5 txt-color margin-top-70'>代理合作</view>
+</view>
+
+</view>

@@ -1,0 +1,32 @@
+/* pages/xgyy/xgyy.wxss */
+.margin-bottom-80{
+  margin-bottom:80rpx;
+}
+.padding-top-26{
+  padding-top: 26rpx;
+}
+.padding-bottom-26{
+  padding-bottom: 26rpx;
+}
+.t-color{
+  color: #3C3F4E;
+}
+.t-color2{
+  color:#C9C9C9;
+}
+.border{
+  border-bottom: 1px solid #F1F1F1;
+}  
+.xg-size{
+ background:rgba(9,28,43,1);
+  box-shadow:0px 1px 5px rgba(102,123,162,0.1);
+  opacity:1;
+  border-radius:10px 10px 0px 0px;
+}
+page{
+  background:#F5F4F9;
+}
+.icon-96{
+height: 96rpx;
+width: 670rpx;
+}

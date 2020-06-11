@@ -38,7 +38,6 @@ page{
 } 
 view,navigator,input,text,textarea{
   font-size: 32rpx;
-  font-weight: 350;
   color: #5a5a5a;
 }
 .flex-row{
@@ -184,6 +183,9 @@ overflow:hidden;               /* 内容超出宽度时隐藏超出部分的内�
 }
 .f-36{
   font-size: 36rpx !important;
+}
+.f-50{
+  font-size: 50rpx !important;
 }
 .text-underline{
   text-decoration: underline;
@@ -513,5 +515,8 @@ button[disabled][type=primary] {
 }
 .maintab-item{
   height: 100%;
+}
+.f-normal{
+  font-weight:normal;
 }
 

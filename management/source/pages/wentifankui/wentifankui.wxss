@@ -1,0 +1,23 @@
+page{
+  background:#F5F4F9;
+}
+.mianji{
+  height: 488rpx;
+}
+.margin-top-26{
+  margin-top: 26rpx;
+}
+.button-mianji{
+  background-color: #F3BD2B;
+  margin-top: 586rpx;
+
+}
+.padding-right-40{
+  padding-right: 40rpx;
+}
+.padding-bottom-80{
+  padding-bottom:80rpx;
+}
+.t-color{
+  color:#A5A9B1;
+}

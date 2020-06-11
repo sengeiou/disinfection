@@ -363,11 +363,11 @@ export class AppBase {
     console.log(phoneno);
     console.log(e);
   }
-  viewPhoto(e) {
-    var img = e.currentTarget.id;
-    console.log(img);
+  viewPhoto(arr,imgs) { 
+    console.log(arr,'+' ,imgs); 
     wx.previewImage({
-      urls: [img],
+      current: imgs,
+      urls: arr,
     })
   }
   viewGallary(modul, photos, current = "") {

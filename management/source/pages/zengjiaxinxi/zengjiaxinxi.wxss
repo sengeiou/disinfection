@@ -1,0 +1,45 @@
+.bj-daxiao{
+background:rgba(9,28,43,1);
+box-shadow:0px 1px 5px rgba(102,123,162,0.1);
+
+border-radius:10px 10px 0px 0px;
+}
+.padding-left-220{
+  padding-left: 220;
+}
+page{
+  background:#F5F4F9;
+}
+.padding-top-30{
+  padding-top: 30rpx;
+}
+.padding-bottom-30{
+  padding-bottom: 30rpx;
+}
+.border{
+  border:1px solid rgba(241,241,241,1);
+}
+.icon-96{
+  height: 50rpx;
+  width: 96rpx;
+}
+.margin-right-80{
+  margin-right: 80rpx;
+}
+.padding-top-25{
+  padding-top: 25rpx;
+}
+.icon-600{
+height: 96rpx;
+width: 670rpx;
+}
+.margin-bottom-80{
+  margin-bottom:80rpx;
+}
+
+.bgselect{
+  background: #fd6851;
+  padding:10rpx 35rpx 10rpx 35rpx;
+  border-radius: 30rpx;
+  min-width: 50rpx;
+}

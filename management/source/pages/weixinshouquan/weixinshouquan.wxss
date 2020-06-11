@@ -1,0 +1,26 @@
+/* pages/wode/wode.wxss */
+
+.mianji{
+  width: 128rpx;
+  height: 128rpx;
+
+}
+.margin-top-70{
+  margin-top:70rpx;
+}
+.margin-left-200{
+  margin-left:480rpx;
+}
+
+.border{
+  border-bottom:1rpx solid #ddd;
+  padding-bottom:40rpx;
+  margin-left:40rpx;
+  margin-right:40rpx;
+}
+.margin-left-80{
+  margin-left:80rpx;
+}
+.margin-left-400{
+  margin-left: 400rpx;
+}

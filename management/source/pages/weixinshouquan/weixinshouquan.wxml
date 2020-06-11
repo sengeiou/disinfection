@@ -1,0 +1,35 @@
+<view class='margin-top-20'></view>
+<view class=""style="height:288rpx;width:670rpx;background-color:#091C2B;margin-left:40rpx;border-radius: 30rpx;">
+<view class='flex-row'>
+<view class='mianji margin-left-40 margin-top-70'style='border:1px dashed #FFFFFF;'>
+<image class='mianji margin-left-5' src='{{uploadpath}}resource/{{res.touxiang}}' style='border-radius:88rpx;'></image>
+</view>
+<view class="txt-white f-32 txt-bold margin-top-70 margin-left-50" >陈秋裤
+<view class='h5 txt-white txt-bold margin-top-10'>ID：13790905047</view>
+</view>
+</view>
+</view>
+<view data-name='zaixiankefu' bindtap='todetails' class='flex-row'>
+    <view class='txt-black txt-bold margin-top margin-left-80'>在线客服
+    <image class='icon-15  margin-left-400' src='{{uploadpath}}resource/{{res.right}}'></image></view>
+  </view>
+    <view class='border'></view>
+
+    <view data-name='wentifankui' bindtap='todetails' class='flex-row'>
+    <view class='txt-black  txt-bold margin-top margin-left-80'>问题反馈
+   <image src='{{uploadpath}}resource/{{res.right}}' class='icon-15 margin-left-400'></image></view>
+  </view>
+    <view class='border'></view>
+
+    <view data-name='guanyuwomen' bindtap='todetails' class='flex-row'>
+    <view class='txt-black txt-bold margin-top margin-left-80'>关于我们
+    <image class='icon-15 margin-left-400' src='{{uploadpath}}resource/{{res.right}}'></image></view>
+  </view>
+    <view class='border'></view>
+
+    <view data-name='tuichudenglu' bindtap='todetails' class='flex-row'>
+    <view class='txt-black  txt-bold margin-top margin-left-80'>退出登录
+    <image class='icon-15 margin-left-400' src='{{uploadpath}}resource/{{res.right}}'></image></view>
+  </view>
+    <view class='border'></view>
+

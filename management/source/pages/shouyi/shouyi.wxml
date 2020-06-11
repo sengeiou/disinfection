@@ -1,0 +1,63 @@
+<view class='margin-top-20'></view>
+<view class="size margin-right-40 margin-left-40">
+  <view class='h5 margin-left-40 margin-top-50' style=''>我的余额</view>
+  <view class='flex-row'>
+    <view class="txt-white h2 txt-bold margin-left-40 flex-1">¥{{OwnerInfo.balance}}</view>
+    <image src="{{uploadpath}}resource/{{res.a14}}" class='icon-48 margin-right-20 margin-top-10'></image>
+  </view>
+    <view class='flex-row margin-top-60 margin-left-40'>
+      <view class="h5 flex-row">本周收益
+        <view class='flex-row'>
+          <block wx:if="report.thisweekincomerate!='-'">
+          <image  src='{{uploadpath}}resource/{{report.thisweekincomerate>0?res.sc:res.xz}}' class="icon-15 flex-row margin-left-5"></image>
+         <view class="h6 {{report.thisweekincomerate>0?'t-color':'t-color2'}}">{{report.thisweekincomerate}}%</view> 
+         </block>
+        </view>
+      </view>
+      <view class="margin-left-80 txt-white">|</view>
+         <view class="h5 flex-row margin-left-40">本周收益
+        <view class='flex-row'>
+        <block wx:if="report.thismonthincomerate!='-'">
+          <image wx:if="report.thismonthincomerate!='-'" src='{{uploadpath}}resource/{{report.thismonthincomerate>0?res.sc:res.xz}}' class="icon-15 flex-row margin-left-5"></image>
+          <view class="h6 {{report.thismonthincomerate>0?'t-color':'t-color2'}}">{{report.thismonthincomerate}}%</view> 
+         </block>
+        </view>
+      </view>
+    </view>
+     <view class='flex-row margin-top-5 margin-left-40'>
+      <view class="h5 txt-white">+¥{{report.thismonthincome}}</view>
+      <view class="margin-left-170 txt-white">|</view>
+      <view class="h5 txt-white margin-left-40">+¥{{report.thismonthincome}}
+      </view>
+    </view>
+  <view class='flex-row margin-left-40 margin-top-20'>
+    <view class="txt-white h5 txt-bold">总收益</view>
+    <view class=" txt-white h5 " style=''>+{{OwnerInfo.totalincome}}</view>
+  </view>
+</view>
+<view class='txt-black txt-bold margin-left-40 margin-top-60'>收益趋势图</view>
+<view class='flex-row margin-top'>
+  <view id="0" bindtap="changetap" class="flex-1 border text-center {{ready==0?'sx':'bg-color'}}" style=''>
+    <view class=" flex-column margin-top-5 {{ready==0?'sxc':''}}" style=''>天</view>
+  </view>
+  <view id="1" bindtap="changetap" class="flex-1 border text-center   {{ready==1?'sx':'bg-color'}}">
+    <view class="flex-column margin-top-5 {{ready==1?'sxc':''}}">周</view>
+  </view>
+  <view id="2" bindtap="changetap" class="flex-1 border text-center margin-right-40    {{ready==2?'sx':'bg-color'}}">
+    <view class="flex-column margin-top-5 {{ready==2?'sxc':''}}">月</view>
+  </view>
+  
+</view>
+<view class="container" style="top:670rpx;width:710rpx;left:20rpx" wx:if="{{ready==0}}">
+  <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+</view>
+
+
+<view class="container" style="top:670rpx;width:710rpx;left:20rpx" wx:if="{{ready==1}}">
+  <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ecweek }}"></ec-canvas>
+</view>
+
+
+<view class="container" style="top:670rpx;width:710rpx;left:20rpx" wx:if="{{ready==2}}">
+  <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ecmonth }}"></ec-canvas>
+</view>

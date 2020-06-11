@@ -1,0 +1,33 @@
+
+page{
+  background:#F5F4F9;
+}
+.icon-120{
+  width: 126rpx;
+  height: 48rpx;
+}
+.t-color{
+  color:#A2A2A2;
+}
+.border-radius-10{
+  border-radius: 10rpx;
+}
+.height-48{
+  height:48rpx;
+}
+.padding-top-8{
+  padding-top:8rpx;
+} 
+.padding-bottom-6{
+  padding-bottom: 6rpx;
+}
+.icon-116{
+  width: 116rpx;
+  height: 42rpx;
+}
+.border{
+  border-bottom: 1px solid rgba(216,216,216,1);
+}
+.padding-left-38{
+  padding-left: 38rpx;
+}
