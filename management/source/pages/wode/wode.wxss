@@ -23,9 +23,9 @@
   margin-left: 400rpx;
 }
 .bj-size{
-  height:288rpx;
+  height:330rpx;
   background-color:#091C2B;
-  border-radius: 30rpx;
+  border-radius: 20rpx;
 }
 .icon-154{
   width: 154rpx;
@@ -34,6 +34,6 @@
 .margin-left-220{
   margin-left:220rpx;
 }
-.margin-top-200{
-  margin-top: 200rpx;
+.margin-top-232{
+  margin-top: 232rpx;
 }

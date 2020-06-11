@@ -171,6 +171,16 @@ class Content extends AppBase {
           }
         }
       });
+      for (var i = 0; i < report.length; i++) {
+        list[i].thismonthincome = new Number(list[i].thismonthincome).toFixed(2);
+      }
+
+
+      this.Base.setMyData({
+        report
+      });
+
+
     });
   }
   changetap(e){

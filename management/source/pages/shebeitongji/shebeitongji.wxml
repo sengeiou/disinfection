@@ -2,24 +2,24 @@
 <view class="flex-row bg-white margin-left-40 margin-right-40 height-60 border-radius-30">
   <!-- <view class='flex-1 h6 t-color2 margin-left-40 margin-top-16'>输入设备编号搜索</view> -->
   <input placeholder="输入设备编号搜索" class="flex-1 bg-white h6 margin-left-40 margin-top-7" bindinput="searchtxt" bindconfirm="dianji"></input>
-  <image bindtap='dianji'  src='{{uploadpath}}resource/{{res.sou}}' class='icon margin-right-20 margin-top-16'></image>
+  <image bindtap='dianji' src='{{uploadpath}}resource/{{res.sou}}' class='icon margin-right-20 margin-top-16'></image>
 </view>
 <view class='flex-row margin-top'>
-  <view bindtap="shebeitongji" class='bg-color margin-left-40 border-radius-20'>
+  <view  class='bg-color margin-left-40 border-radius-20'>
     <view class='padding-left-48 padding-right-48 h6 txt-white padding-top-16'>设备总数</view>
     <view class='h5 txt-white text-center padding-bottom-16'>{{list.alldevice.length}}</view>
   </view>
   <view class='bg-color2 margin-left-46 margin-right-46 border-radius-20'>
     <view class='padding-left-60 padding-right-60 h6 txt-white padding-top-16'>工作中</view>
-    <view class='h5 txt-white text-center padding-bottom-16'>{{list2.length}}</view>
+    <view class='h5 txt-white text-center padding-bottom-16'>{{list.allsubowner[0].workingdevice}}</view>
   </view>
   <view class='bg-color3 margin-right-40 border-radius-20'>
-    <view class='padding-left-60 padding-right-60 h6 txt-white padding-top-16'>联网中</view>
-    <view class='h5 txt-white text-center padding-bottom-16'>{{list3.length}}</view>
+    <view class='padding-left-60 padding-right-60 h6 txt-white padding-top-16'>离线</view>
+    <view class='h5 txt-white text-center padding-bottom-16'>{{list.allsubowner[0].exceptdevice}}</view>
   </view>
 </view>
- <view class='flex-row f-32 w-color margin-left-40 txt-bold margin-top margin-bottom-40'>以配置设备
-  <view class='f-32 w-color margin-left-20'>{{list.allsubowner.length}}</view>
+<view class='flex-row f-32 w-color margin-left-40 txt-bold margin-top margin-bottom-40'>以配置设备
+  <view class='f-32 w-color margin-left-20'>{{list.allsubowner[0].devicecount}}</view>
 </view>
 
 <view wx:for="{{list.allsubowner}}" bindtap="chakan" id="{{item.id}}" class='bg-color border-radius-30 margin-top margin-left-40 margin-right-40'>
@@ -27,21 +27,21 @@
   <view class='flex-row margin-left-20 margin-top-16'>
     <view class='h6 txt-white flex-1 margin-top-3'>设备数量：{{item.devicecount}}</view>
     <view class='h6 w-color2 margin-top-3'>查看</view>
-    <image  src='{{uploadpath}}resource/{{res.xy}}' class='icon margin-right-30 margin-left-10 '></image>
+    <image src='{{uploadpath}}resource/{{res.xy}}' class='icon margin-right-30 margin-left-10 '></image>
   </view>
   <view class='flex-row margin-left-20 margin-bottom-30 margin-top-10'>
     <view class='h6 txt-white'>工作中：{{item.workingdevice}}</view>
-    <view class='h6 txt-white margin-left-40'>离线：</view>
-      <view class='h6 txt-white margin-left-40'>待机：</view>
+    <view class='h6 txt-white margin-left-40'>离线：{{item.exceptdevice}}</view>
+    <view class='h6 txt-white margin-left-40'>待机：</view>
   </view>
 </view>
 
 <view class='flex-row f-32 w-color margin-left-40 txt-bold margin-top margin-bottom-40'>库存设备
-  <view class='f-32 w-color margin-left-20'>{{list2.length}}</view>
+  <view class='f-32 w-color margin-left-20'>{{listinstore.length}}</view>
 </view>
 
 <view wx:for="{{listinstore}}" class='flex-row bg-white border-radius-20 margin-right-40 margin-left-40 bj-shadow margin-bottom-20'>
   <view class='h5 w-color3 flex-1 margin-left-30 margin-top-20 margin-bottom-20'>未配置</view>
   <view class='h5 w-color3 margin-top-20'>设备编号</view>
   <view class='f-32 w-color3 margin-top-18 margin-right-30'>{{item.name}}</view>
-</view> 
+</view>

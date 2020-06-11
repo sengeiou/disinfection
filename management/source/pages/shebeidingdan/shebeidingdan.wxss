@@ -12,6 +12,32 @@ page{
 .border-radius-10{
   border-radius: 10rpx;
 }
+.qd-size{
+  width:152rpx;
+height:48rpx;
+background:rgba(213,221,237,1);
+opacity:1;
+border-radius:10rpx;
+}
+.icon-220{
+  height: 220rpx;
+  width: 354rpx;
+}
+.t-color-ts{
+  color: #B4B8BF;
+}
+.margin-left-200{
+  margin-left: 200rpx;
+}
+.margin-top-280{
+  margin-top: 280rpx;
+}
+.margin-top-7{
+  margin-top: 8rpx;
+}
+.margin-top-3{
+  margin-top: 4rpx;
+}
 .height-48{
   height:48rpx;
 }

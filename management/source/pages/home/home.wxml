@@ -8,7 +8,7 @@
 <view class="txt-white h5 txt-bold margin-top-5 flex-1" >+{{OwnerInfo.totalincome}}</view>
 <view bindtap='tixian' class="size margin-left-155 margin-right-30 text-center padding-top-5 txt-white h5">提现
 </view>
-<!-- <view bindtap="tixain" class="size margin-left-155 margin-right-20 text-center padding-top-5 txt-white h5">提现</view> -->
+
 </view>
 </view>
 <view wx:if="{{OwnerInfo.role=='A'}}">

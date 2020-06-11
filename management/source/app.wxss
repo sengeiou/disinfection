@@ -441,6 +441,9 @@ button[disabled][type=primary] {
 .margin-left-50{
   margin-left:50rpx;
 }
+.margin-left-60{
+ margin-left:60rpx;
+}
 .margin-right-15{
   margin-right:15rpx;
 }

@@ -55,28 +55,28 @@ class Content extends AppBase {
       this.Base.setMyData({
         listinstore: arr
       })
-      var arr = [];
-      var arr2 = [];
-      for (var i = 1; i < ret.alldevice.length; i++) {
-        if (ret.alldevice[i].workingtype == "WORK") {
-          // console.log(ret, "6666666666666")
-          arr.push(ret.alldevice[i])
-        }
-        if (ret.alldevice[i].workingtype == "ON") {
-          arr2.push(ret.alldevice[i])
-        }
-        // console.log(ret, "6666666666666")
-        // this.Base.setMyData({
-        //   list4:ret.alldevice
-        // })
-      }
+      // var arr = [];
+      // var arr2 = [];
+      // for (var i = 1; i < ret.alldevice.length; i++) {
+      //   if (ret.alldevice[i].workingtype == "WORK") {
+      //     // console.log(ret, "6666666666666")
+      //     arr.push(ret.alldevice[i])
+      //   }
+      //   if (ret.alldevice[i].workingtype == "ON") {
+      //     arr2.push(ret.alldevice[i])
+      //   }
+      //   // console.log(ret, "6666666666666")
+      //   // this.Base.setMyData({
+      //   //   list4:ret.alldevice
+      //   // })
+      // }
 
-      this.Base.setMyData({
-        list2: arr
-      })
-      this.Base.setMyData({
-        list3: arr2
-      })
+      // this.Base.setMyData({
+      //   list2: arr
+      // })
+      // this.Base.setMyData({
+      //   list3: arr2
+      // })
 
     })
 
@@ -108,11 +108,7 @@ class Content extends AppBase {
       url: '/pages/sousuoshebei/sousuoshebei?name=' + search,
     })
   }
-  shebeitongji() {
-    wx.navigateTo({
-      url: '/pages/shebeitongjitwo/shebeitongjitwo',
-    })
-  }
+
   chakan(e) {
     var id=e.currentTarget.id;
     wx.navigateTo({
@@ -127,7 +123,6 @@ var content = new Content();
 var body = content.generateBodyJson();
 body.onLoad = content.onLoad;
 body.onMyShow = content.onMyShow;
-body.shebeitongji = content.shebeitongji;
 body.dianji = content.dianji;
 body.searchtxt = content.searchtxt;
 body.chakan = content.chakan;

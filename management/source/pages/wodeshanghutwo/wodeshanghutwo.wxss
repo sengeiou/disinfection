@@ -44,11 +44,12 @@ border-radius:10px;
 .margin-top-34{
   margin-top: 34rpx;
 }
-.margin-left-310{
-  margin-left: 310rpx;
+.margin-left-340{
+  margin-left: 335rpx;
 }
 .gl-size{
-  background:rgba(255,103,75,1);
+  height:48rpx;
+ background:rgba(255,103,75,1);
 opacity:1;
 border-radius:40rpx;
 }

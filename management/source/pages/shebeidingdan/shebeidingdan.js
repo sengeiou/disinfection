@@ -21,6 +21,12 @@ class Content extends AppBase {
   constructor() {
     super();
   }
+  setPageTitle() {
+    wx.setNavigationBarTitle({
+      // title: '',
+      title: '订单详情',
+    });
+  }
 
 
   onLoad(options) {

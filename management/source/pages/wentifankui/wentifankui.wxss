@@ -19,5 +19,5 @@ page{
   padding-bottom:80rpx;
 }
 .t-color{
-  color:#A5A9B1;
+  color:#AFAFAF
 }

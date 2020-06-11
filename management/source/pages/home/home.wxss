@@ -1,7 +1,7 @@
 .mianji{
   width:314rpx;
   height:176rpx;
-  border-radius: 30rpx;
+  border-radius: 20rpx;
 }
 page{
   background:#F5F4F9;

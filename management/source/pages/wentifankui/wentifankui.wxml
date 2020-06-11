@@ -1,11 +1,11 @@
 <view class='mianji border-radius-20 bg-white margin-left-40 margin-top margin-right-40'>
-<!-- <view class='flex-row'>
-<view class='h5 margin-left-5 margin-top-26'style='color:#A5A9B1;'>您的意见或者建议</view>
-</view> -->
-<input bindinput="nr" placeholder="您的意见或者建议" placeholder-style="h5 t-color" type="text" class="margin-left-10 margin-top-26">
-</input>
+<view class="margin-left-10 margin-top-5">
+<textarea bindinput="nr" placeholder="您的意见或者建议" placeholder-class="h5 t-color" type="text" class="margin-left-20 margin-top-5">
+</textarea>
+
 </view>
 
+</view>
 <view class='fixbottom'>
 <view bindtap="yijian" class='padding-left-40 padding-right-40 padding-bottom-80'>
 <button class='button-mianji txt-white border-radius-20'>提交</button>

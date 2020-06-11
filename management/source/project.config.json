@@ -117,6 +117,48 @@
 					"id": -1,
 					"name": "pages/tuichudenglu/tuichudenglu",
 					"pathName": "pages/tuichudenglu/tuichudenglu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/wode",
+					"pathName": "pages/wode/wode",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/guanyuwomen/guanyuwomen",
+					"pathName": "pages/guanyuwomen/guanyuwomen",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/shouyi/shouyi",
+					"pathName": "pages/shouyi/shouyi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/shebeidingdan/shebeidingdan",
+					"pathName": "pages/shebeidingdan/shebeidingdan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/dianpushebei/dianpushebei",
+					"pathName": "pages/dianpushebei/dianpushebei",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wodeshanghutwo/wodeshanghutwo",
+					"pathName": "pages/wodeshanghutwo/wodeshanghutwo",
 					"scene": null
 				}
 			]
