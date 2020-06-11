@@ -108,7 +108,7 @@ class Content extends AppBase {
 
     var api = new OrderApi();
 
-    api.createorder({ amount: taocan.price, xuanxiang_id: taocan.id }, (res) => {
+    api.createorder({ amount: taocan.price, xuanxiang_id: taocan.id}, (res) => {
 
       if (res.code == '0') {
         var api = new WechatApi();
