@@ -4,15 +4,15 @@
   <view class='flex-row'>
     <view class="txt-white h2 txt-bold margin-left-40 flex-1">¥{{OwnerInfo.balance}}</view>
     <!-- <image src="{{uploadpath}}resource/{{res.a14}}" class='icon-48 margin-right-20 margin-top-10'></image> -->
-    <view class="tx.size margin-right-20 margin-top-10">
-    <view class="txt-white h5 text-center margin-top-4">提现</view>
+    <view class="tx.size margin-right-20 margin-top-10 text-center">
+    <view class="txt-white h5" style="line-height: 48rpx;">提现</view>
     </view>
   </view>
 
 <!-- 收益 -->
 
   <view class='flex-row margin-top margin-left-40'>
-    <view class="margin-right-100">
+    <view class="margin-right-130">
       <view class="h6 flex-row">本周收益
         <block wx:if="report.thisweekincomerate!='-'">
           <image src='{{uploadpath}}resource/{{report.thisweekincomerate>0?res.sc:res.xz}}' class="icon-15 flex-row margin-left-5"></image>
@@ -22,7 +22,7 @@
       <view class="h5 txt-white margin-top-5">+¥{{report.thismonthincome}}</view>
     </view>
 <view style="border-right:1px solid white"></view>
-    <view class=" margin-left-40">
+    <view class=" margin-left-130">
       <view class="h6 flex-row ">本周收益
         <block wx:if="report.thismonthincomerate!='-'">
           <image wx:if="report.thismonthincomerate!='-'" src='{{uploadpath}}resource/{{report.thismonthincomerate>0?res.sc:res.xz}}' class="icon-15 flex-row margin-left-5"></image>

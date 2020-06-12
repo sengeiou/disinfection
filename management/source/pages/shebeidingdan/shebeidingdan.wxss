@@ -15,7 +15,7 @@ page{
 .qd-size{
   width:152rpx;
 height:48rpx;
-background:rgba(213,221,237,1);
+background:#FF674B;
 opacity:1;
 border-radius:10rpx;
 }
@@ -34,9 +34,6 @@ border-radius:10rpx;
 }
 .margin-top-7{
   margin-top: 8rpx;
-}
-.margin-top-3{
-  margin-top: 4rpx;
 }
 .height-48{
   height:48rpx;

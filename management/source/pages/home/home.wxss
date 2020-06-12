@@ -20,6 +20,9 @@ page{
   width: 128rpx;
 
 }
+.margin-right-15{
+  margin-right:15rpx;
+}
 .size{
 width:128rpx;
 height:48rpx;

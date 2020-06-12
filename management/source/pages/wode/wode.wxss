@@ -3,6 +3,10 @@
 .mianji{
   width: 128rpx;
   height: 128rpx;
+}
+.mianjitwo{
+  width: 121rpx;
+  height: 121rpx;
 
 }
 .margin-top-70{
@@ -22,7 +26,18 @@
 .margin-left-400{
   margin-left: 400rpx;
 }
+.sq-size{
+  width:154rpx;
+height:48rpx;
+background:rgba(255,103,75,1);
+opacity:1;
+border-radius:30rpx;
+}
+.margin-left-484{
+  margin-left: 484rpx;
+}
 .bj-size{
+  width: 670rpx;
   height:330rpx;
   background-color:#091C2B;
   border-radius: 20rpx;

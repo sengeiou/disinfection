@@ -1,7 +1,11 @@
 <view class='margin-top'></view>
 <view class='sh-dx flex-row  padding-top-30 padding-bottom-30 margin-left-40 margin-right-40 bj-shadow'>
   <view class='f-32 txt-white margin-left-40 flex-1 margin-top-5'>商户信息卡</view>
-  <image bindtap='xiugaiyonghu' id="{{l.id}}" class=' padding-left-30 margin-right-30 padding-top-10 padding-bottom-10 icon-140' src='{{uploadpath}}resource/{{res.a11}}'></image>
+  <!-- <image bindtap='xiugaiyonghu' id="{{l.id}}" class=' padding-left-30 margin-right-30 padding-top-10 padding-bottom-10 icon-140' src='{{uploadpath}}resource/{{res.a11}}'></image> -->
+    <view class="xg-size flex-row margin-left-50 margin-right-20" bindtap="xiugaishouji" id="{{l.id}}">
+    <image class="icon-18 margin-left-30 margin-top-5" style="line-height:50rpx;" src='{{uploadpath}}resource/{{res.penn}}'></image>
+    <view class="txt-white h6 margin-left-10" style="line-height:50rpx;">修改</view>
+  </view>
 
 </view>
 <view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow'>
@@ -20,13 +24,22 @@
 <view class='flex-row bg-white margin-left-40 margin-right-40  border-radius-10 margin-top-20 bj-shadow'>
   <view class='sh-color2 padding-top-40 f-32 padding-left-40 padding-bottom-40'>授权手机号：</view>
   <view class='sh-color3 f-32 padding-top-40 padding-left-10 padding-bottom-40'>{{l.mobile}}</view>
-  <image bindtap='xiugaishouji' id="{{l.id}}" class=' padding-left-50  padding-top-40 padding-bottom-10 icon-140' src='{{uploadpath}}resource/{{res.a11}}'></image>
+  <!-- <image bindtap='xiugaishouji' id="{{l.id}}" class=' padding-left-50  padding-top-40 padding-bottom-10 icon-140' src='{{uploadpath}}resource/{{res.a11}}'></image> -->
+  <view class="xg-size flex-row margin-left-61 margin-top-35 margin-right-20" bindtap="xiugaishouji" id="{{l.id}}">
+    <image class="icon-18 margin-left-30 margin-top-5" style="line-height:50rpx;" src='{{uploadpath}}resource/{{res.penn}}'></image>
+    <view class="txt-white h6 margin-left-10" style="line-height:50rpx;">修改</view>
+  </view>
+
 </view>
 
 <view class='margin-top-30'></view>
 <view class='sh-dx flex-row  padding-top-30 padding-bottom-30 margin-left-40 margin-right-40 bj-shadow'>
   <view class='f-32 txt-white margin-left-40 flex-1 margin-top-5'>拥有设备</view>
-  <image bindtap='zengjia' id="{{l.id}}" class='   padding-bottom-10 padding-top-10 margin-right-30 icon-140' src='{{uploadpath}}resource/{{res.a12}}'></image>
+  <!-- <image bindtap='zengjia' id="{{l.id}}" class='   padding-bottom-10 padding-top-10 margin-right-30 icon-140' src='{{uploadpath}}resource/{{res.a12}}'></image> -->
+    <view class="xg-size flex-row margin-left-50 margin-right-20" bindtap="zengjia" id="{{l.id}}">
+    <image class="icon-18 margin-left-30 margin-top-5" style="line-height:50rpx;" src='{{uploadpath}}resource/{{res.add}}'></image>
+    <view class="txt-white h6 margin-left-10" style="line-height:50rpx;">增加</view>
+  </view>
 </view>
 <view class='flex-row bg-white margin-left-40 margin-right-40 border bj-shadow' wx:for="{{list}}">
   <view class='sh-color padding-top-30 h5 padding-left-40 padding-bottom-30'>设备编号：</view>

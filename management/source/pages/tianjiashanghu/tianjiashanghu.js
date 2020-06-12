@@ -28,6 +28,7 @@ class Content extends AppBase {
     this.Base.setMyData({
       name:e.detail.value
     })
+
   }
   shopname(e) {
     this.Base.setMyData({
@@ -43,9 +44,19 @@ class Content extends AppBase {
      var name=this.Base.getMyData().name;
      var shopname=this.Base.getMyData().shopname;
     var shopaddress= this.Base.getMyData().shopaddress;
+
+    if (name == undefined || shopname == undefined || shopaddress == undefined) {
+       wx.showToast({
+      title: '填写信息不能为空',
+      icon: 'none'
+      }) 
+    }else
+    {
       wx.navigateTo({
-        url: '/pages/xiugaixinxitwo/xiugaixinxitwo?name=' +name+'&shopname='+shopname+'&shopaddress='+shopaddress+'',
+        url: '/pages/xiugaixinxitwo/xiugaixinxitwo?name=' + name + '&shopname=' + shopname + '&shopaddress=' + shopaddress + '',
       })
+
+    }
   }
 }
 var content = new Content();

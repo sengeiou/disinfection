@@ -28,7 +28,7 @@ class Content extends AppBase {
   onMyShow() {
     var that = this;
     var api = new OwnerApi();
-    ownerApi.info({}, (info) => {
+    api.info({}, (info) => {
       var mobile = info.mobile;
       this.Base.setMyData({
         mobile

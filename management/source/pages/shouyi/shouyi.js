@@ -26,7 +26,11 @@ class Content extends AppBase {
   onMyShow() {
     var that = this;
     var api = new OwnerApi();
-    api.report({},(report)=>{
+    api.report({},(report)=>{   
+   for (var i = 0; i < report.length; i++) {
+      report[i].thismonthincome = new Number(report[i].thismonthincome).toFixed(2);
+      }
+
       this.Base.setMyData({report,
         ready:0,
         ec: {
@@ -171,14 +175,7 @@ class Content extends AppBase {
           }
         }
       });
-      for (var i = 0; i < report.length; i++) {
-        list[i].thismonthincome = new Number(list[i].thismonthincome).toFixed(2);
-      }
 
-
-      this.Base.setMyData({
-        report
-      });
 
 
     });

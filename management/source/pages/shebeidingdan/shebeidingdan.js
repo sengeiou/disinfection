@@ -17,6 +17,7 @@ import {
 import {
   OwnerApi
 } from "../../apis/owner.api.js";
+import { OrderApi }from"../../apis/order.api.js"
 class Content extends AppBase {
   constructor() {
     super();
@@ -49,6 +50,10 @@ class Content extends AppBase {
   onMyShow() {
     var that = this;
     this.loaddata();
+    this.Base.setMyData({
+      my:true
+    })
+
   }
   bindDateChange(e) {
     console.log(e);
@@ -89,4 +94,5 @@ body.onMyShow = content.onMyShow;
 body.qjxz = content.qjxz;
 body.bindDateChange = content.bindDateChange; 
 body.loaddata = content.loaddata;
+body.queding=content.queding;
 Page(body)

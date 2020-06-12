@@ -17,19 +17,19 @@
   </view>
 
   <!-- <image  src='{{uploadpath}}resource/{{res.a13}}' class='icon-120 margin-left-50 txt-white'></image> -->
- <view class="qd-size margin-left-60">
- <view class="h5 txt-white text-center margin-top-3">确定</view>
+ <view bindtap="queding" class="qd-size margin-left-60">
+ <view class="h5 txt-white text-center" style="line-height:48rpx;">确定</view>
  </view>
 </view>
 
-<view wx:if="{{list.length==0}}" data-type='nn'>
+<view wx:if="{{my==true}}" data-type='nn'>
 <image src='{{uploadpath}}resource/{{res.txcg}}' class='icon-220 margin-left-200 margin-top-280'></image>
 <view class='t-color-ts h5 text-center margin-top'>暂无相关订单记录</view>
 
 </view>
 
 
-<view class='bg-white border-radius-20 margin-right-40 margin-left-40 margin-top-20' wx:for="{{list}}">
+<view wx:if="{{my==false}}"  class='bg-white border-radius-20 margin-right-40 margin-left-40 margin-top-20' wx:for="{{list}}">
   <view class='flex-row margin-top-16 border padding-bottom-10 padding-top-10'>
     <view class='h6 flex-1 margin-top-3 t-color  margin-left-40  flex-1 '>订单号：{{item.orderno}}</view>
     <view class='h6 margin-top-3 t-color margin-right-50'>{{item.pay_time_formatting}}</view>

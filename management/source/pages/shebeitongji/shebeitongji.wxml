@@ -14,8 +14,8 @@
     <view class='h5 txt-white text-center padding-bottom-16'>{{list.allsubowner[0].workingdevice}}</view>
   </view>
   <view class='bg-color3 margin-right-40 border-radius-20'>
-    <view class='padding-left-60 padding-right-60 h6 txt-white padding-top-16'>离线</view>
-    <view class='h5 txt-white text-center padding-bottom-16'>{{list.allsubowner[0].exceptdevice}}</view>
+    <view class='padding-left-60 padding-right-60 h6 txt-white padding-top-16'>待机</view>
+    <view class='h5 txt-white text-center padding-bottom-16'>{{list.allsubowner[0].activedevice}}</view>
   </view>
 </view>
 <view class='flex-row f-32 w-color margin-left-40 txt-bold margin-top margin-bottom-40'>以配置设备
@@ -32,7 +32,7 @@
   <view class='flex-row margin-left-20 margin-bottom-30 margin-top-10'>
     <view class='h6 txt-white'>工作中：{{item.workingdevice}}</view>
     <view class='h6 txt-white margin-left-40'>离线：{{item.exceptdevice}}</view>
-    <view class='h6 txt-white margin-left-40'>待机：</view>
+    <view class='h6 txt-white margin-left-40'>待机：{{item.activedevice}}</view>
   </view>
 </view>
 
