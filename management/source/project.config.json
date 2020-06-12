@@ -222,6 +222,13 @@
 					"id": -1,
 					"name": "pages/wode/wode",
 					"pathName": "pages/wode/wode",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/shanghuguanli/shanghuguanli",
+					"pathName": "pages/shanghuguanli/shanghuguanli",
 					"scene": null
 				}
 			]

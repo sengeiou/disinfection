@@ -50,9 +50,6 @@ class Content extends AppBase {
   onMyShow() {
     var that = this;
     this.loaddata();
-    this.Base.setMyData({
-      my:true
-    })
 
   }
   bindDateChange(e) {

@@ -14,6 +14,9 @@ border-radius:4px;
 .w-color2{
 color: #091C2B;
 }
+.t-colortwo{
+  color:#B4B8BF;
+}
 .w-color3{
   color: #B4B8BF;
 }

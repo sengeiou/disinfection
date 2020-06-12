@@ -57,19 +57,18 @@ class Content extends AppBase {
   lijitixian(){
     var amount = Number(this.Base.getMyData().amount);
     var api=new OwnerApi();
+    if (amount == "") {
+      this.Base.toast("提现金额不能为空");
+      return;
+    } else if (amount < 10){
+      this.Base.toast("提现最低金额为10元")
+      return;
+    }
     api.withdrew({
       amount:amount
     },(ret)=>{
-      //  console.log(ret,'返回值')
-      //return
-      if (amount=="") {
-        this.Base.toast("提现金额不能为空");
-        return;
-      }
-      if(amount<=10){
-          this.Base.toast("提现最低金额为10元")
-          return;
-      }
+
+     
       if(ret.code=="-1"){
         this.Base.toast(ret.return)
         return

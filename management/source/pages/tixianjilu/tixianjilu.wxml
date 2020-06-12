@@ -11,6 +11,8 @@
 <view class='margin-left-30 margin-left-40 margin-right-40'></view>
 </view>
 
+<view class="h5 t-colortwo text-center margin-top-30">没有更多了~</view>
+
 <view wx:if="{{list.length==0}}" data-type='nn'>
 <image src='{{uploadpath}}resource/{{res.txcg}}' class='icon-220 margin-left-200 margin-top-280'></image>
 <view class='t-color h5 text-center margin-top'>暂无提现记录</view>
