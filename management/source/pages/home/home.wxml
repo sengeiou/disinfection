@@ -2,11 +2,11 @@
 
 <view class="margin-left-40"style="height:288rpx;width:670rpx;background-color:#091C2B;border-radius: 30rpx;">
 <view class="h5 margin-top-60 margin-left-40 margin-bottom-10" style='color:#FF674B;'>可提现余额</view>
-<view class="txt-white h2 margin-left-40 margin-bottom-20 txt-bold">{{OwnerInfo.balance}}</view>
-<view class='flex-row'>
-<view class="h5 margin-left-40 margin-top-5">累计收入</view>
-<view class="txt-white h5 txt-bold margin-top-5 flex-1" >+{{OwnerInfo.totalincome}}</view>
-<view bindtap='tixian' class="size margin-left-155 margin-right-15 text-center txt-white h5"  style="line-height: 48rpx;">提现
+<view class="txt-white h2 margin-left-40  txt-bold">{{OwnerInfo.balance}}</view>
+<view class='flex-row margin-top'>
+<view class="h5 margin-left-40 ">累计收入</view>
+<view class="txt-white h5 txt-bold  flex-1" >+{{OwnerInfo.totalincome}}</view>
+<view bindtap='tixian' class="size margin-left-155 margin-right-20 text-center txt-white h5 "  style="line-height: 48rpx;">提现
 </view>
 
 </view>

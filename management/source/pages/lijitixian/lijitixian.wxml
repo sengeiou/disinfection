@@ -3,5 +3,5 @@
   <image src='{{uploadpath}}resource/{{res.sq}}' class='icon-122 margin-left-284 margin-top-60'></image>
   <view class='f-32 text-center margin-top-30 txt-black'>提现申请已提交</view>
   <view class='h6 text-center t-color'>{{list.updated_date}}</view>
-  <view class='h5 text-center margin-top-20 t-color margin-bottom-40'>预计到账时间：02月10日</view>
+  <view class='h5 text-center margin-top-20 t-color margin-bottom-40'>预计到账时间：{{list.updated_date}}</view>
 </view>

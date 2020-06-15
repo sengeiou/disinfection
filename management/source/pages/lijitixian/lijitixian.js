@@ -25,26 +25,21 @@ class Content extends AppBase {
     var api = new OwnerApi;
     api.info({
     }, (info) => {
-      // var amount = info.addtime;
-      // console.log(info + "先看看")
+   
+    //   this.Base.setMyData({
+    //   list:info
+
+    //  })
+      var updated_date = Number(this.Base.getMyData().updated_date);
+      // // console.log(updated_date+"看看卡")
       this.Base.setMyData({
-      list:info
-     })
-      // console.log(amount + "先看看")
+        list: info
+
+      })
+
     })
   }
- 
-  wdsp(e) {
-    var name = e.currentTarget.dataset.name;
-    if (name == "txcg") {
-      wx.navigateTo({
-        url: '/pages/tixianchenggong/tixianchenggong',
-      })
-    }
-  
 
-
-  }
 }
 
 
@@ -53,5 +48,5 @@ var content = new Content();
 var body = content.generateBodyJson();
 body.onLoad = content.onLoad;
 body.onMyShow = content.onMyShow;
-body.wdsp = content.wdsp;
+
 Page(body)

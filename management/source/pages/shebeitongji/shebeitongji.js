@@ -1,4 +1,4 @@
-// pages/content/content.js
+
 import {
   AppBase
 } from "../../appbase";

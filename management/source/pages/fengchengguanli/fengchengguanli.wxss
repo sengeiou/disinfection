@@ -16,3 +16,11 @@ page{
   width: 160rpx;
   height: 48rpx;
 }
+.size{
+width:160rpx;
+height:48rpx;
+background:rgba(255,103,75,1);
+opacity:1;
+border-radius:30rpx;
+
+}

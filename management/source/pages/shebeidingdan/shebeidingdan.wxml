@@ -1,23 +1,23 @@
-<view class='flex-row flex-center margin-top margin-left-40 margin-right-40'>
-  <view class=' bg-white border-radius-10 height-48 padding-left-30 padding-right-30'>
+<view class='flex-row flex-center margin-top margin-left-40 margin-right-40' >
+  <view class=' bg-white border-radius-10 height-48 padding-left-30 padding-right-30 margin-right-30' style="width:190rpx;">
     <picker id="startdate" mode="date" value="{{startdate}}" end="{{enddate}}" bindchange="bindDateChange">
-      <view class="picker 'h6 t-color text-center  margin-top-7">
+      <view class="picker 'h6 t-color text-center  " style="line-height:48rpx;">
         {{startdate}}
       </view>
     </picker>
   </view>
 
-  <view class='h5 t-color margin-left-20 margin-right-20'>至</view>
-  <view class='h6 text-center t-color bg-white border-radius-10 height-48 padding-left-30 padding-right-30'>
+  <view class='h5 t-color'>至</view>
+  <view class='h6 text-center t-color bg-white border-radius-10 height-48 padding-left-30 padding-right-30 margin-left-30'style="width:190rpx;">
     <picker id="enddate" mode="date" value="{{enddate}}" start="{{startdate}}" end="{{maxdate}}" bindchange="bindDateChange">
-      <view class="picker h6 text center t-color  margin-top-7">
+      <view class="picker h6 text center t-color  " style="line-height:48rpx;">
         {{enddate}}
       </view>
     </picker>
   </view>
 
   <!-- <image  src='{{uploadpath}}resource/{{res.a13}}' class='icon-120 margin-left-50 txt-white'></image> -->
- <view bindtap="queding" class="qd-size margin-left-60">
+ <view bindtap="queding" class="qd-size margin-left-20">
  <view class="h5 txt-white text-center" style="line-height:48rpx;">确定</view>
  </view>
 </view>

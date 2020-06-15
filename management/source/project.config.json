@@ -229,6 +229,48 @@
 					"id": -1,
 					"name": "pages/shanghuguanli/shanghuguanli",
 					"pathName": "pages/shanghuguanli/shanghuguanli",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/fengchengguanli/fengchengguanli",
+					"pathName": "pages/fengchengguanli/fengchengguanli",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/fengchengguanli/fengchengguanli",
+					"pathName": "pages/fengchengguanli/fengchengguanli",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/fengchengguanli/fengchengguanli",
+					"pathName": "pages/fengchengguanli/fengchengguanli",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/shanghuguanli/shanghuguanli",
+					"pathName": "pages/shanghuguanli/shanghuguanli",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/shebeitongji/shebeitongji",
+					"pathName": "pages/shebeitongji/shebeitongji",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/lijitixian/lijitixian",
+					"pathName": "pages/lijitixian/lijitixian",
 					"scene": null
 				}
 			]

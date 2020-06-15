@@ -2,6 +2,7 @@
   background-color:#FF674B;
   border-radius:30rpx;
   height:48rpx;
+  width: 160rpx;
 
 }
 page{
@@ -19,11 +20,14 @@ page{
 .t-color3{
 color:rgba(139,139,139,1);
 }
+.margin-top-50{
+  margin-top: 50rpx;
+}
 .bg-size{
 background:rgba(255,255,255,1);
-box-shadow:0px 1px 8px rgba(102,123,162,0.16);
+box-shadow:0px 2rpx 16rpx rgba(102,123,162,0.16);
 opacity:1;
-border-radius:10px;
+border-radius:20rpx;
 }
 .padding-top-24{
   padding-top: 24rpx;
@@ -47,7 +51,7 @@ border-radius:10px;
 }
 .button{
   background:rgba(243,189,43,1);
-border-radius:10px;
+border-radius:20rpx;
 }
 .margin-bottom-80{
   margin-bottom: 80rpx;

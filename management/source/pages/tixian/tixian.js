@@ -39,6 +39,7 @@ class Content extends AppBase {
     this.Base.setMyData({
       amount: e.detail.value
     })
+
  
   }
   
@@ -58,26 +59,24 @@ class Content extends AppBase {
     var amount = Number(this.Base.getMyData().amount);
     var api=new OwnerApi();
     if (amount == "") {
-      this.Base.toast("提现金额不能为空");
-      return;
-    } else if (amount < 10){
+      this.Base.toast("提现金额不能为空")
+    }
+    
+     if(amount < 10){
       this.Base.toast("提现最低金额为10元")
       return;
     }
+   
+
     api.withdrew({
       amount:amount
     },(ret)=>{
-
-     
+  
       if(ret.code=="-1"){
         this.Base.toast(ret.return)
         return
       }
- 
-      // if(amount==amount.toFixed(2)){
-      //   this.Base.toast("请输入整数")
-      //   return;
-      // }
+
              
       wx.navigateTo({
         url: '/pages/lijitixian/lijitixian',

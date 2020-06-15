@@ -3,8 +3,8 @@
     <view class='flex-row margin-top-20'>
       <view class='h5 margin-left-20'>设备编号</view>
       <view class="flex-1">{{item.deviceno}}</view>
-      <image src='{{uploadpath}}resource/{{res.s}}' class='icon-15 margin-right-20 margin-left-10 '></image>
-      <image src='{{uploadpath}}resource/{{res.v}}' class='icon-15 margin-right-30 '></image>
+      <image src='{{uploadpath}}resource/{{item.workingtype=="OFF"?res.lx:res.dj}}' class='icon-15 margin-right-20 margin-left-10 '></image>
+      <image src='{{uploadpath}}resource/{{item.workingtype=="WORK"?res.zx:""}}' class='icon-15 margin-right-30 '></image>
     </view>
     <view class='h6 margin-left-20 margin-top-5 t-color'>{{item.shopname}}</view>
     <view class='flex-row margin-left-20 margin-bottom-30 margin-top-5'>

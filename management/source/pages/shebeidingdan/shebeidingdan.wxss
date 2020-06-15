@@ -8,6 +8,7 @@ page{
 }
 .t-color{
   color:#A2A2A2;
+  overflow:visible;
 }
 .border-radius-10{
   border-radius: 10rpx;

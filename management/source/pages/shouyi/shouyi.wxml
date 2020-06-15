@@ -19,7 +19,7 @@
           <view class="h6 {{report.thisweekincomerate>0?'t-color':'t-color2'}}">{{report.thisweekincomerate}}%</view>
         </block>
       </view>
-      <view class="h5 txt-white margin-top-5">+¥{{report.thismonthincome}}</view>
+      <view class="h5 txt-white margin-top-5">+¥{{report.thisweekincome}}</view>
     </view>
 <view style="border-right:1px solid white"></view>
     <view class=" margin-left-130">
@@ -29,7 +29,7 @@
           <view class="h6 {{report.thismonthincomerate>0?'t-color':'t-color2'}}">{{report.thismonthincomerate}}%</view>
         </block>
       </view>
-      <view class="h5 txt-white margin-top-5">+¥{{report.thismonthincome}}</view>
+      <view class="h5 txt-white margin-top-5">+¥{{report.thisweekincome}}</view>
     </view>
   </view>
 
