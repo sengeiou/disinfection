@@ -7,3 +7,7 @@ page{
 .t-color{
   color: #556482;
 }
+.icon-d{
+  height:60rpx;
+  width: 90rpx;
+}

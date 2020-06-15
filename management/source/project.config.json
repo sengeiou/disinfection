@@ -271,6 +271,13 @@
 					"id": -1,
 					"name": "pages/lijitixian/lijitixian",
 					"pathName": "pages/lijitixian/lijitixian",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/dianpushebei/dianpushebei",
+					"pathName": "pages/dianpushebei/dianpushebei",
 					"scene": null
 				}
 			]
