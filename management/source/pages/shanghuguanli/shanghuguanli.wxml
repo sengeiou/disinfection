@@ -2,7 +2,7 @@
 <view class='sh-dx flex-row  padding-top-30 padding-bottom-30 margin-left-40 margin-right-40 bj-shadow'>
   <view class='f-32 txt-white margin-left-40 flex-1 margin-top-5'>商户信息卡</view>
   <!-- <image bindtap='xiugaiyonghu' id="{{l.id}}" class=' padding-left-30 margin-right-30 padding-top-10 padding-bottom-10 icon-140' src='{{uploadpath}}resource/{{res.a11}}'></image> -->
-    <view class="xg-size flex-row margin-left-50 margin-right-20" bindtap="xiugaishouji" id="{{l.id}}">
+    <view class="xg-size flex-row margin-left-50 margin-right-20" bindtap="xiugaiyonghu" id="{{l.id}}">
     <image class="icon-18 margin-left-30 margin-top-5" style="line-height:50rpx;" src='{{uploadpath}}resource/{{res.penn}}'></image>
     <view class="txt-white h6 margin-left-10 margin-right-10" style="line-height:50rpx;">修改</view>
   </view>
@@ -23,11 +23,11 @@
 
 <view class='flex-row bg-white margin-left-40 margin-right-40  border-radius-10 margin-top-20 bj-shadow'>
   <view class='sh-color2 padding-top-40 f-32 padding-left-40 padding-bottom-40'>授权手机号：</view>
-  <view class='sh-color3 f-32 padding-top-40 padding-left-10 padding-bottom-40' style="width:270rpx;">{{l.mobile}}</view>
+  <view class='sh-color3 f-32 padding-top-40 padding-left-10 padding-bottom-40 flex-1'>{{l.mobile}}</view>
   <!-- <image bindtap='xiugaishouji' id="{{l.id}}" class=' padding-left-50  padding-top-40 padding-bottom-10 icon-140' src='{{uploadpath}}resource/{{res.a11}}'></image> -->
-  <view class="xg-size flex-row margin-top-35 " bindtap="xiugaishouji" id="{{l.id}}">
-    <image class="icon-18 margin-left-30 margin-top-5" style="line-height:50rpx;" src='{{uploadpath}}resource/{{res.penn}}'></image>
-    <view class="txt-white h6 margin-left-10" style="line-height:50rpx;">修改</view>
+  <view class="xg-size flex-row margin-top-30 margin-right-20" bindtap="xiugaishouji" id="{{l.id}}">
+    <image class="icon-18 margin-left-30 margin-top-5 " style="line-height:50rpx;" src='{{uploadpath}}resource/{{res.penn}}'></image>
+    <view class="txt-white h6 margin-left-10 " style="line-height:50rpx;">修改</view>
   </view>
 
 </view>

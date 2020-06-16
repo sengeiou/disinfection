@@ -20,6 +20,23 @@ background:#FF674B;
 opacity:1;
 border-radius:10rpx;
 }
+.w-color{
+  color: #FF6520;
+}
+.biank{
+width:116rpx;
+height:42rpx;
+border:2rpx solid rgba(9,28,43,1);
+opacity:1;
+border-radius:8rpx;
+}
+.bianktwo{
+width:116rpx;
+height:42rpx;
+border:2rpx solid rgba(255,101,32,1);
+opacity:1;
+border-radius:8rpx;
+}
 .icon-220{
   height: 220rpx;
   width: 354rpx;

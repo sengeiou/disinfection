@@ -1,3 +1,5 @@
+
+
 <view class='margin-top-20'></view>
 <view class="size margin-right-40 margin-left-40">
   <view class='h5 margin-left-40 margin-top-50' style=''>我的余额</view>
@@ -12,7 +14,7 @@
 <!-- 收益 -->
 
   <view class='flex-row margin-top margin-left-40'>
-    <view class="margin-right-130">
+    <view class="margin-right-110">
       <view class="h6 flex-row">本周收益
         <block wx:if="report.thisweekincomerate!='-'">
           <image src='{{uploadpath}}resource/{{report.thisweekincomerate>0?res.sc:res.xz}}' class="icon-15 flex-row margin-left-5"></image>
@@ -22,7 +24,7 @@
       <view class="h5 txt-white margin-top-5">+¥{{report.thisweekincome}}</view>
     </view>
 <view style="border-right:1px solid white"></view>
-    <view class=" margin-left-130">
+    <view class=" margin-left-110 margin-right-40">
       <view class="h6 flex-row ">本周收益
         <block wx:if="report.thismonthincomerate!='-'">
           <image wx:if="report.thismonthincomerate!='-'" src='{{uploadpath}}resource/{{report.thismonthincomerate>0?res.sc:res.xz}}' class="icon-15 flex-row margin-left-5"></image>

@@ -12,8 +12,8 @@
   <view class='size margin-top margin-left-40 margin-right-40'>
     <view class='f-32 txt-white margin-left-24 margin-top-34'>{{item.name}} {{item.shopname}}</view>
     <view class="flex-row">
-    <view class='h5 txt-white margin-left-24 margin-top-25 '>设备数量：{{item.devicecount}}   </view>
-   <view bindtap='glsq' data-name="guanlishouquan" id="{{item.id}}" class='h6 txt-white padding-left-20 padding-right-20 margin-left-340 margin-top-20 gl-size' style="line-height:48rpx;">管理授权</view>
+    <view class='h5 txt-white margin-left-24 margin-top-25 flex-1 '>设备数量：{{item.devicecount}}   </view>
+   <view bindtap='glsq' data-name="guanlishouquan" id="{{item.id}}" class='h6 txt-white padding-left-20 padding-right-20  margin-top-10 margin-right-20 gl-size' style="line-height:48rpx;">管理授权</view>
     </view>
     <view class='h6 txt-white margin-left-24 margin-top-14 flex-row padding-bottom-40'>完成订单：{{OwnerInfo.completeorder}}
       <view class='h6 txt-white margin-left-20'>盈利总额：{{item.totalincome}}</view>

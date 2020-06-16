@@ -16,4 +16,9 @@
 </view>
 
 </scroll-view>
-<image bindtap="querentianjia" src='{{uploadpath}}resource/{{res.a2}}' class="margin-right-40 margin-left-40 margin-bottom-80 margin-top icon-600"></image>
+<!-- <image bindtap="querentianjia" src='{{uploadpath}}resource/{{res.a2}}' class="margin-right-40 margin-left-40 margin-bottom-80 margin-top icon-600"></image> -->
+
+<view bindtap="back" data-name="backone" class="margin-right-40 margin-left-40 margin-bottom-80 bottom-size">
+<view class="text-center txt-white" style="line-height:96rpx;">确认增加</view>
+</view>
+

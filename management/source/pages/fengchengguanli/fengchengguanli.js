@@ -9,6 +9,12 @@ class Content extends AppBase {
   constructor() {
     super();
   }
+  setPageTitle() {
+    wx.setNavigationBarTitle({
+      // title: '',
+      title: '分成管理',
+    });
+  }
   onLoad(options) {
     this.Base.Page = this;
     //options.id=5;

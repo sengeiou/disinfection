@@ -2,31 +2,32 @@
 
   <view class='bg-color border-radius-30 margin-right-40 margin-left-40 bj-shadow margin-top' wx:for="{{list}}" wx:key='k' wx:for-index='idx'>
     <view class='flex-row margin-top-20'>
-      <view class='h5 margin-left-20 flex-1 txt-white margin-top-20'>{{item.name}} {{item.shopname}}</view>
-      <!-- <image id="{{idx}}" src='{{uploadpath}}resource/{{res.a10}}' class='icon-160 margin-right-20 margin-top-20' bindtap="updaterate"></image> --><view class="size margin-right-20 margin-top-20"  bindtap="updaterate" id="{{idx}}">
-      <view class="h5 txt-white text-center" style="line-height:48rpx;">确认修改</view>
+      <view class=' margin-left-20 flex-1 txt-white margin-top-20'>{{item.name}} {{item.shopname}}</view>
+      <!-- <image id="{{idx}}" src='{{uploadpath}}resource/{{res.a10}}' class='icon-160 margin-right-20 margin-top-20' bindtap="updaterate"></image> -->
+      <view class="size margin-right-20 margin-top-20" bindtap="updaterate" id="{{idx}}">
+        <view class="h5 txt-white text-center" style="line-height:48rpx;">确认修改</view>
       </view>
     </view>
-    <view class='flex-row margin-left-20 margin-bottom-30 margin-top-10'>
-      <view class='h7  txt-white'>设备数量：{{item.devicecount}}</view>
-      <view class='h7  txt-white margin-left-40'>总盈利：{{item.totalincome}}元</view>
+    <view class='flex-row margin-left-20  margin-top-30 margin-bottom-30'>
+      <view class='h6  txt-white'>设备数量：{{item.devicecount}}</view>
+      <view class='h6  txt-white margin-left-40'>总盈利：{{item.totalincome}}元</view>
     </view>
 
-    <view class="flex-row margin-bottom-20">
+    <view class="flex-row margin-bottom-30">
       <view>
-        <image bindtap="jianshao" src="{{uploadpath}}resource/{{res.jiantwo}}" class="icon-15 margin-left-20 margin-top-20" id="{{idx}}"></image>
+        <image bindtap="jianshao" src="{{uploadpath}}resource/{{res.jiantwo}}" class="icon-14 margin-left-20 margin-top-20" id="{{idx}}"></image>
       </view>
 
-      <view class="section section_gap  flex-1">
-          <slider selected-color="yellow" value="{{item.payrate}}" step="1" block-size='10' bindchange='payratechange' id="{{idx}}" />  
+      <view class="section section_gap  flex-1" style="height:38px;">
+        <slider selected-color="yellow" value="{{item.payrate}}" step="1" block-size='10' bindchange='payratechange' id="{{idx}}" />
       </view>
 
-    <view class="h7 margin-top-20 margin-right-10" style="color:#F3BD2B">{{item.payrate}}%</view>
+      <view class="h6 margin-top-25 " style="color:#F3BD2B;position:relative; right:15rpx;">{{item.payrate}}%</view>
 
-    <view>
-      <image bindtap="zengjia" src="{{uploadpath}}resource/{{res.jia}}" class="icon-15 margin-right-20 margin-top-20" id="{{idx}}"></image>
+      <view>
+        <image bindtap="zengjia" src="{{uploadpath}}resource/{{res.jia}}" class="icon-15 margin-right-20 margin-top-20" id="{{idx}}"></image>
+      </view>
     </view>
-  </view>
 
   </view>
 

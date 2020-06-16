@@ -127,7 +127,7 @@ export class AppBase {
     ApiConfig.SetUnicode(this.Base.unicode);
 
 
-
+    this.Base.setPageTitle();
   }
 
   gotoOpenUserInfoSetting() {

@@ -278,6 +278,41 @@
 					"id": -1,
 					"name": "pages/dianpushebei/dianpushebei",
 					"pathName": "pages/dianpushebei/dianpushebei",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/fengchengguanli/fengchengguanli",
+					"pathName": "pages/fengchengguanli/fengchengguanli",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tixianjilu/tixianjilu",
+					"pathName": "pages/tixianjilu/tixianjilu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wentifankui/wentifankui",
+					"pathName": "pages/wentifankui/wentifankui",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wodeshanghutwo/wodeshanghutwo",
+					"pathName": "pages/wodeshanghutwo/wodeshanghutwo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/home/home",
+					"pathName": "pages/home/home",
 					"scene": null
 				}
 			]

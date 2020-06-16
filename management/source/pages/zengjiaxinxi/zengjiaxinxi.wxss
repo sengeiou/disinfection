@@ -10,6 +10,13 @@ border-radius:10px 10px 0px 0px;
 page{
   background:#F5F4F9;
 }
+.bottom-size{
+width:670rpx;
+height:96rpx;
+background:rgba(243,189,43,1);
+opacity:1;
+border-radius:20rpx;
+}
 .padding-top-30{
   padding-top: 30rpx;
 }

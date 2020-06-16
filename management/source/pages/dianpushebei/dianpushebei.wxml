@@ -3,9 +3,16 @@
     <view class='flex-row margin-top-20'>
       <view class='h5 margin-left-20'>设备编号</view>
       <view class="flex-1">{{item.deviceno}}</view>
-      <image src='{{uploadpath}}resource/{{item.workingtype=="OFF"?res.lx:""}}' class='icon-15 margin-right-20 margin-left-10 '></image>
-          <image src='{{uploadpath}}resource/{{item.workingtype=="ON"?res.zx:""}}' class='icon margin-right-20 margin-left-10 '></image>
-      <image src='{{uploadpath}}resource/{{item.workingtype=="WORK"?res.gongz:""}}' class='icon-d margin-right-30 '></image>
+      <view class=" margin-right-20 margin-left-10 " wx:if="{{item.workingtype=='OFF'}}">
+          <image src='{{uploadpath}}resource/{{res.lx}}' class='icon-15'></image>
+      </view>
+          <view class=" margin-right-20 margin-left-10 "  wx:if="{{item.workingtype=='ON'}}">
+           <image src='{{uploadpath}}resource/{{res.zx}}' class='icon   '></image>
+          </view>
+          <view class=" margin-right-20 margin-left-10 "  wx:if="{{item.workingtype=='WORK'}}">
+            <image src='{{uploadpath}}resource/{{res.gongz}}' class='icon-d'></image>
+          </view>
+
     </view>
     <view class='h6 margin-left-20 margin-top-5 t-color'>{{item.shopname}}</view>
     <view class='flex-row margin-left-20 margin-bottom-30 margin-top-5'>

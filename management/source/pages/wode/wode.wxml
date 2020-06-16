@@ -1,3 +1,5 @@
+
+
 <view class='margin-top-20'></view>
 <view class="bj-size margin-left-40    ">
   <!-- <view class="flex-center" style="height:288rpx;width:670rpx;background-color:#091C2B;border-radius:30rpx;"> -->
@@ -11,7 +13,7 @@
   </view>
 
 
-    <button class="margin-left-484 margin-top" open-type="getUserInfo" bindgetuserinfo="getUserInfo" style="width:154rpx;height:0rpx;padding:0;overflow:visible;">
+    <button wx:if="{{UserInfo==undefined}}" class="margin-left-484 margin-top" open-type="getUserInfo" bindgetuserinfo="getUserInfo" style="width:154rpx;height:0rpx;padding:0;overflow:visible;">
       <!-- <image src='{{uploadpath}}resource/{{res.a17}}' class='icon-154'></image> -->
       <view class="sq-size">
         <view class="txt-white h5 text-center" style="line-height: 48rpx;">微信授权</view>

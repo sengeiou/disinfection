@@ -43,11 +43,11 @@ border-radius:30rpx;
 .padding-rihgt-300{
   padding-right: 300rpx;
 }
-.margin-right-130{
-  margin-right: 130rpx;
+.margin-right-110{
+  margin-right: 110rpx;
 }
-.margin-left-130{
-  margin-left: 130rpx;
+.margin-left-110{
+  margin-left: 110rpx;
 }
 .margin-left-156{
   margin-left: 156rpx;

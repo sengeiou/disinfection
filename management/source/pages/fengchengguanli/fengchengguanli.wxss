@@ -24,3 +24,13 @@ opacity:1;
 border-radius:30rpx;
 
 }
+.margin-top-25{
+  margin-top: 23rpx;
+}
+.margin-top-25{
+  margin-top: 23rpx;
+}
+.icon-14{
+  height: 28rpx;
+  width: 28rpx;
+}

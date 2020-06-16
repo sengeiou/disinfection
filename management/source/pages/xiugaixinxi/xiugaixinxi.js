@@ -12,7 +12,7 @@ class Content extends AppBase {
   setPageTitle() {
     wx.setNavigationBarTitle({
       // title: '',
-      title: '修改信息',
+      title: '手机授权',
     });
   }
   mobile(e){

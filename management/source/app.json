@@ -30,7 +30,8 @@
     "pages/zongshu/zongshu",
     "pages/xiugaixinxitwo/xiugaixinxitwo",
     "pages/hometwo/hometwo",
-    "pages/dianpushebei/dianpushebei"
+    "pages/dianpushebei/dianpushebei",
+    "pages/dailihezuo/dailihezuo"
   ],
   "permission": {
     "scope.userLocation": {

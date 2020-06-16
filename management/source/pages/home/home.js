@@ -30,6 +30,15 @@ class Content extends AppBase {
     var ownerapi= new OwnerApi();
 
   }
+  adLoad(){
+    console.log("广告加载成功")
+  }
+  adError(){
+    console.log("广告加载失败",err)
+  }
+  adClose(){
+    console.log("广告关闭")
+  }
   wodeshanghu(e){
     var name = e.currentTarget.dataset.name;
 
@@ -63,6 +72,11 @@ class Content extends AppBase {
      
 
   }
+  dailihezuo(){
+    wx.navigateTo({
+      url: '/pages/dailihezuo/dailihezuo',
+    })
+  }
   shebeidingdan(e){
       wx.navigateTo({
         url: '/pages/shebeidingdan/shebeidingdan',
@@ -93,4 +107,8 @@ body.tixian = content.tixian;
 body.shebeitongji=content.shebeitongji;
 body.shebeidingdan = content.shebeidingdan;
 body.fengchengguanli = content.fengchengguanli;
+body.dailihezuo = content.dailihezuo;
+body.adLoad = content.adLoad;
+body.adError = content.adError;
+body.adClose = content.adClose;
 Page(body)
