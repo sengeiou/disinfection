@@ -31,20 +31,13 @@ class Content extends AppBase {
            var arr2=[];
       for (var i=1;i<ret.length;i++) {
         if (ret[i].workingtype=="WORK") {
-          // console.log(ret, "6666666666666")
+     
           arr.push(ret[i])
         }
         if(ret[i].workingtype=="ON"){
           arr2.push(ret[i])
         }
-        // console.log(ret, "6666666666666")
-        // this.Base.setMyData({
-        //   list4:ret.alldevice
-        // })
         }
-        // this.Base.setMyData({ list4:ret.alldevice})
-      // console.log(ret, "6666666666666")
-      // console.log(arr, "77777777777")
       this.Base.setMyData({  list2:arr })
       this.Base.setMyData({ list3:arr2 })
     })

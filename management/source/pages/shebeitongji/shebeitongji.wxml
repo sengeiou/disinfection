@@ -14,7 +14,7 @@
     <view  class='h5 txt-white text-center padding-bottom-16'>{{list2.length}}</view>
   </view>
   <view class='bg-color3 margin-right-40 border-radius-20'>
-    <view class='padding-left-60 padding-right-60 h6 txt-white padding-top-16'>待机</view>
+    <view class='padding-left-60 padding-right-60 h6 txt-white padding-top-16'>联网中</view>
     <view class='h5 txt-white text-center padding-bottom-16'>{{list3.length}}</view>
   </view>
 </view>

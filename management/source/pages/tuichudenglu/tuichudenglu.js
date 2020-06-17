@@ -138,7 +138,7 @@ class Content extends AppBase {
       console.log(ret,'ret')
       if(ret.code=="0"){
         wx.setStorageSync("token", ret.return);
-        wx:wx.switchTab({
+        wx.switchTab({
           url: '/pages/home/home',
           success: function(res) {},
           fail: function(res) {},

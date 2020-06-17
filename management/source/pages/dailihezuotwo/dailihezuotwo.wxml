@@ -1,0 +1,1 @@
+<image src="{{uploadpath}}inst/{{InstInfo.daili}}" mode='widthFix' style='width:100vw'></image>

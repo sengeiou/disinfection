@@ -73,14 +73,27 @@ class Content extends AppBase {
 
   }
   dailihezuo(){
-    wx.navigateTo({
-      url: '/pages/dailihezuo/dailihezuo',
-    })
+      if (this.Base.getMyData().OwnerInfo.role == "A") {
+        wx.navigateTo({
+          url: '/pages/dailihezuo/dailihezuo',
+        })
+      } else {
+        wx.navigateTo({
+          url: '/pages/dailihezuotwo/dailihezuotwo',
+        })
+      }
   }
   shebeidingdan(e){
+    if (this.Base.getMyData().OwnerInfo.role == "A") {
       wx.navigateTo({
         url: '/pages/shebeidingdan/shebeidingdan',
       })
+    } else {
+      wx.navigateTo({
+        url: '/pages/shebeidingdantwo/shebeidingdantwo',
+      })
+    }
+
   }
   fengchengguanli(){
       wx.navigateTo({
@@ -108,7 +121,4 @@ body.shebeitongji=content.shebeitongji;
 body.shebeidingdan = content.shebeidingdan;
 body.fengchengguanli = content.fengchengguanli;
 body.dailihezuo = content.dailihezuo;
-body.adLoad = content.adLoad;
-body.adError = content.adError;
-body.adClose = content.adClose;
 Page(body)

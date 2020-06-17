@@ -1,0 +1,74 @@
+
+page{
+  background:#F5F4F9;
+}
+.icon-120{
+  width: 126rpx;
+  height: 48rpx;
+}
+.t-color{
+  color:#A2A2A2;
+  overflow:visible;
+}
+.border-radius-10{
+  border-radius: 10rpx;
+}
+.qd-size{
+  width:152rpx;
+height:48rpx;
+background:#FF674B;
+opacity:1;
+border-radius:10rpx;
+}
+.w-color{
+  color: #FF6520;
+}
+.biank{
+width:116rpx;
+height:42rpx;
+border:2rpx solid rgba(9,28,43,1);
+opacity:1;
+border-radius:8rpx;
+}
+.bianktwo{
+width:116rpx;
+height:42rpx;
+border:2rpx solid rgba(255,101,32,1);
+opacity:1;
+border-radius:8rpx;
+}
+.icon-220{
+  height: 220rpx;
+  width: 354rpx;
+}
+.t-color-ts{
+  color: #B4B8BF;
+}
+.margin-left-200{
+  margin-left: 200rpx;
+}
+.margin-top-280{
+  margin-top: 280rpx;
+}
+.margin-top-7{
+  margin-top: 8rpx;
+}
+.height-48{
+  height:48rpx;
+}
+.padding-top-8{
+  padding-top:8rpx;
+} 
+.padding-bottom-6{
+  padding-bottom: 6rpx;
+}
+.icon-116{
+  width: 116rpx;
+  height: 42rpx;
+}
+.border{
+  border-bottom: 1px solid rgba(216,216,216,1);
+}
+.padding-left-38{
+  padding-left: 38rpx;
+}
