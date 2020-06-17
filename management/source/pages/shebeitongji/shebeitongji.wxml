@@ -1,7 +1,7 @@
 <view class='margin-top-30'></view>
 <view class="flex-row bg-white margin-left-40 margin-right-40 height-60 border-radius-30">
   <!-- <view class='flex-1 h6 t-color2 margin-left-40 margin-top-16'>输入设备编号搜索</view> -->
-  <input placeholder="输入设备编号搜索" class="flex-1 bg-white h6 margin-left-40 margin-top-7" bindinput="searchtxt" bindconfirm="dianji"></input>
+  <input bindtap='dianji' placeholder="输入设备编号搜索" class="flex-1 bg-white h6 margin-left-40 margin-top-7" bindinput="searchtxt" bindconfirm="dianji"></input>
   <image bindtap='dianji' src='{{uploadpath}}resource/{{res.sou}}' class='icon margin-right-20 margin-top-16'></image>
 </view>
 <view class='flex-row margin-top'>
@@ -11,11 +11,11 @@
   </view>
   <view class='bg-color2 margin-left-46 margin-right-46 border-radius-20'>
     <view class='padding-left-60 padding-right-60 h6 txt-white padding-top-16'>工作中</view>
-    <view  class='h5 txt-white text-center padding-bottom-16'>{{list.allsubowner[0].workingdevice}}</view>
+    <view  class='h5 txt-white text-center padding-bottom-16'>{{list2.length}}</view>
   </view>
   <view class='bg-color3 margin-right-40 border-radius-20'>
     <view class='padding-left-60 padding-right-60 h6 txt-white padding-top-16'>待机</view>
-    <view class='h5 txt-white text-center padding-bottom-16'>{{list.allsubowner[0].activedevice}}</view>
+    <view class='h5 txt-white text-center padding-bottom-16'>{{list3.length}}</view>
   </view>
 </view>
 <view class='flex-row f-32 w-color margin-left-40 txt-bold margin-top margin-bottom-40'>以配置设备

@@ -55,28 +55,28 @@ class Content extends AppBase {
       this.Base.setMyData({
         listinstore: arr
       })
-      // var arr = [];
-      // var arr2 = [];
-      // for (var i = 1; i < ret.alldevice.length; i++) {
-      //   if (ret.alldevice[i].workingtype == "WORK") {
-      //     // console.log(ret, "6666666666666")
-      //     arr.push(ret.alldevice[i])
-      //   }
-      //   if (ret.alldevice[i].workingtype == "ON") {
-      //     arr2.push(ret.alldevice[i])
-      //   }
-      //   // console.log(ret, "6666666666666")
-      //   // this.Base.setMyData({
-      //   //   list4:ret.alldevice
-      //   // })
-      // }
+      var arr = [];
+      var arr2 = [];
+      for (var i = 1; i < ret.alldevice.length; i++) {
+        if (ret.alldevice[i].workingtype == "WORK") {
+          // console.log(ret, "6666666666666")
+          arr.push(ret.alldevice[i])
+        }
+        if (ret.alldevice[i].workingtype == "ON") {
+          arr2.push(ret.alldevice[i])
+        }
+        // console.log(ret, "6666666666666")
+        // this.Base.setMyData({
+        //   list4:ret.alldevice
+        // })
+      }
 
-      // this.Base.setMyData({
-      //   list2: arr
-      // })
-      // this.Base.setMyData({
-      //   list3: arr2
-      // })
+      this.Base.setMyData({
+        list2: arr
+      })
+      this.Base.setMyData({
+        list3: arr2
+      })
 
     })
 

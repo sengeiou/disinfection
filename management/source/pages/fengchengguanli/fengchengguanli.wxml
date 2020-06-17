@@ -15,7 +15,7 @@
 
     <view class="flex-row margin-bottom-30">
       <view>
-        <image bindtap="jianshao" src="{{uploadpath}}resource/{{res.jiantwo}}" class="icon-14 margin-left-20 margin-top-20" id="{{idx}}"></image>
+        <image bindtap="jianshao" src="{{uploadpath}}resource/{{res.jianthree}}" class="icon-14 margin-left-20 margin-top-20" id="{{idx}}"></image>
       </view>
 
       <view class="section section_gap  flex-1" style="height:38px;">
