@@ -313,6 +313,13 @@
 					"id": -1,
 					"name": "pages/home/home",
 					"pathName": "pages/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/shanghuguanli/shanghuguanli",
+					"pathName": "pages/shanghuguanli/shanghuguanli",
 					"scene": null
 				}
 			]
