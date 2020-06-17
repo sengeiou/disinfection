@@ -15,7 +15,7 @@
     <view class='h5 txt-white margin-left-24 margin-top-25 flex-1 '>设备数量：{{item.devicecount}}   </view>
    <view bindtap='glsq' data-name="guanlishouquan" id="{{item.id}}" class='h6 txt-white padding-left-20 padding-right-20  margin-top-10 margin-right-20 gl-size' style="line-height:48rpx;">管理授权</view>
     </view>
-    <view class='h6 txt-white margin-left-24 margin-top-14 flex-row padding-bottom-40'>完成订单：{{OwnerInfo.completeorder}}
+    <view class='h6 txt-white margin-left-24 margin-top-14 flex-row padding-bottom-40'>完成订单：{{item.completeorder}}
       <view class='h6 txt-white margin-left-20'>盈利总额：{{item.totalincome}}</view>
     </view>
   </view>

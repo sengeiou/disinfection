@@ -51,7 +51,7 @@ export class ApiUtil {
       message: msg
     });
     toast.present();
-  }
+  } 
 
   static FormatDateTime(val) {
     var year=val.getFullYear();
@@ -61,6 +61,31 @@ export class ApiUtil {
     var minute = val.getMinutes() > 9 ? val.getMinutes() : ("0" + val.getMinutes());
     var second = val.getSeconds() > 9 ? val.getSeconds() : ("0" + val.getSeconds());
     return year+"-"+month+"-"+date+" "+hour+":"+minute+":"+second;
+  }
+  static FormatDateTimet(val) {
+    var year = val.getFullYear();
+    var month = (val.getMonth() + 1) > 9 ? (val.getMonth() + 1) : ("0" + (val.getMonth() + 1));
+    var date = val.getDate() > 9 ? val.getDate() : ("0" + val.getDate());
+    return year + "-" + month + "-" + date + " " ;
+  }
+  static FormatDateTimeNow(val) {
+    var hour = val.getHours() > 9 ? val.getHours() : ("0" + val.getHours());
+    var minute = val.getMinutes() > 9 ? val.getMinutes() : ("0" + val.getMinutes());
+    var second = val.getSeconds() > 9 ? val.getSeconds() : ("0" + val.getSeconds());
+    return hour + ":" + minute + ":" + second;
+  }
+  static FormatDateHour(val) {
+    var hour = val.getHours() > 9 ? val.getHours() : ("0" + val.getHours());
+
+    return hour 
+  }
+  static FormatDateMin(val) {
+    var minute = val.getMinutes() > 9 ? val.getMinutes() : ("0" + val.getMinutes());
+    return minute 
+  }
+  static FormatDateSec(val) {
+    var second = val.getSeconds() > 9 ? val.getSeconds() : ("0" + val.getSeconds());
+    return second;
   }
   static FormatDate(val) {
     var year = val.getFullYear();

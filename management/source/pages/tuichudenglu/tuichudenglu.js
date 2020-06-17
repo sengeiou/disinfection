@@ -94,13 +94,17 @@ class Content extends AppBase {
       mobile: mobile,
       type: 'register'
     }, (ret) => {
-      if (ret) {
+      if (ret.code == "0") {
         that.Base.setMyData({
           send: true,
           reminder: 60
         })
         that.Base.setInVerify();
+      }else{
+        this.Base.info(ret.return)
+
       }
+
     })
   }
   setInVerify() {

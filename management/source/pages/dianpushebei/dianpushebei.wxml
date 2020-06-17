@@ -14,7 +14,7 @@
           </view>
 
     </view>
-    <view class='h6 margin-left-20 margin-top-5 t-color'>{{item.shopname}}</view>
+    <view class='h6 margin-left-20 margin-top-5 t-color'>{{OwnerInfo.shopname}}</view>
     <view class='flex-row margin-left-20 margin-bottom-30 margin-top-5'>
       <view class='h5 '>完成订单：{{item.ordercount}}</view>
       <view class='h5  margin-left-80'>盈利总额：{{item.orderamount}}</view>

@@ -182,6 +182,12 @@ class Content extends AppBase {
   changetap(e){
     this.Base.setMyData({ready:e.currentTarget.id})
   }
+
+  tixian(){
+    wx.navigateTo({
+      url: '/pages/tixian/tixian',
+    })
+  }
 }
 
 var content = new Content();
@@ -189,4 +195,5 @@ var body = content.generateBodyJson();
 body.onLoad = content.onLoad; 
 body.onMyShow = content.onMyShow;
 body.changetap = content.changetap;
+body.tixian=content.tixian;
 Page(body)

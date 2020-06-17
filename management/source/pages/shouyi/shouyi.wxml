@@ -6,7 +6,7 @@
   <view class='flex-row'>
     <view class="txt-white h2 txt-bold margin-left-40 flex-1">¥{{OwnerInfo.balance}}</view>
     <!-- <image src="{{uploadpath}}resource/{{res.a14}}" class='icon-48 margin-right-20 margin-top-10'></image> -->
-    <view class="tx.size margin-right-20 margin-top-10 text-center">
+    <view bindtap='tixian' class="tx.size margin-right-20 margin-top-10 text-center">
     <view class="txt-white h5" style="line-height: 48rpx;">提现</view>
     </view>
   </view>

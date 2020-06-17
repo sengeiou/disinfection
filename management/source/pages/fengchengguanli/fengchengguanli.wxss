@@ -25,11 +25,12 @@ border-radius:30rpx;
 
 }
 .margin-top-25{
-  margin-top: 23rpx;
+  margin-top: 21rpx;
 }
-.margin-top-25{
-  margin-top: 23rpx;
+.margin-top-26{
+  margin-top: 22rpx;
 }
+
 .icon-14{
   height: 28rpx;
   width: 28rpx;
