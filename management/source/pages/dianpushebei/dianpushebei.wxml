@@ -4,13 +4,13 @@
       <view class='h5 margin-left-20'>设备编号</view>
       <view class="flex-1">{{item.deviceno}}</view>
       <view class=" margin-right-20 margin-left-10 " wx:if="{{item.workingtype=='OFF'}}">
-          <image src='{{uploadpath}}resource/{{res.wifi}}' class='icon'></image>
+          <image src='{{uploadpath}}resource/{{res.wfc}}' class='icon-28'></image>
       </view>
           <view class=" margin-right-20 margin-left-10 "  wx:if="{{item.workingtype=='ON'}}">
-           <image src='{{uploadpath}}resource/{{res.zx}}' class='icon   '></image>
+           <image src='{{uploadpath}}resource/{{res.wfh}}' class='icon-28   '></image>
           </view>
           <view class=" margin-right-20 margin-left-10 "  wx:if="{{item.workingtype=='WORK'}}">
-            <image src='{{uploadpath}}resource/{{res.gongz}}' class='icon-d'></image>
+            <image src='{{uploadpath}}resource/{{res.zgz}}' class='icon-28'></image>
           </view>
 
     </view>

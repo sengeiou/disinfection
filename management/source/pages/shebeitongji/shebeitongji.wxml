@@ -43,5 +43,5 @@
 <view wx:for="{{listinstore}}" class='flex-row bg-white border-radius-20 margin-right-40 margin-left-40 bj-shadow margin-bottom-20'>
   <view class='h5 w-color3 flex-1 margin-left-30 margin-top-20 margin-bottom-20'>未配置</view>
   <view class='h5 w-color3 margin-top-20'>设备编号</view>
-  <view class='f-32 w-color3 margin-top-18 margin-right-30'>{{item.name}}</view>
+  <view class='f-32 w-color3 margin-top-18 margin-right-30'>{{item.deviceno}}</view>
 </view>

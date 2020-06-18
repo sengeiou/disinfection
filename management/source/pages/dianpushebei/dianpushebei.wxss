@@ -11,3 +11,7 @@ page{
   height:60rpx;
   width: 90rpx;
 }
+.icon-28{
+  width: 50rpx;
+  height: 40rpx;
+}
