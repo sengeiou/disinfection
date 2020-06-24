@@ -6,17 +6,19 @@
   align-items: center;
   text-align: center;
   box-sizing: border-box;
-  padding: 0 20%;
+  padding: 0 10%;
 }
 .circle-bar-wrap .font{
   max-height: 62rpx;
-  font-size: 48rpx;
-  overflow:hidden;
+  font-size: 40rpx;
+
+  /* overflow:hidden;
   text-overflow:ellipsis;
   display:-webkit-box;
   -webkit-box-orient:vertical;
   -webkit-line-clamp:2;
-  white-space: normal;
+  white-space: normal; */
+
   color:#A6B4CF;
 }
 .circle-bar-wrap .val{

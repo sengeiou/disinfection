@@ -13,12 +13,12 @@
 	</view>
 	<view wx:if="{{orderinfo.xiaoduzhuantai=='B'}}" class="flex-row flex-center margin-top-10">
 		<view class="flex-1"></view>
-		<canvas-ring class="h3" title="{{time}}" Number="5" canvasWidth="150" lineColor="#ECF0F7" id="canvasRing" value="{{baifenbi}}"></canvas-ring>
+		<canvas-ring class="h5" title="{{time}}" Number="5" canvasWidth="140" lineColor="#ECF0F7" id="canvasRing" value="{{baifenbi}}"></canvas-ring>
 		<view class="flex-1"></view>
 	</view>
 	<view wx:if="{{orderinfo.xiaoduzhuantai=='C'}}" class="flex-row flex-center margin-top-10">
 		<view class="flex-1"></view>
-		<canvas-ring class="h3" title="" Number="5" canvasWidth="150" lineColor="#ECF0F7" id="canvasRing" value="{{baifenbi}}"></canvas-ring>
+		<canvas-ring class="h5" title="" Number="5" canvasWidth="140" lineColor="#ECF0F7" id="canvasRing" value="{{baifenbi}}"></canvas-ring>
 		<view class="flex-1"></view>
 	</view>
 	<view wx:if="{{orderinfo.xiaoduzhuantai=='C'}}" class="wwwc">

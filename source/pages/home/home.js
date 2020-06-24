@@ -47,7 +47,6 @@ class Content extends AppBase {
       this.Base.setMyData({
         xuanxianglist
       })
-
     })
 
     memberapi.zhengshu({}, (zhengshu) => {
@@ -179,6 +178,11 @@ class Content extends AppBase {
           wx.requestPayment(payret)
 
         })
+
+      }
+      else{
+
+         this.Base.info(res.result)
 
       }
 
