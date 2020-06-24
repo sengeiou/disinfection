@@ -12,3 +12,21 @@
 .margin-left-290{
   margin-left: 290rpx;
 }
+.shadow{
+box-shadow:0px 2px 16px rgba(102,123,162,0.16);
+opacity:1;
+}
+.name{
+font-size:16px;
+font-weight:normal;
+line-height:22px;
+color:rgba(88,88,88,1);
+opacity:1;
+}
+.tel-mail{
+font-size:16px;
+font-weight:normal;
+line-height:22px;
+color:rgba(6,6,6,1);
+opacity:1;
+}

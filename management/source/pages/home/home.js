@@ -30,6 +30,15 @@ class Content extends AppBase {
     var ownerapi= new OwnerApi();
 
   }
+  adLoad(){
+    console.log("广告加载成功")
+  }
+  adError(){
+    console.log("广告加载失败",err)
+  }
+  adClose(){
+    console.log("广告关闭")
+  }
   wodeshanghu(e){
     var name = e.currentTarget.dataset.name;
 
@@ -63,10 +72,28 @@ class Content extends AppBase {
      
 
   }
+  dailihezuo(){
+      if (this.Base.getMyData().OwnerInfo.role == "A") {
+        wx.navigateTo({
+          url: '/pages/dailihezuo/dailihezuo',
+        })
+      } else {
+        wx.navigateTo({
+          url: '/pages/dailihezuotwo/dailihezuotwo',
+        })
+      }
+  }
   shebeidingdan(e){
+    if (this.Base.getMyData().OwnerInfo.role == "A") {
       wx.navigateTo({
         url: '/pages/shebeidingdan/shebeidingdan',
       })
+    } else {
+      wx.navigateTo({
+        url: '/pages/shebeidingdantwo/shebeidingdantwo',
+      })
+    }
+
   }
   fengchengguanli(){
       wx.navigateTo({
@@ -93,4 +120,5 @@ body.tixian = content.tixian;
 body.shebeitongji=content.shebeitongji;
 body.shebeidingdan = content.shebeidingdan;
 body.fengchengguanli = content.fengchengguanli;
+body.dailihezuo = content.dailihezuo;
 Page(body)

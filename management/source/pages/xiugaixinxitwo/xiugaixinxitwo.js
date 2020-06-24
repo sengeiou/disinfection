@@ -28,12 +28,13 @@ class Content extends AppBase {
   onMyShow() {
     var that = this;
     var api = new OwnerApi();
-    ownerApi.info({}, (info) => {
+    api.info({}, (info) => {
       var mobile = info.mobile;
       this.Base.setMyData({
         mobile
       })
-       console.log(info, "wode");
+  
+      //  console.log(info, "wode");
     });
 
   }
@@ -58,10 +59,11 @@ class Content extends AppBase {
           url: '/pages/zengjiaxinxi/zengjiaxinxi?from=new&ownerb_id='+ret.return,
         })
       } else {
-        wx.showToast({ 
-          title: ret.return,
-          icon: 'none'
-        })
+  
+          wx.showToast({
+            title: '手机号已被占用',
+            icon: 'none'
+          })
       }
     })
   }

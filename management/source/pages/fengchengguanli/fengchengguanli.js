@@ -9,6 +9,12 @@ class Content extends AppBase {
   constructor() {
     super();
   }
+  setPageTitle() {
+    wx.setNavigationBarTitle({
+      // title: '',
+      title: '分成管理',
+    });
+  }
   onLoad(options) {
     this.Base.Page = this;
     //options.id=5;
@@ -24,15 +30,43 @@ class Content extends AppBase {
       });
     }
   }
-  payratechange(e){
-    console.log(e);
-    var idx=e.currentTarget.id;
-    var list=this.Base.getMyData().list;
-    list[idx].payrate = e.detail.value; 
-    this.Base.setMyData({ list });
+  // payratechange(e){
+  //   console.log(e);
+  //   var idx=e.currentTarget.id;
+  //   var list=this.Base.getMyData().list;
+  //   list[idx].payrate = list[idx].payrate;
+  //   this.Base.setMyData({ list });
+  // }
+  jianshao(e){
+    // var ownerapi = new OwnerApi();
+      // ownerapi.childlist({
+      //   // owner_id:list[]
+      //         }, ret=> {
+      //   this.Base.setMyData({ ret })
+
+        // console.log(ret[0].payrate+"看啊")
+    var idx = e.currentTarget.id;
+    var list = this.Base.getMyData().list;
+          list[idx].payrate--;
+          // this.Base.setMyData({ list: ret })
+    
+        this.Base.setMyData({ list })
+      
+     
+    
+  }
+  zengjia(e){
+
+    var idx = e.currentTarget.id;
+    var list = this.Base.getMyData().list;
+    list[idx].payrate++;
+    // this.Base.setMyData({ list: ret })
+
+    this.Base.setMyData({ list })
+
+
   }
   updaterate(e){
-
     var idx = e.currentTarget.id;
     var list = this.Base.getMyData().list;
     var ownerapi = new OwnerApi();
@@ -51,4 +85,6 @@ body.onLoad = content.onLoad;
 body.onMyShow = content.onMyShow; 
 body.payratechange = content.payratechange;
 body.updaterate = content.updaterate;
+body.jianshao=content.jianshao;
+body.zengjia=content.zengjia;
 Page(body)

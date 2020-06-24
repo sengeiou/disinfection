@@ -9,11 +9,10 @@ class Content extends AppBase {
   constructor() {
     super();
   }
-  setPageTitle() {
+  setPageTitle(instinfo) {
     wx.setNavigationBarTitle({
-      // title: 'wentifankui',
-      title: '问题反馈',
-    });
+      title: "问题反馈",
+    })
   }
   onLoad(options) {
     this.Base.Page = this;

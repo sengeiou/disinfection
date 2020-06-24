@@ -23,6 +23,10 @@ page{
 .padding-right-48{
   padding-right: 48rpx;
 }
+
+.margin-top-16{
+  margin-top: 16rpx;
+}
 .margin-left-46{
   margin-left: 46rpx;
 }

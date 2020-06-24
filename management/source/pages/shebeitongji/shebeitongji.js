@@ -1,4 +1,4 @@
-// pages/content/content.js
+
 import {
   AppBase
 } from "../../appbase";
@@ -108,11 +108,7 @@ class Content extends AppBase {
       url: '/pages/sousuoshebei/sousuoshebei?name=' + search,
     })
   }
-  shebeitongji() {
-    wx.navigateTo({
-      url: '/pages/shebeitongjitwo/shebeitongjitwo',
-    })
-  }
+
   chakan(e) {
     var id=e.currentTarget.id;
     wx.navigateTo({
@@ -127,7 +123,6 @@ var content = new Content();
 var body = content.generateBodyJson();
 body.onLoad = content.onLoad;
 body.onMyShow = content.onMyShow;
-body.shebeitongji = content.shebeitongji;
 body.dianji = content.dianji;
 body.searchtxt = content.searchtxt;
 body.chakan = content.chakan;

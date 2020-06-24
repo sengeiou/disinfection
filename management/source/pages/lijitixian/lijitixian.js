@@ -19,32 +19,39 @@ class Content extends AppBase {
     this.Base.Page = this;
     //options.id=5;
     super.onLoad(options);
+   
   }
   onMyShow() {
     var that = this;
     var api = new OwnerApi;
     api.info({
     }, (info) => {
-      // var amount = info.addtime;
-      // console.log(info + "先看看")
+      var updated_date = Number(this.Base.getMyData().updated_date);
       this.Base.setMyData({
-      list:info
-     })
-      // console.log(amount + "先看看")
+        list: info
+
+      })
+
+    })
+
+    var now = new Date();
+    console.log(this.Base.getMyData());
+    console.log(this.Base.getMyData().InstInfo);
+    console.log(this.Base.getMyData().InstInfo.withdrawtime);
+    this.Base.getMyData().InstInfo;//.withdrawtime;
+    var withdrawtime = this.Base.getMyData().InstInfo.withdrawtime;
+    var mytime = ApiUtil.FormatDateTime(now);
+    var mydate = ApiUtil.FormatDateTimet(now)
+    var hour = ApiUtil.FormatDateHour(now);
+    var hourt = parseInt(hour) + parseInt(withdrawtime) ;
+    var min = ApiUtil.FormatDateMin(now);
+    var sec = ApiUtil.FormatDateSec(now)
+    var mytimenowt = mydate + hourt + ":" + min + ":" + sec;
+    this.Base.setMyData({
+      mytime, mytimenowt, hourt
     })
   }
- 
-  wdsp(e) {
-    var name = e.currentTarget.dataset.name;
-    if (name == "txcg") {
-      wx.navigateTo({
-        url: '/pages/tixianchenggong/tixianchenggong',
-      })
-    }
-  
 
-
-  }
 }
 
 
@@ -53,5 +60,5 @@ var content = new Content();
 var body = content.generateBodyJson();
 body.onLoad = content.onLoad;
 body.onMyShow = content.onMyShow;
-body.wdsp = content.wdsp;
+
 Page(body)

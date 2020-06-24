@@ -94,13 +94,17 @@ class Content extends AppBase {
       mobile: mobile,
       type: 'register'
     }, (ret) => {
-      if (ret) {
+      if (ret.code == "0") {
         that.Base.setMyData({
           send: true,
           reminder: 60
         })
         that.Base.setInVerify();
+      }else{
+        this.Base.info(ret.return)
+
       }
+
     })
   }
   setInVerify() {
@@ -138,7 +142,7 @@ class Content extends AppBase {
       console.log(ret,'ret')
       if(ret.code=="0"){
         wx.setStorageSync("token", ret.return);
-        wx:wx.switchTab({
+        wx.switchTab({
           url: '/pages/home/home',
           success: function(res) {},
           fail: function(res) {},

@@ -23,10 +23,13 @@ class Content extends AppBase {
     //options.id=5;
     super.onLoad(options);
   }
-  onMyShow() {
+  onMyShow(e) {
     var that = this;
     var api = new OwnerApi();
-    api.report({},(report)=>{
+    api.report({},(report)=>{   
+      
+      report.thisweekincome = new Number(report.thisweekincome).toFixed(2);
+
       this.Base.setMyData({report,
         ready:0,
         ec: {
@@ -171,10 +174,19 @@ class Content extends AppBase {
           }
         }
       });
+
+
+
     });
   }
   changetap(e){
     this.Base.setMyData({ready:e.currentTarget.id})
+  }
+
+  tixian(){
+    wx.navigateTo({
+      url: '/pages/tixian/tixian',
+    })
   }
 }
 
@@ -183,4 +195,5 @@ var body = content.generateBodyJson();
 body.onLoad = content.onLoad; 
 body.onMyShow = content.onMyShow;
 body.changetap = content.changetap;
+body.tixian=content.tixian;
 Page(body)

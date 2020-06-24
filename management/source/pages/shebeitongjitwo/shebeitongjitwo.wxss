@@ -16,6 +16,10 @@ page{
 .margin-top-15{
   margin-top: 15rpx;
 }
+.icon-28{
+  width: 50rpx;
+  height: 40rpx;
+}
 .bg-color{background-color: #091C2B;}
 .bg-color2{background-color: #F3BD2B;}
 .bg-color3{background-color: #FF674B;}

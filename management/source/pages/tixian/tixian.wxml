@@ -1,10 +1,11 @@
 <view class='margin-top-20'></view>
 <view class="margin-left-40"style="height:288rpx;width:670rpx;background-color:#091C2B;border-radius: 30rpx;">
 <view class="h5 margin-top-60 margin-left-40" style='color:#FF674B;'>可提现余额 </view>
-<view class="txt-white h2 margin-left-40 margin-bottom-40 txt-bold">￥{{OwnerInfo.balance}}</view>
-<view class='flex-row'>
-<view class="h5 margin-left-40">提现最低额度为10元</view>
-<view bindtap='tixianjilu' class="text-center txt-white h5 margin-left-188 daxiao padding-right-30 padding-left-30 padding-top-5">提现记录 
+<view class="txt-white h2 margin-left-40  txt-bold">￥{{OwnerInfo.balance}}</view>
+<view class='flex-row margin-top-50'>
+<view class="h5 margin-left-40 ">提现最低额度为10元</view>
+<view class="flex-1"></view>
+<view bindtap='tixianjilu' class="text-center txt-white h5 margin-right-20 daxiao" style="line-height:48rpx;">提现记录 
 </view>
 </view>
 </view>

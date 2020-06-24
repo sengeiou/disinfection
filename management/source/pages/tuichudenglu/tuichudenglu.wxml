@@ -19,10 +19,10 @@
 <view wx:if='{{show=="yy"}}'>
   <view class=' mianji margin-left-80 margin-top margin-right-80'>
     <!-- <view class='f-32 margin-left-46 margin-top-28 dl-color'>输入手机号</view> -->
-    <input class="f-32 padding-left-40 margin-top-28" placeholder-style="color:#A5A9B1;" type="number" bindinput="uName" placeholder='输入手机号'></input>
+    <input maxlength="11" class="f-32 padding-left-40 margin-top-28" placeholder-style="color:#A5A9B1;" type="number" bindinput="uName" placeholder='输入手机号'></input>
   </view>
   <view class=' mianji margin-left-80 margin-top margin-right-80'>
-    <input class="f-32 padding-left-40 margin-top-28" placeholder-style="color:#A5A9B1;" type="password" bindinput="uPwd" placeholder='输入密码'></input>
+    <input  maxlength="20" class="f-32 padding-left-40 margin-top-28" placeholder-style="color:#A5A9B1;" type="password" bindinput="uPwd" placeholder='输入密码'></input>
   </view>
   <view data-name='dl' bindtap='denglu'>
     <!-- <image  src='{{uploadpath}}resource/{{res.a18}}'class="icon-96 margin-left-80 margin-top margin-right-80 margin-bottom-40"  ></image> -->
@@ -41,7 +41,7 @@
 
 <view wx:if='{{show=="yh"}}'>
   <view class=' mianji margin-left-80 margin-right-80 margin-top'>
-    <input class="f-32 padding-left-40 margin-top-28" placeholder-style="color:#A5A9B1;" type="text" bindinput="uName" placeholder='输入手机号'></input>
+    <input maxlength="11" class="f-32 padding-left-40 margin-top-28" placeholder-style="color:#A5A9B1;" type="text" bindinput="uName" placeholder='输入手机号'></input>
   </view>
 
   <view class='flex-row'>
@@ -56,7 +56,7 @@
 
     <view class="txt-black  margin-top-50 margin-left-15 margin-right-40  padding-top-14  " wx:if="{{reminder>0}}" style="width:180rpx;">{{reminder}}秒</view>
 
-    <view class="margin-top-70 h6 margin-right-40 margin-left-10" wx:if="{{send==true && reminder<=0}}" bindtap="sendmessage">重新发送验证码</view>
+    <view class="margin-top-70 h6 margin-right-40 margin-left-15" wx:if="{{send==true && reminder<=0}}" bindtap="sendmessage" style="width:180rpx;">重新发送验证码</view>
     <!-- {{send?"t":"g"}}-{{reminder}} -->
   </view>
   <view data-name='zc' bindtap='zhuce' class="dl-mianji margin-right-80 margin-left-80 margin-bottom-40 margin-top-100">

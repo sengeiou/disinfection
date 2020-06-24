@@ -29,7 +29,7 @@
 
     <view class="txt-black  margin-top-50 margin-left-15 margin-right-40  padding-top-14  " wx:if="{{reminder>0}}" style="width:180rpx;">{{reminder}}秒</view>
 
-    <view class="margin-top-70 h6 margin-right-40 margin-left-20" wx:if="{{send==true && reminder<=0}}" bindtap="sendmessage">重新发送验证码</view>
+    <view class="margin-top-70 h6 margin-right-40 margin-left-15" wx:if="{{send==true && reminder<=0}}" bindtap="sendmessage" style="width:180rpx;">重新发送验证码</view>
     <!-- {{send?"t":"g"}}-{{reminder}} -->
   </view>
 

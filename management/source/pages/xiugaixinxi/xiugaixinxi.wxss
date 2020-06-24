@@ -15,6 +15,13 @@ border-radius:10px 10px 0px 0px;
 .border-ra{
   border-radius:0px 0px 10px 10px;
 }
+.bottom-size{
+width:670rpx;
+height:96rpx;
+background:rgba(243,189,43,1);
+opacity:1;
+border-radius:20rpx;
+}
 .t-color{
   color: #3C3F4E;
 }

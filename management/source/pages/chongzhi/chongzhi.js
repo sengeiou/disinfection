@@ -37,9 +37,9 @@ class Content extends AppBase {
     api.activeaccount({
       password:password,
     },(ret)=>{
-      if (password.length > 6 || password.length < 5){
+      if (password.length < 5){
         wx.showToast({
-          title: '密码长度不对，长度应为6位',
+          title: '密码长度不对，长度应为6-20位',
           icon: 'none'
         })
         return;

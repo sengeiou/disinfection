@@ -47,9 +47,11 @@ class Content extends AppBase {
       })
     }
     if (name == "tuichudenglu") {
-      wx.navigateTo({
-        url: '/pages/tuichudenglu/tuichudenglu',
-      })
+ 
+        wx.redirectTo({
+          url: '/pages/tuichudenglu/tuichudenglu',
+        })
+  
     }
   }
   getUserInfo(){

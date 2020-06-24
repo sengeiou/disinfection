@@ -24,7 +24,7 @@ class Content extends AppBase {
   setPageTitle() {
     wx.setNavigationBarTitle({
       // title: '',
-      title: '我的商户',
+      title: '增加设备',
     });
   }
   onLoad(options) {

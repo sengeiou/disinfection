@@ -17,5 +17,9 @@
  </input>
 </view>
 <view class="fixbottom">
-<image bindtap="back" data-name="backone" src='{{uploadpath}}resource/{{res.a3}}' class="margin-right-40 margin-left-40 margin-bottom-80 icon-96"></image>
+<!-- <image bindtap="back" data-name="backone" src='{{uploadpath}}resource/{{res.a3}}' class="margin-right-40 margin-left-40 margin-bottom-80 icon-96"></image> -->
+<view bindtap="back" data-name="backone" class="margin-right-40 margin-left-40 margin-bottom-80 bottom-size">
+<view class="text-center txt-white" style="line-height:96rpx;">确认修改</view>
+</view>
+
 </view>

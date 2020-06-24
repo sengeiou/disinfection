@@ -12,11 +12,29 @@
 .size{
   height:408rpx;
   background-color:#091C2B;
-  border-radius: 30rpx;
+  border-radius: 20rpx;
 }
 .icon-48{
   height:48rpx;
   width: 128rpx;
+
+}
+.margin-top-4{
+  margin-top:4rpx;
+}
+.sy-color{
+font-size:16px;
+font-weight:normal;
+line-height:22px;
+color:rgba(35,35,35,1);
+opacity:1;
+}
+.tx.size{
+  width:128rpx;
+height:48rpx;
+background:rgba(255,103,75,1);
+opacity:1;
+border-radius:30rpx;
 
 }
 .margin-left-360{
@@ -25,11 +43,14 @@
 .padding-rihgt-300{
   padding-right: 300rpx;
 }
-.margin-left-100{
-  margin-left: 100rpx;
+.margin-right-110{
+  margin-right: 110rpx;
 }
-.margin-left-170{
-  margin-left: 170rpx;
+.margin-left-110{
+  margin-left: 110rpx;
+}
+.margin-left-156{
+  margin-left: 156rpx;
 }
 .t-color{
   color: #FF674B;

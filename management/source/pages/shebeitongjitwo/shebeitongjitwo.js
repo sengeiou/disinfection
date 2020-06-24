@@ -27,26 +27,19 @@ class Content extends AppBase {
     api.devicesummary({},ret=>{
     //  console.log(ret,owner_id,"9999999999")
     this.Base.setMyData({  list:ret })
-      //      var arr=[];
-      //      var arr2=[];
-      // for (var i=1;i<ret.alldevice.length;i++) {
-      //   if (ret.alldevice[i].workingtype=="WORK") {
-      //     // console.log(ret, "6666666666666")
-      //     arr.push(ret.alldevice[i])
-      //   }
-      //   if(ret.alldevice[i].workingtype=="ON"){
-      //     arr2.push(ret.alldevice[i])
-      //   }
-      //   // console.log(ret, "6666666666666")
-      //   // this.Base.setMyData({
-      //   //   list4:ret.alldevice
-      //   // })
-      //   }
-      //   this.Base.setMyData({ list4:ret.alldevice})
-      // // console.log(ret, "6666666666666")
-      // // console.log(arr, "77777777777")
-      // this.Base.setMyData({  list2:arr })
-      // this.Base.setMyData({ list3:arr2 })
+           var arr=[];
+           var arr2=[];
+      for (var i=1;i<ret.length;i++) {
+        if (ret[i].workingtype=="WORK") {
+     
+          arr.push(ret[i])
+        }
+        if(ret[i].workingtype=="ON"){
+          arr2.push(ret[i])
+        }
+        }
+      this.Base.setMyData({  list2:arr })
+      this.Base.setMyData({ list3:arr2 })
     })
   
     

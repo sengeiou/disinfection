@@ -20,6 +20,23 @@ border-radius:10px 10px 0px 0px;
 .border{
   border-bottom: 1px solid #F1F1F1;
 } 
+.xg-size{
+width:140rpx;
+height:50rpx;
+background:rgba(255,103,75,1);
+opacity:1;
+border-radius:40rpx;
+}
+.margin-left-61{
+  margin-left: 61rpx;
+}
+.icon-18{
+  width:23rpx;
+  height:28rpx;
+}
+.margin-top-35{
+  margin-top: 38rpx;
+}
 .sh-color{
   color: #3C3F4E;
 }
